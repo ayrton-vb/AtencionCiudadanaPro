@@ -1,3 +1,28 @@
+//-------------------------
+// menu scroll
+//-------------------------
+
+window.addEventListener("scroll", function() {
+    var header = document.querySelector("nav")
+    header.classList.toggle("red",window.scrollY>0);
+
+    
+    var link = document.querySelectorAll('.nav-link');
+    link.forEach((el) => {el.classList.toggle("whiteText",window.scrollY>0);});
+    
+    var logoP = document.querySelector('.logoR');
+    logoP.classList.toggle("logoB",window.scrollY>0);
+
+
+
+})
+
+
+//-------------------------
+// escritura titulo
+//-------------------------
+
+
 let app = document.getElementById('typewriter');
 
 let typewriter = new Typewriter(app, {

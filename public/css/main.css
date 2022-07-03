@@ -6,6 +6,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     /* overflow: hidden; */
 }
+
+.red {
+    background-color: #dc0a14 !important;
+}
+.redText {
+    color: #dc0a14 !important;
+}
+.whiteText {
+    color: white !important;
+}
 /*
 ============================banner==============================
 */
@@ -26,11 +36,12 @@ body {
 ============================MENU==============================
 */
 #nav {
-    border: solid 1px red;
+  
 }
 
+
 .nav-link {
-    color: red !important;
+   
 }
 /*
 ============================SLIDER IMAGENES==============================
@@ -52,12 +63,22 @@ body {
 }
 
 .mapa {
-    background: url(../img/mapa.png);
+    background: url(/imagenes/maoa.png);
     width:100%;
     height:500px;
     margin-bottom: 300px;
 
+ position: relative ;
 }
+
+.logoR{
+    content:url("/imagenes/LogoR.png");
+}
+
+.logoB{
+    content:url("/imagenes/LogoB.png");
+}
+
 
 
 
@@ -137,7 +158,7 @@ body {
 /*=========================FOOTER================================*/
 
 footer {
-    background: red;
+    background-color: #dc0a14;
     min-height: 60px;
 
 }
@@ -170,6 +191,19 @@ footer p{
 */
 
 
+@media(max-width:991px){
+    #nav {
+        background-color: #dc0a14;
+    }
+    .redText {
+        color: white !important;
+    }
+
+    #banner{
+       margin-top: 10px;
+    }
+
+}
 /*
 ============================MEDIA QUERY PANTALLA SM==============================
 */
@@ -219,6 +253,18 @@ footer p{
 
     }
 
+    #nav {
+        background-color: #dc0a14;
+    }
+    .redText {
+        color: white !important;
+    }
+
+    #banner{
+       margin-top: 10px;
+    }
+
+
 }
 
 /*
@@ -254,6 +300,17 @@ footer p{
         height:300px;
         margin-bottom: -50px;
 
+    }
+
+    #nav {
+        background-color: #dc0a14;
+    }
+    .redText {
+        color: white !important;
+    }
+
+    #banner{
+       margin-top: 10px;
     }
 
 }
