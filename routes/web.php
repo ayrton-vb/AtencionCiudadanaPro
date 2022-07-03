@@ -28,3 +28,5 @@ Route::middleware([
 });
 
 Route::resource('direcciones','App\Http\Controllers\DireccionController');
+
+Route::resource('clientes','App\Http\Controllers\ClienteController');

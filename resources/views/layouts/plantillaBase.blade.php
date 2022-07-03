@@ -43,10 +43,10 @@
                         <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#actividades">Actividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#actividades">Sobre Nosotros</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#ubicacion">Ubicacion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#ubicacion">Contacto</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#nosotros">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -86,10 +86,12 @@
 
 
     <!-- =============================================== -->
-    <!--CONTENIFO -->
+    <!--CONTENIDO -->
     <!-- =============================================== -->
-<div style="height: 2000px">
+<div id="contidoPrincipal">
 
+    @yield('contenido')
+     
 </div>
 
 

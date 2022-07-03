@@ -44,17 +44,41 @@ body {
    
 }
 /*
-============================SLIDER IMAGENES==============================
+============================CONTENIDO PRINCIPAL==============================
 */
 
-#actividades {
+#contidoPrincipal{
+    min-height: 500px;
+}
 
+/*
+============================TRAMITES DEMANDADOS==============================
+*/
+
+.cards-wrapper{
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.card{
+    text-align: center;
+    margin: 0 .5em;
+    width: calc(100%/3);
+}
+
+.images-wrapper{
+    height: 11vw;
+}
+
+.images-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
 }
 /*
 ============================UBICACION==============================
 */
 #seccion-direccion {
-    margin-top:300px;
+    margin-top:150px;
     background-color: #f3f3f3;
     display:flex;
     justify-content: center;
@@ -63,10 +87,10 @@ body {
 }
 
 .mapa {
-    background: url(/imagenes/maoa.png);
+    background: url(/imagenes/mapa.png);
     width:100%;
-    height:500px;
-    margin-bottom: 300px;
+    height:300px;
+    margin-bottom: 350px;
 
  position: relative ;
 }
@@ -109,6 +133,11 @@ body {
     margin:0;
 }
 
+/*=========================SOBRE NOSOTROS================================*/
+
+#nosotros{
+    margin-bottom:150px;
+}
 
 /*=========================CONTACTOS BACKGROUND================================*/
 
