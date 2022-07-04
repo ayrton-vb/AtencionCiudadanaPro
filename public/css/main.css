@@ -36,12 +36,12 @@ body {
 ============================MENU==============================
 */
 #nav {
-  
+
 }
 
 
 .nav-link {
-   
+
 }
 /*
 ============================CONTENIDO PRINCIPAL==============================
@@ -50,6 +50,19 @@ body {
 #contidoPrincipal{
     min-height: 500px;
 }
+
+
+
+
+    /*
+    ============================SECCION TRAMITES MAS DEMANDADOS==============================
+    */
+
+#TramitesDem{
+    background-color: #f3f3f3;
+}
+
+
 
 /*
 ============================TRAMITES DEMANDADOS==============================
@@ -74,23 +87,32 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
+/*
+============================SERVICIOS==============================
+*/
+#servicios{
+
+}
 /*
 ============================UBICACION==============================
 */
 #seccion-direccion {
-    margin-top:150px;
+
     background-color: #f3f3f3;
     display:flex;
     justify-content: center;
-    padding-bottom: 0px;
+    padding-bottom: 80px;
+
 
 }
 
 .mapa {
     background: url(/imagenes/mapa.png);
     width:100%;
-    height:300px;
-    margin-bottom: 350px;
+
+
+
 
  position: relative ;
 }
@@ -136,14 +158,14 @@ body {
 /*=========================SOBRE NOSOTROS================================*/
 
 #nosotros{
-    margin-bottom:150px;
+    ;
 }
 
 /*=========================CONTACTOS BACKGROUND================================*/
 
 #bg-contactos{
     position:relative;
-    top: -130px;
+
 
 }
 
@@ -155,24 +177,13 @@ body {
 
 /*=========================CONTACTOS FORMULARIO================================*/
 
-#contenedor-formulario{
-    position:absolute;
-    top:20%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background: #fbfafa;
-    border-radius:5px;
-    margin-top: 95px;
 
-}
 
-#titulo-formulario {
-    color: #3f3f3f;
-}
+
 
 #boton{
     color: white;
-    background: #e30613;
+    background: #6c757d;
 }
 
 

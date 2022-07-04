@@ -22,7 +22,7 @@
 <header data-aos="" class="container-fluid text-center fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark " id="nav">
         <div class="container-fluid"  >
-        
+
             <img class="logoR"  src="" width="50">
 
 
@@ -40,10 +40,10 @@
                         <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#actividades">Actividades</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#actividades">Puntos de Atención</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#ubicacion">Ubicacion</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#ubicacion">Directorio Institucional</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active mx-4 fs-5 fw-bold redText" href="#nosotros">Contacto</a>
@@ -91,19 +91,19 @@
 <div id="contidoPrincipal">
 
     @yield('contenido')
-     
+
 </div>
 
 
     <!--========================================================== -->
     <!--FOOTER-->
     <!--========================================================== -->
-    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap mt-1">
   <p class="fs-5 px-3  pt-3 fw-bold">Atención Ciudadana &copy; GAMEA Todos Los Derechos Reservados 2022</p>
   <div id="iconos" >
       <a href="https://www.facebook.com/ElAltoAlcaldia"><i class="bi bi-facebook"></i></a>
       <a href="https://twitter.com/renuevaelalto?t=9W6ixRI4MKKTbYUqmJxf6Q&s=09"><i class="bi bi-twitter"></i></a>
-      <a href="https://www.instagram.com/alcaldiaelalto/?utm_medium=copy_link"><i class="bi bi-instagram"></i></a>  
+      <a href="https://www.instagram.com/alcaldiaelalto/?utm_medium=copy_link"><i class="bi bi-instagram"></i></a>
   </div>
 </footer>
 
