@@ -26,6 +26,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::resource('areas','App\Http\Controllers\AreaController');
 
 Route::resource('direcciones','App\Http\Controllers\DireccionController');
 

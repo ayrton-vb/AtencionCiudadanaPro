@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Direccion extends Model
+class Area extends Model
 {
     use HasFactory;
-    public function areas(){
-        return $this->hasMany(Area::class,'id');
+    public function direccions(){
+        return $this->belongsTo(Direccion::class,'id_direccion');
     }
 }
