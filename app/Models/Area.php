@@ -11,4 +11,7 @@ class Area extends Model
     public function direccions(){
         return $this->belongsTo(Direccion::class,'id_direccion');
     }
+    public function categorias(){
+        return $this->hasMany(Categoria::class,'id');
+    }
 }
