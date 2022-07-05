@@ -80,12 +80,13 @@ body {
 }
 
 .images-wrapper{
-    height: 11vw;
+    height: 5vw;
 }
 
 .images-wrapper img{
     max-width: 100%;
     max-height: 100%;
+
 }
 
 /*

@@ -16,6 +16,7 @@ class CreateDireccionsTable extends Migration
         Schema::create('direccions', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('alias');
             $table->timestamps();
         });
     }
