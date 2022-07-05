@@ -35,7 +35,7 @@
         <div class="card" >
             <div class="card-body">
             <div class="images-wrapper">
-                <img src="/imagenes/recaudaciones/servicio.png"  alt="...">
+                <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
 
         </div>
                 <h5 class="card-title">Card title</h5>
@@ -48,7 +48,7 @@
         <div class="card" >
             <div class="card-body">
         <div class="images-wrapper">
-            <img src="/imagenes/recaudaciones/servicio.png"  alt="...">
+            <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
         </div>
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -61,7 +61,7 @@
         <div class="card" >
             <div class="card-body">
         <div class="images-wrapper">
-            <img src="/imagenes/recaudaciones/servicio.png"  alt="...">
+            <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
         </div>
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -79,7 +79,7 @@
         <div class="card" >
             <div class="card-body">
   <div class="images-wrapper">
-      <img src="./imagenes/catastro/servicio.png" alt="...">
+      <img src="./imagenes/recaudaciones/categoria/Recurso 7.png" alt="...">
 
   </div>
   <div class="card-body">
@@ -92,7 +92,7 @@
 <div class="card" >
     <div class="card-body">
 <div class="images-wrapper">
-    <img src="./imagenes/catastro/servicio.png"  alt="...">
+    <img src="./imagenes/recaudaciones/categoria/Recurso 7.png"  alt="...">
 </div>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -104,7 +104,7 @@
 <div class="card" >
     <div class="card-body">
 <div class="images-wrapper">
-    <img src="./imagenes/catastro/servicio.png"  alt="...">
+    <img src="./imagenes/recaudaciones/categoria/Recurso 7.png"  alt="...">
 </div>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -121,7 +121,7 @@
         <div class="card" >
             <div class="card-body">
   <div class="images-wrapper">
-      <img src="./imagenes/integral/servicio.png" alt="...">
+      <img src="./imagenes/recaudaciones/categoria/Recurso 11.png" alt="...">
 
   </div>
   <div class="card-body">
@@ -134,7 +134,7 @@
 <div class="card" >
     <div class="card-body">
 <div class="images-wrapper">
-    <img src="./imagenes/integral/servicio.png"  alt="...">
+    <img src="./imagenes/recaudaciones/categoria/Recurso 11.png"  alt="...">
  </div>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -146,7 +146,7 @@
 <div class="card" >
     <div class="card-body">
     <div class="images-wrapper">
-        <img src="./imagenes/integral/servicio.png"  alt="...">
+        <img src="./imagenes/recaudaciones/categoria/Recurso 11.png"  alt="...">
     </div>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -298,7 +298,7 @@
 <!-- UBICACION-->
 <!-- =============================================== -->
 <section id="ubicacion" class=" pt-3 pb-3">
- <h1 data-aos="zoom-in-up" class="text-danger text-center fs-2 fw-bold text-decoration-underline">Ubicación</h1>
+ <h1 data-aos="zoom-in-up" class="text-danger text-center fs-2 fw-bold text-decoration-underline">Puntos de Atención</h1>
 <div id="seccion-direccion" class="mt-3">
   <div class="mapa"> </div>
   <div>
@@ -344,19 +344,55 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-6">
                 <!--========================================================== -->
                 <!-- CONTENEDOR DEL NUMEROS DE COTACTO -->
                 <!--========================================================== -->
-                <div id="numeros-contacto" class="container">
+                <div id="numeros-contacto" class="container d-flex">
+                    <div id="numeros-dependencias w-50">
+                        <h5 class="text-white text-center w-75 fw-bold">Números de Contacto  </h5>
+                        <div id="contactoNumero" class="text-center">
+                            <img src="/imagenes/recaudaciones/servicio.png" class="w-25">
+                            <h6 class="text-center text-white">Direccion de Recaudaciones</h6>
+                            <h6 class="text-center text-white">2-22860457</h6>
+                        </div>
+                        <div id="contactoNumero" class="text-center">
+                            <img src="/imagenes/catastro/servicio.png" class="w-25">
+                            <h6 class="text-center text-white">Direccion de Recaudaciones</h6>
+                            <h6 class="text-center text-white">2-22860457</h6>
+                        </div>
+                        <div id="contactoNumero" class="text-center">
+                            <img src="/imagenes/integral/servicio.png" class="w-25">
+                            <h6 class="text-center text-white">Direccion de Recaudaciones</h6>
+                            <h6 class="text-center text-white">2-22860457</h6>
+                        </div>
 
+                    </div>
+                    <div id="numeros-emergencia w-50 ">
+                        <h5 class="text-white text-center fw-bold " >Números de Emergencia</h5>
+                        <div id="contactoNumero" class="text-center">
+                            <img src="/imagenes/recaudaciones/servicio.png" class="w-25">
+                            <h6 class="text-center">Direccion de Recaudaciones</h6>
+                            <h6 class="text-center">2-22860457</h6>
+                        </div>
+                        <div id="contactoNumero" class="text-center">
+                            <img src="/imagenes/catastro/servicio.png" class="w-25">
+                            <h6 class="text-center">Direccion de Recaudaciones</h6>
+                            <h6 class="text-center">2-22860457</h6>
+                        </div>
+                        <div id="contactoNumero" class="text-center">
+                            <img src="/imagenes/integral/servicio.png" class="w-25">
+                            <h6 class="text-center">Direccion de Recaudaciones</h6>
+                            <h6 class="text-center">2-22860457</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6">
                 <!--========================================================== -->
                 <!-- CONTENEDOR DEL FORMULARIO -->
                 <!--========================================================== -->
-                <div id="contenedor-formulario" class="container  ">
+                <div id="contenedor-formulario" class="container">
                     <div class="text-center text-white">
                         <div><img src="./imagenes/buzon.png" alt="" class="w-25 pt-1"></div>
 
