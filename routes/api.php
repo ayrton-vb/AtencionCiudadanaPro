@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/tramites/{id}/direccion','App\Http\Controllers\AreaController@byDireccion');
+
+Route::get('/tramites/{id}/area','App\Http\Controllers\CategoriaController@byArea');

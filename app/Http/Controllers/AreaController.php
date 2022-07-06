@@ -12,6 +12,14 @@ class AreaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function byDireccion($id){
+
+        $areas = Area::where('id_direccion',$id)->get();
+        return  $areas;
+    }
+
+
     public function index()
     {
         $areas = Area::all();

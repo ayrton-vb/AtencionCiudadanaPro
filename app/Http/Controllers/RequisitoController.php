@@ -2,34 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Area;
-use App\Models\Categoria;
+use App\Models\Requisito;
+use App\Models\Tramite;
 use Illuminate\Http\Request;
 
-class CategoriaController extends Controller
+class RequisitoController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     *
-     *   public function byDireccion($id){
-
-    $areas = Area::where('id_direccion',$id)->get();
-    return  $areas;
-    }
      */
-
-    public function byArea($id){
-
-        $categorias= Categoria::where('id_area',$id)->get();
-        return  $categorias;
-    }
-
     public function index()
     {
-        $categorias = Categoria::all();
-        return view('categoria.index')->with('categorias',$categorias);
+        $tramites = Tramite::all();
+        $requisitos = Requisito::all();
+        return view('requisito.index')->with('requisitos',$requisitos)->with('tramites',$tramites);
     }
 
     /**

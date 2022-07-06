@@ -27,6 +27,10 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::resource('requisitos','App\Http\Controllers\RequisitoController');
+
+Route::resource('tramites','App\Http\Controllers\TramiteController');
+
 Route::resource('categorias','App\Http\Controllers\CategoriaController');
 
 Route::resource('areas','App\Http\Controllers\AreaController');

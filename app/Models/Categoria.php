@@ -11,4 +11,8 @@ class Categoria extends Model
     public function areas(){
         return $this->belongsTo(Area::class,'id_area');
     }
+
+    public function tramites(){
+        return $this->hasMany(Tramite::class,'id');
+    }
 }
