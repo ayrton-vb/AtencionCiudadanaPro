@@ -12,6 +12,7 @@
             <th>Categoria</th>
             <th>Area</th>
             <th>Direccion</th>
+            <th>Requisitos</th>
             <th>Acciones</th>
         </tr>
         </thead>
@@ -23,6 +24,14 @@
                 <td>{{$tramite->categorias->alias}}</td>
                 <td>{{$tramite->categorias->areas->alias}}</td>
                 <td>{{$tramite->categorias->areas->direccions->alias}}</td>
+                <td>
+                    @if($tramite->id==1)
+                         <a href="/tramites/{{$tramite->id}}/edit" class="btn btn-info">Ver</a>
+                    @else
+                        <a href="/tramites/{{$tramite->id}}/edit" class="btn btn-danger">Crear</a>
+                    @endif
+
+                </td>
                 <td>
                    <form action="{{ route ('tramites.destroy',$tramite->id)}}" method="POST">
                         @csrf
