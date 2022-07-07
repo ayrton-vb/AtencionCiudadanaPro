@@ -25,12 +25,7 @@
                 <td>{{$tramite->categorias->areas->alias}}</td>
                 <td>{{$tramite->categorias->areas->direccions->alias}}</td>
                 <td>
-                    @if($tramite->id==1)
-                         <a href="/tramites/{{$tramite->id}}/edit" class="btn btn-info">Ver</a>
-                    @else
-                        <a href="/tramites/{{$tramite->id}}/edit" class="btn btn-danger">Crear</a>
-                    @endif
-
+                    <a href="/tramites/{{$tramite->id}}/requisitobyTramite" class="btn btn-info">Ver</a>
                 </td>
                 <td>
                    <form action="{{ route ('tramites.destroy',$tramite->id)}}" method="POST">

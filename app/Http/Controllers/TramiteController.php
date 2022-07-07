@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Area;
 use App\Models\Categoria;
 use App\Models\Direccion;
+use App\Models\Requisito;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
 
@@ -17,9 +18,10 @@ class TramiteController extends Controller
      */
     public function index()
     {
+        $requisitos = Requisito::all();
 
         $tramites = Tramite::all();
-        return view('tramite.index')->with('tramites',$tramites);
+        return view('tramite.index')->with('tramites',$tramites)->with('requisitos',$requisitos);
     }
 
     /**

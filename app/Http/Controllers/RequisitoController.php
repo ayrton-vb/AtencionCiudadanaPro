@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
 use App\Models\Requisito;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
@@ -13,6 +14,14 @@ class RequisitoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    public function requisitobyTramite($id){
+
+        $requisitos = Requisito::where('id_tramite',$id)->get();
+        return  view('requisito.tramite');
+    }
+
     public function index()
     {
         $tramites = Tramite::all();
