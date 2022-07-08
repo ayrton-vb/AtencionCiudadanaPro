@@ -188,7 +188,7 @@
         <p class="fs-4 px-4 m-0">Actividades económicas</p>
         <p class="fs-4 px-4 m-0">Inmuebles</p>
         <p class="fs-4 px-4 m-0">Vehículos</p>
-        <a href="./recaudaciones/index.html" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+        <a href="/clientes/1/categoriasByArea" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
 
       </div>
     </div>
@@ -201,7 +201,7 @@
           <p class="fs-4 px-4 m-0">Trámites Catastrales</p>
           <p class="fs-4 px-4 m-0">Trámites de Urbanizaciones</p>
           <p class="fs-4 px-4 m-0">Trámites de Planimetrías</p>
-          <a href="./catastro/index.html" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+          <a href="/clientes/2/categoriasByArea" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
         </div>
 
       </div>
@@ -215,7 +215,7 @@
           <p class="fs-4 px-4 m-0">Pago de Bono Discapacidad</p>
           <p class="fs-4 px-4 m-0">Actividades Juventudes</p>
           <p class="fs-4 px-4 m-0">Atencion Adulto Mayor</p>
-          <a href="./integral/index.html" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+          <a href="/clientes/3/categoriasByArea" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
       </div>
 
       </div>

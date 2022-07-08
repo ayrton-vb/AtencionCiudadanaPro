@@ -27,6 +27,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/clientes/{id}/categoriasByArea','App\Http\Controllers\ClienteController@categoriasByArea');
+
 Route::get('/requisitos/{id}/{id2}/editRequisitobyTramite','App\Http\Controllers\RequisitoController@editRequisitobyTramite');
 
 Route::get('/tramites/{id}/requisitobyTramiteCreate','App\Http\Controllers\RequisitoController@requisitobyTramiteCreate');

@@ -8,7 +8,7 @@
             <option value="{{$tramite->id}}">{{$tramite->nombre}}</option>
         </select>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nombre del trámite</label>
+            <label for="exampleInputEmail1" class="form-label">Requisito del trámite</label>
             <input id="dato" name="dato" type="text" class="form-control" tabindex="1">
         </div>
         <div class="mb-3">
