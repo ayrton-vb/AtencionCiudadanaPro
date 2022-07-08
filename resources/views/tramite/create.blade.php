@@ -7,8 +7,6 @@
 
         <h1 class="text-center">Crear Tramite</h1>
 
-
-
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -74,17 +72,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
         <a href="/tramites" class="btn btn-secondary">Cancelar</a>
         <button type="submit" class="btn btn-primary">Guardar</button>

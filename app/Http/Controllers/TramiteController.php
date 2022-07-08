@@ -80,7 +80,6 @@ class TramiteController extends Controller
     public function edit($id)
     {
         $tramite = Tramite::find($id);
-
         return view('tramite.edit')->with('tramite',$tramite);
     }
 
