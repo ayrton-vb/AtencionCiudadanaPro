@@ -27,6 +27,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/requisitos/{id}/{id2}/editRequisitobyTramite','App\Http\Controllers\RequisitoController@editRequisitobyTramite');
+
 Route::get('/tramites/{id}/requisitobyTramiteCreate','App\Http\Controllers\RequisitoController@requisitobyTramiteCreate');
 
 Route::get('/tramites/{id}/requisitobyTramite','App\Http\Controllers\RequisitoController@requisitobyTramite');

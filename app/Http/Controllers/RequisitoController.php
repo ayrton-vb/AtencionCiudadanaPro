@@ -6,6 +6,7 @@ use App\Models\Categoria;
 use App\Models\Requisito;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
 class RequisitoController extends Controller
@@ -17,6 +18,13 @@ class RequisitoController extends Controller
      */
 
 
+
+    public function editRequisitobyTramite($id,$id2){
+        $tramite = Tramite::find($id);
+        $requisito = Requisito::find($id2);
+        $tipoPersonas = TipoPersona::all();
+        return view('requisito.edit')->with('tramite',$tramite)->with('requisito',$requisito)->with('tipoPersonas',$tipoPersonas);
+    }
 
     public function requisitobyTramiteCreate($id){
         $tramite = Tramite::find($id);
@@ -82,7 +90,9 @@ class RequisitoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tipoPersonas = TipoPersona::all();
+        $requisito = Requisito::find($id);
+        return view('requisito.edit')->with('requisito', $requisito)->with('tipoPersonas',  $tipoPersonas);
     }
 
     /**
@@ -94,7 +104,13 @@ class RequisitoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $requisito = Requisito::find($id);
+        $requisito->dato = $request->get('dato');
+        $requisito->id_tramite = $request->get('id_tramite');
+        $requisito->id_tipoPersona = $request->get('id_tipoPersona');
+        $id = $request->get('id_tramite');
+        $requisito->save();
+        return redirect('tramites/'.$id.'/requisitobyTramite');
     }
 
     /**

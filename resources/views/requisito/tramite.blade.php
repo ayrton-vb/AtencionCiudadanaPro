@@ -25,7 +25,7 @@
                     <form action="{{ route ('requisitos.destroy',$requisito->id)}}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <a href="/tramites/{{$requisito->id}}/edit" class="btn btn-info">Editar</a>
+                        <a href="/requisitos/{{$idTramite}}/{{$requisito->id}}/editRequisitobyTramite" class="btn btn-info">Editar</a>
                         <button type="submit" class="btn btn-danger">Borrar</button>
                     </form>
                 </td>

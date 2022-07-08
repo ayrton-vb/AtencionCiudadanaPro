@@ -4,6 +4,7 @@
 
     <h1 class="text-center">Tramites</h1>
     <a href="tramites/create" class="btn btn-primary mb-2">Crear</a>
+
     <table id="table" class="table table-light table-striped mt-4">
         <thead class="bg-primary">
         <tr>
@@ -25,7 +26,7 @@
                 <td>{{$tramite->categorias->areas->alias}}</td>
                 <td>{{$tramite->categorias->areas->direccions->alias}}</td>
                 <td>
-                    <a href="/tramites/{{$tramite->id}}/requisitobyTramite" class="btn btn-info">Ver</a>
+                    <a href="/tramites/{{$tramite->id}}/requisitobyTramite" class="btn btn-dark">Ver</a>
                 </td>
                 <td>
                    <form action="{{ route ('tramites.destroy',$tramite->id)}}" method="POST">

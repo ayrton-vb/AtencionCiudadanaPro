@@ -20,7 +20,7 @@
                 @endforeach
             </select>
         </div>
-        <a href="/requisitos" class="btn btn-secondary">Cancelar</a>
+        <a href="/tramites/{{$tramite->id}}/requisitobyTramite" class="btn btn-secondary">Cancelar</a>
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
 

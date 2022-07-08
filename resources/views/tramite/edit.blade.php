@@ -17,7 +17,7 @@
                         <label for="exampleInputEmail1" class="form-label">Categoria</label>
                         <input style="display: none" id="categoria" name="id_categoria" type="text" class="form-control" tabindex="1" value="{{$tramite->id}}">
                         <input id="" name="" type="text" class="form-control" tabindex="1" value="{{$tramite->categorias->alias}}" disabled>
-                        </select>
+
                     </div>
 
                     <div class="mb-3">
