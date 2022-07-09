@@ -27,7 +27,7 @@ class ClienteController extends Controller
         $direcciones = Direccion::all();
         $areasList = array(0);
         foreach ($direcciones as  $direccion) {
-            $var = Area::where('id_direccion',$direccion->id)->get();
+            $var = Area::where('id_direccion',$id)->get();
             $count = count($var);
             if(! $count){
                 array_push($areasList,0);

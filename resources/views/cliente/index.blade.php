@@ -246,14 +246,14 @@
 {{--<section id="actividades" class=" border-bottom border-2 pb-3 pt-3">
   <div class="container w-60 m-auto text-center" id="actividades">
     <h1 data-aos="zoom-in-up" class="fs-2 fw-bold">Actividades <span class="text-danger text-decoration-underline">Relevantes</span></h1>
-    <p data-aos="zoom-in-up" class="fs-3 ">Rebaja de impuestos, Capacitaciones gratuitas, Avisos </p>
+    <p data-aos="zoom-in-up" class="fs-3 ">Rebaja de impuestos, Capacitaciones gratuitas, Avisos </p><
   </div>
 
   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">/button>
     </div>
 
             <!-- IMAGENES DEBEN TENER EL MISMO TAMAÑO-->

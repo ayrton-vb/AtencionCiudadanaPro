@@ -10,14 +10,49 @@
 </section>
 
     <section class="d-flex">
-        @for ($i = 1; $i <= $areasList[1]; $i++)
+       @for ($i = 1; $i <= $areasList[1]; $i++)
 
-            <input type="button" class="btn btn-danger me-2" value="{{$areasByDireccion[$i-1]->alias}}">
+            <input id="categoria{{$areasByDireccion[$i-1]->id}}" onclick="funcion(categoria{{$areasByDireccion[$i-1]->id}}.value)" type="button" class="btn btn-outline-danger me-2" value="{{$areasByDireccion[$i-1]->alias}}">
         @endfor
     </section>
     <section id="contenidoCategorias">
 
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        window.onload = function() {
+           var categoria = $("#categoria1").val();
+
+            var html_label = '<label> tramites categoria: '+categoria+'</label>';
+            $('#contenidoCategorias').html(html_label);
+        };
+
+        function funcion($value){
+            var categoria = $value;
+            console.log(categoria)
+            var html_label = '<label> tramites categoria: '+categoria+'</label>';
+            $('#contenidoCategorias').html(html_label);
+        }
+
+        function onSelectDireccion($value){
+            var idDireccion = $value;
+            console.log(idDireccion);
+            if(! idDireccion){
+                $('#area').html('<option  value="">-Selecciona-</option>');
+                return;
+            }
+            $.get('/api/tramites/'+idDireccion+'/direccion', function (data){
+                console.log(data);
+                var html_select = '<option  value="">-Selecciona-</option>';
+                for (var i=0; i<data.length; i++)
+                    html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
+                $('#area').html(html_select);
+            });
+        }
+    </script>
+
 
 
 @endsection
