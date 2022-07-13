@@ -12,10 +12,20 @@
     <section class="d-flex">
        @for ($i = 1; $i <= $areasList[1]; $i++)
 
-            <input id="categoria{{$areasByDireccion[$i-1]->id}}" onclick="funcion(categoria{{$areasByDireccion[$i-1]->id}}.value)" type="button" class="btn btn-outline-danger me-2" value="{{$areasByDireccion[$i-1]->alias}}">
+            <input id="categoria{{$areasByDireccion[$i-1]->id}}" onclick="funcion({{$areasByDireccion[$i-1]->id}})" type="button" class="btn btn-outline-danger me-2" value="{{$areasByDireccion[$i-1]->alias}}">
         @endfor
     </section>
-    <section id="contenidoCategorias">
+    <section id="contenidoCategorias2">
+        <div id="contenidoCategorias">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -23,17 +33,45 @@
 
     <script>
         window.onload = function() {
-           var categoria = $("#categoria1").val();
+           var categoria = 1;
 
-            var html_label = '<label> tramites categoria: '+categoria+'</label>';
-            $('#contenidoCategorias').html(html_label);
+     /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';
+            $('#contenidoCategorias').html(html_label);*/
+            var contenidoCategorias = document.getElementById('contenidoCategorias');
+
+            const card = document.createElement("div");
+            divisor.setAttribute("id", "cerrar");
+
+            const divisor2 = document.createElement("p");
+            divisor2.setAttribute("id", "abrir");
+
+            divisor.appendChild(divisor2);
+
+
+
+            contenidoCategorias.appendChild(divisor);
         };
 
         function funcion($value){
             var categoria = $value;
             console.log(categoria)
             var html_label = '<label> tramites categoria: '+categoria+'</label>';
+
+
+
+
             $('#contenidoCategorias').html(html_label);
+
+
+            $('#contenidoCategorias').appendChild(prueba)
+
+            $.get('/api/tramites/'+categoria+'/area', function (data){
+                console.log(data);
+                var html_select = '<option  value="">-Selecciona-</option>';
+                for (var i=0; i<data.length; i++)
+                    html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
+                $('#area').html(html_select);
+            });
         }
 
         function onSelectDireccion($value){
