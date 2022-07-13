@@ -9,23 +9,35 @@
         </p>
     </section>
 
-    <section class="d-flex">
+    <section class="d-flex mb-4">
         @for ($i = 1; $i <= $areasList[1]; $i++)
 
             <input id="categoria{{$areasByDireccion[$i-1]->id}}" onclick="funcion({{$areasByDireccion[$i-1]->id}})" type="button" class="btn btn-outline-danger me-2" value="{{$areasByDireccion[$i-1]->alias}}">
         @endfor
     </section>
-    <section id="contenidoCategorias2">
-        <div id="contenidoCategorias">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+    <section >
+        <div class="container">
+            <div id="contenidoCategorias" class="row">
+
+      {{--          <div  class="col-3 mb-2">
+                    <div id="dentro" class="card" >
+                        <div class="card-body">
+                            <div class="images-wrapper">
+                                <img src="/imagenes/recaudaciones/categoria/Recurso 2.png"  alt="...">
+
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+                        </div>
+                    </div>
+                </div>--}}
+
             </div>
         </div>
+
+
+
 
     </section>
 
@@ -39,55 +51,110 @@
                    $('#contenidoCategorias').html(html_label);*/
             var contenidoCategorias = document.getElementById('contenidoCategorias');
 
-            const card = document.createElement("div");
-            divisor.setAttribute("id", "cerrar");
+            const fracment = document.createDocumentFragment();
 
-            const divisor2 = document.createElement("p");
-            divisor2.setAttribute("id", "abrir");
+            $.get('/api/tramites/'+categoria+'/area', function (data){
+                console.log(data);
+                console.log(data.length);
+                var html_select = '<option  value="">-Selecciona-</option>';
+                for (var i=0; i<data.length; i++){
+                    // html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
+                    const col = document.createElement("div");
+                    col.classList.add("col-3","mb-2");
+                    const card = document.createElement("div");
+                    card.classList.add("card");
+                    card.setAttribute("id","dentro");
+                    const cardBody = document.createElement("div");
+                    cardBody.classList.add("card-body");
+                    const imagesWrapper = document.createElement("div");
+                    imagesWrapper.classList.add("images-wrapper");
+                    const img = document.createElement("img");
+                    img.classList.add("images-wrapper");
+                    img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recurso "+categoria+".png");
+                    const cardTitle = document.createElement("h5");
+                    cardTitle.classList.add("card-title","mt-1");
+                    cardTitle.innerText = data[i].alias;
+                    const cardText = document.createElement("p");
+                    cardText.classList.add("card-text");
+                    cardText.innerText = "contenido";
+                    const enlace = document.createElement("a");
+                    enlace.classList.add("fs-6","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                    enlace.innerText = "Requisitos";
+                    enlace.setAttribute("href","/clientes/"+categoria+"/tramiteByArea");
 
-            divisor.appendChild(divisor2);
+
+                    col.appendChild(card);
+                    card.appendChild(cardBody);
+                    cardBody.appendChild(imagesWrapper);
+                    imagesWrapper.appendChild(img);
+                    cardBody.appendChild(cardTitle);
+                    cardBody.appendChild(cardText);
+                    cardBody.appendChild(enlace);
+
+                    fracment.appendChild(col);
+                    contenidoCategorias.appendChild(fracment);
+
+                }});
 
 
+            console.log(fracment);
 
-            contenidoCategorias.appendChild(divisor);
         };
 
         function funcion($value){
             var categoria = $value;
             console.log(categoria)
-            var html_label = '<label> tramites categoria: '+categoria+'</label>';
+
+            var contenidoCategorias = document.getElementById('contenidoCategorias');
+            contenidoCategorias.innerHTML="";
+
+            const fracment = document.createDocumentFragment();
 
 
 
 
-            $('#contenidoCategorias').html(html_label);
+        $.get('/api/tramites/'+categoria+'/area', function (data){
+            console.log(data);
+            console.log(data.length);
+
+            for (var i=0; i<data.length; i++){
+                // html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
+                const col = document.createElement("div");
+                col.classList.add("col-3","mb-2");
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.setAttribute("id","dentro");
+                const cardBody = document.createElement("div");
+                cardBody.classList.add("card-body");
+                const imagesWrapper = document.createElement("div");
+                imagesWrapper.classList.add("images-wrapper");
+                const img = document.createElement("img");
+                img.classList.add("images-wrapper");
+                img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recurso "+categoria+".png");
+                const cardTitle = document.createElement("h5");
+                cardTitle.classList.add("card-title","mt-1");
+                cardTitle.innerText = data[i].alias;
+                const cardText = document.createElement("p");
+                cardText.classList.add("card-text");
+                cardText.innerText = "contenido";
+                const enlace = document.createElement("a");
+                enlace.classList.add("fs-6","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                enlace.innerText = "Requisitos";
+                enlace.setAttribute("href","/clientes/"+categoria+"/tramiteByArea");
 
 
-            $('#contenidoCategorias').appendChild(prueba)
+                col.appendChild(card);
+                card.appendChild(cardBody);
+                cardBody.appendChild(imagesWrapper);
+                imagesWrapper.appendChild(img);
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                cardBody.appendChild(enlace);
 
-            $.get('/api/tramites/'+categoria+'/area', function (data){
-                console.log(data);
-                var html_select = '<option  value="">-Selecciona-</option>';
-                for (var i=0; i<data.length; i++)
-                    html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
-                $('#area').html(html_select);
-            });
-        }
+                fracment.appendChild(col);
+                contenidoCategorias.appendChild(fracment);
 
-        function onSelectDireccion($value){
-            var idDireccion = $value;
-            console.log(idDireccion);
-            if(! idDireccion){
-                $('#area').html('<option  value="">-Selecciona-</option>');
-                return;
-            }
-            $.get('/api/tramites/'+idDireccion+'/direccion', function (data){
-                console.log(data);
-                var html_select = '<option  value="">-Selecciona-</option>';
-                for (var i=0; i<data.length; i++)
-                    html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
-                $('#area').html(html_select);
-            });
+            }});
         }
     </script>
 

@@ -40,7 +40,7 @@
         </div>
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+                <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
             </div>
         </div>
 
@@ -53,7 +53,7 @@
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
         </div>
             </div>
 
@@ -66,7 +66,7 @@
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
         </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
             </div>
 </div>
@@ -97,7 +97,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
     </div>
 </div>
@@ -109,7 +109,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
     </div>
 </div>
@@ -126,7 +126,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
             </div>
 </div>
@@ -138,7 +138,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
     </div>
 </div>
@@ -150,7 +150,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
+    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
     </div>
 </div>
@@ -329,10 +329,10 @@
 <!-- =============================================== -->
 
 <section id="nosotros" class="container-fluid pt-3 pb-3" >
-    <h1 data-aos="fade-down" class="text-center "><span class="text-danger">Atencion Ciudadadana es</span></h1>
+    <h1 data-aos="fade-down" class="text-center "><span class="text-danger">Atencion Ciudadadana </span></h1>
 
         <p data-aos="fade-down" class="text-center p-3  fs-3 ">
-           <span class="text-danger">Atención Ciudadana</span> es el portal Web que permite al ciudadano obtener
+            <span class="text-danger">Portal Web</span> que permite ala ciudadania obtener
            información sobre los servicios y trámites que se desarrollan en el Gobierno Autónomo
            Municipal de La Ciudad de El Alto y sus dependencias.
        </p>
@@ -378,17 +378,17 @@
                     <div id="numeros-emergencia w-50 ">
                         <h5 class="text-white text-center fw-bold " >Números de Emergencia</h5>
                         <div id="contactoNumero" class="text-center">
-                            <img src="/imagenes/recaudaciones/servicioB.png" class="w-25">
+                            <img src="/imagenes/emergencia.png" class="w-25">
                             <h6 class="text-center">Direccion de Recaudaciones</h6>
                             <h6 class="text-center">2-22860457</h6>
                         </div>
                         <div id="contactoNumero" class="text-center">
-                            <img src="/imagenes/catastro/servicioB.png" class="w-25">
+                            <img src="/imagenes/emergencia.png" class="w-25">
                             <h6 class="text-center">Direccion de Recaudaciones</h6>
                             <h6 class="text-center">2-22860457</h6>
                         </div>
                         <div id="contactoNumero" class="text-center">
-                            <img src="/imagenes/integral/servicioB.png" class="w-25">
+                            <img src="/imagenes/emergencia.png" class="w-25">
                             <h6 class="text-center">Direccion de Recaudaciones</h6>
                             <h6 class="text-center">2-22860457</h6>
                         </div>

@@ -67,10 +67,17 @@ body {
 /*
 ============================TRAMITES DEMANDADOS==============================
 */
+#dentro{
+    width: 100% !important;
+}
+
 
 .cards-wrapper{
     display: flex;
     padding-bottom: 40px;
+    min-height: 100px;
+
+
 }
 
 .card{
