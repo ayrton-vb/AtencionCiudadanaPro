@@ -16,6 +16,13 @@ class TramiteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function byArea($id){
+
+        $categorias= Tramite::where('id_categoria',$id)->get();
+        return  $categorias;
+    }
+
     public function index()
     {
         $requisitos = Requisito::all();

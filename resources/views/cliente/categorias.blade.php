@@ -45,59 +45,63 @@
 
     <script>
         window.onload = function() {
-            var categoria = 1;
+            if(document.getElementById('categoria1')){
+                var categoria = 1;
+                /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';
+                       $('#contenidoCategorias').html(html_label);*/
+                var contenidoCategorias = document.getElementById('contenidoCategorias');
 
-            /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';
-                   $('#contenidoCategorias').html(html_label);*/
-            var contenidoCategorias = document.getElementById('contenidoCategorias');
+                const fracment = document.createDocumentFragment();
 
-            const fracment = document.createDocumentFragment();
-
-            $.get('/api/tramites/'+categoria+'/area', function (data){
-                console.log(data);
-                console.log(data.length);
-                var html_select = '<option  value="">-Selecciona-</option>';
-                for (var i=0; i<data.length; i++){
-                    // html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
-                    const col = document.createElement("div");
-                    col.classList.add("col-3","mb-2");
-                    const card = document.createElement("div");
-                    card.classList.add("card");
-                    card.setAttribute("id","dentro");
-                    const cardBody = document.createElement("div");
-                    cardBody.classList.add("card-body");
-                    const imagesWrapper = document.createElement("div");
-                    imagesWrapper.classList.add("images-wrapper");
-                    const img = document.createElement("img");
-                    img.classList.add("images-wrapper");
-                    img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recurso "+categoria+".png");
-                    const cardTitle = document.createElement("h5");
-                    cardTitle.classList.add("card-title","mt-1");
-                    cardTitle.innerText = data[i].alias;
-                    const cardText = document.createElement("p");
-                    cardText.classList.add("card-text");
-                    cardText.innerText = "contenido";
-                    const enlace = document.createElement("a");
-                    enlace.classList.add("fs-6","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
-                    enlace.innerText = "Requisitos";
-                    enlace.setAttribute("href","/clientes/"+categoria+"/tramiteByArea");
-
-
-                    col.appendChild(card);
-                    card.appendChild(cardBody);
-                    cardBody.appendChild(imagesWrapper);
-                    imagesWrapper.appendChild(img);
-                    cardBody.appendChild(cardTitle);
-                    cardBody.appendChild(cardText);
-                    cardBody.appendChild(enlace);
-
-                    fracment.appendChild(col);
-                    contenidoCategorias.appendChild(fracment);
-
-                }});
+                $.get('/api/tramites/'+categoria+'/area2', function (data){
+                    console.log(data);
+                    console.log(data.length);
+                    var html_select = '<option  value="">-Selecciona-</option>';
+                    for (var i=0; i<data.length; i++){
+                        // html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
+                        const col = document.createElement("div");
+                        col.classList.add("col-3","mb-2");
+                        const card = document.createElement("div");
+                        card.classList.add("card");
+                        card.setAttribute("id","dentro");
+                        const cardBody = document.createElement("div");
+                        cardBody.classList.add("card-body");
+                        const imagesWrapper = document.createElement("div");
+                        imagesWrapper.classList.add("images-wrapper");
+                        const img = document.createElement("img");
+                        img.classList.add("images-wrapper");
+                        img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recurso "+categoria+".png");
+                        const cardTitle = document.createElement("h5");
+                        cardTitle.classList.add("card-title","mt-1");
+                        cardTitle.innerText = data[i].nombre;
+                        const cardText = document.createElement("p");
+                        cardText.classList.add("card-text");
+                        cardText.innerText = "contenido";
+                        const enlace = document.createElement("a");
+                        enlace.classList.add("fs-6","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                        enlace.innerText = "Requisitos";
+                        enlace.setAttribute("href","/clientes/"+categoria+"/tramiteByArea");
 
 
-            console.log(fracment);
+                        col.appendChild(card);
+                        card.appendChild(cardBody);
+                        cardBody.appendChild(imagesWrapper);
+                        imagesWrapper.appendChild(img);
+                        cardBody.appendChild(cardTitle);
+                        cardBody.appendChild(cardText);
+                        cardBody.appendChild(enlace);
+
+                        fracment.appendChild(col);
+                        contenidoCategorias.appendChild(fracment);
+
+                    }});
+
+
+                console.log(fracment);
+            }
+
+
+
 
         };
 

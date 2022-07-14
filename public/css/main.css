@@ -80,6 +80,10 @@ body {
 
 }
 
+#si{
+    width: 100% !important;
+}
+
 .card{
     text-align: center;
     margin: 0 .5em;
