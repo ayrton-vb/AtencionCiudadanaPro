@@ -24,6 +24,7 @@ class RequisitoController extends Controller
         $requisito = Requisito::find($id2);
         $tipoPersonas = TipoPersona::all();
         return view('requisito.edit')->with('tramite',$tramite)->with('requisito',$requisito)->with('tipoPersonas',$tipoPersonas);
+
     }
 
     public function requisitobyTramiteCreate($id){
@@ -69,6 +70,7 @@ class RequisitoController extends Controller
         $id = $request->get('id_tramite');
         $requisito->save();
         return redirect('tramites/'.$id.'/requisitobyTramite');
+
     }
 
     /**

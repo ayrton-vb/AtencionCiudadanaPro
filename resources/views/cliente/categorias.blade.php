@@ -80,7 +80,7 @@
                         const enlace = document.createElement("a");
                         enlace.classList.add("fs-6","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
                         enlace.innerText = "Requisitos";
-                        enlace.setAttribute("href","/clientes/"+categoria+"/tramiteByArea");
+                        enlace.setAttribute("href","/clientes/"+categoria+"/tramiteByTramite");
 
 
                         col.appendChild(card);
@@ -144,7 +144,7 @@
                 const enlace = document.createElement("a");
                 enlace.classList.add("fs-6","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
                 enlace.innerText = "Requisitos";
-                enlace.setAttribute("href","/clientes/"+categoria+"/tramiteByArea");
+                enlace.setAttribute("href","/clientes/"+data[i].id+"/tramiteByTramite");
 
 
                 col.appendChild(card);

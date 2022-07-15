@@ -6,6 +6,7 @@ use App\Models\Area;
 use App\Models\Categoria;
 use App\Models\Direccion;
 use App\Models\Requisito;
+use App\Models\TipoPersona;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
 use phpDocumentor\Reflection\PseudoTypes\TraitString;
@@ -17,6 +18,37 @@ class TramiteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function tramiteBytramite($id)
+    {
+
+        $tramite = Tramite::find($id);
+        $requisitos = Requisito::where('id_tramite',$id)->get();
+        $tipoPersonas = TipoPersona::all();
+
+        $var = array();
+
+        foreach ($tipoPersonas as $tipoPersona){
+            foreach ($requisitos as $requisito){
+                if($requisito->id_tipoPersona == $tipoPersona->id){
+                    array_push($var, $requisito);
+                }
+
+
+            }
+
+        };
+
+
+
+
+
+        return view('cliente.datos')->with('tramite',$tramite)->with('requisitos',$requisitos)
+            ->with('tipoPersonas',$tipoPersonas)->with('var',$var);
+
+
+
+    }
 
     public function byArea($id){
         $categorias = Categoria::where('id_area',$id)->get();

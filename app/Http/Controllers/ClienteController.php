@@ -18,6 +18,7 @@ class ClienteController extends Controller
      */
 
 
+
     public function tramiteByArea($id)
     {
         return view('cliente.tramite');

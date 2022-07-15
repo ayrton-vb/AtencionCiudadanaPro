@@ -27,6 +27,10 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/clientes/{id}/tramiteByTramite','App\Http\Controllers\TramiteController@tramiteByTramite');
+
+Route::get('/clientes/{id}/tramiteByArea','App\Http\Controllers\ClienteController@tramiteByArea');
+
 Route::get('/clientes/{id}/tramiteByArea','App\Http\Controllers\ClienteController@tramiteByArea');
 
 Route::get('/clientes/{id}/categoriasByArea','App\Http\Controllers\ClienteController@categoriasByArea');
