@@ -117,7 +117,7 @@
 
 
 
-        $.get('/api/tramites/'+categoria+'/area', function (data){
+        $.get('/api/tramites/'+categoria+'/area2', function (data){
             console.log(data);
             console.log(data.length);
 
@@ -137,7 +137,7 @@
                 img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recurso "+categoria+".png");
                 const cardTitle = document.createElement("h5");
                 cardTitle.classList.add("card-title","mt-1");
-                cardTitle.innerText = data[i].alias;
+                cardTitle.innerText = data[i].nombre;
                 const cardText = document.createElement("p");
                 cardText.classList.add("card-text");
                 cardText.innerText = "contenido";

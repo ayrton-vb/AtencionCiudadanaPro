@@ -8,6 +8,7 @@ use App\Models\Direccion;
 use App\Models\Requisito;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
+use phpDocumentor\Reflection\PseudoTypes\TraitString;
 
 class TramiteController extends Controller
 {
@@ -18,9 +19,17 @@ class TramiteController extends Controller
      */
 
     public function byArea($id){
-
-        $categorias= Tramite::where('id_categoria',$id)->get();
-        return  $categorias;
+        $categorias = Categoria::where('id_area',$id)->get();
+        $tramites = Tramite::all();
+        $tramitesList = array();
+        foreach ($categorias as  $categoria) {
+        foreach ($tramites as  $tramite) {
+            if($tramite->id_categoria == $categoria->id){
+                array_push($tramitesList,$tramite);
+            }
+            }
+        }
+        return  $tramitesList;
     }
 
     public function index()
