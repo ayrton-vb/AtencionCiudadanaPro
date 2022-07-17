@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -52,3 +53,5 @@ Route::resource('areas','App\Http\Controllers\AreaController');
 Route::resource('direcciones','App\Http\Controllers\DireccionController');
 
 Route::resource('clientes','App\Http\Controllers\ClienteController');
+
+Route::get('/pdf/{id}/pdfrequisitobyTramite','App\Http\Controllers\PDFController@PDF');

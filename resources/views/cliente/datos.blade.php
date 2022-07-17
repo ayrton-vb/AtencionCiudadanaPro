@@ -11,7 +11,8 @@
 
         <div>
             <a data-aos="fade-up" href="/clientes/1/categoriasByArea" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold">Volver</a>
-            <button data-aos="fade-up" id="btnCrearPdf" type="button" class="btn btn-outline-primary  mx-2 fs-6 m-1  fw-bold">Descargar</button>
+
+            <a data-aos="fade-up" id="btnCrearPdf" type="button" class="btn btn-outline-primary  mx-2 fs-6 m-1  fw-bold" href="/pdf/{{$tramite->id}}/pdfrequisitobyTramite">Descargar</a>
         </div>
 
     </section>
