@@ -29,22 +29,22 @@ class TramiteController extends Controller
         $var = array();
 
         foreach ($tipoPersonas as $tipoPersona){
+            $var3 = 0;
             foreach ($requisitos as $requisito){
-                if($requisito->id_tipoPersona == $tipoPersona->id){
-                    array_push($var, $requisito);
+                if($requisito->id_tipoPersona == $tipoPersona->id
+                    and $requisito->id_tramite == $tramite->id)
+                {
+                    $var3 = $var3 + 1;
+                    if($var3 < 2){
+                        array_push($var,$tipoPersona);
+                    }
                 }
-
-
             }
-
         };
-
-
-
-
+        $var2 = count($var);
 
         return view('cliente.datos')->with('tramite',$tramite)->with('requisitos',$requisitos)
-            ->with('tipoPersonas',$tipoPersonas)->with('var',$var);
+            ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3);
 
 
 

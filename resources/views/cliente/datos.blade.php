@@ -7,7 +7,7 @@
 
 
     <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
-        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold""><span class="text-danger text-decoration-underline">Empadronamiento por actividad económica</span></h1>
+        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger text-decoration-underline">Empadronamiento por actividad económica</span></h1>
 
         <div>
             <a data-aos="fade-up" href="/clientes/1/categoriasByArea" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold">Volver</a>
@@ -91,22 +91,36 @@
                     <div class="col-9 pt-4 border-start border-danger  border-5">
                         <h3 class="fw-bold">¿Cuáles son los requisitos?</h3>
 
-                        @foreach($var as $va)
-                            <p>{{$va->dato}}</p>
-                        @endforeach
+                        @for ($i = 0; $i < $var2; $i++)
 
-                        @foreach($tipoPersonas as $tipoPersona)
-                            <p id="{{$tipoPersona->nombre}}" class="fs-4 fw-bold text-danger">{{$tipoPersona->nombre}}</p>
+                                <p id="{{$var[$i]->nombre}}" class="fs-4 fw-bold text-danger">{{$var[$i]->nombre}}</p>
+
+
+                            @foreach($requisitos as $requisito)
+                                @if($requisito->id_tipoPersona == $var[$i]->id)
+                                    <p class="fs-4">{{$requisito->dato}}</p>
+                                @else
+                                @endif
+                            @endforeach
+
+                        @endfor
+
+
+
+                      {{--  @foreach($tipoPersonas as $tipoPersona)
+                            @if(0 == 1)
+                                <p id="{{$tipoPersona->nombre}}" class="fs-4 fw-bold text-danger">{{$tipoPersona->nombre}}</p>
+                            @else
+                            @endif
+
                             @foreach($requisitos as $requisito)
                                 @if($requisito->id_tipoPersona == $tipoPersona->id)
                                     <p class="fs-4">{{$requisito->dato}}</p>
                                 @else
-
                                 @endif
-
-
                             @endforeach
-                        @endforeach
+
+                        @endforeach--}}
 
 
                     </div>
