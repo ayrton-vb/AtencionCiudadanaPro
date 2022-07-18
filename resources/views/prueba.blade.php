@@ -14,7 +14,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h2 class="text-center pb-3">Gobierno Autonomo Municipal de El Alto</h2>
+<h2 class="text-center">Gobierno Autonomo Municipal de El Alto</h2>
 
 
 <!--========================================================== -->
@@ -23,143 +23,88 @@
 
 
 
-<table class="table">
+<table class="table w-100">
     <thead>
     <tr>
-        <th scope="col-2"></th>
-        <th scope="col-4"></th>
-        <th scope="col-6"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
     </tr>
     </thead>
     <tbody>
-    <tr class="border-bottom border-danger" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 2.png') }}" class="w-25" alt="..."></th>
-        <td><h3 class="fw-bold w-100">Nombre del trámite:</h3></td>
-        <td> <p class="fs-4 w-100">{{$tramite->nombre}}</p></td>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 2.png') }}" class="w-75 mr-3" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">Nombre del trámite:</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->nombre}}</p></td>
 
     </tr>
-    <tr class="border-bottom border-danger" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 3.png') }}" class="w-25" alt="..."></th>
-        <td><h3 class="fw-bold w-100">¿De qué se trata el trámite?</h3></td>
-        <td> <p class="fs-4 w-100">{{$tramite->sobre}}</p></td>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 3.png') }}" class="w-75" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">¿De qué se trata el trámite?</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->sobre}}</p></td>
 
     </tr>
-    <tr class="border-bottom border-danger" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 4.png') }}" class="w-25" alt="..."></th>
-        <td><h3 class="fw-bold w-100">¿Cuál es el área responsable?</h3></td>
-        <td> <p class="fs-4 w-100">{{$tramite->areaRes}}</p></td>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 4.png') }}" class="w-75" alt="..."></th>
+        <td><h2 class="fs-6 fw-bold w-100">¿Cuál es el área responsable?</h2></td>
+        <td> <p class="fs-6 w-100">{{$tramite->areaRes}}</p></td>
     </tr>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 4.png') }}" class="w-75" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">¿Cuál es el área responsable?</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->areaRes}}</p></td>
+    </tr>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 5.png') }}" class="w-75" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">¿Dónde debo iniciar el trámite?</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->inicio}}</p></td>
+    </tr>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 6.png') }}" class="w-75" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">¿Cuáles son los días y horarios de atención?</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->horario}}</p></td>
+    </tr>
+    <tr class="m-0 p-0" style="margin-bottom: -10px;">
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 7.png') }}" class="w-75" alt="..."></th>
+        <td colspan="2"><h5 class="fs-6 fw-bold w-100">¿Cuáles son los requisitos?</h5></td>
+        @for ($i = 0; $i < $var2; $i++)
+
+    </tr>
+    <tr class="m-0 p-0">
+        <th></th>
+        <td colspan="2"  class="border-bottom border-danger">
+            <p id="{{$var[$i]->nombre}}" class="m-0 p-0 fs-4 fw-bold text-danger w-100">{{$var[$i]->nombre}}</p>
+            @foreach($requisitos as $requisito)
+                @if($requisito->id_tipoPersona == $var[$i]->id)
+    </tr>
+    <tr class="m-0 p-0">
+        <th></th>
+        <td colspan="2"><p class="fs-6 m-0 p-0 w-100">*{{$requisito->dato}}</p></td>
+                @else
+                @endif
+            @endforeach
+            @endfor
+        </td>
+    </tr>
+
+    <tr class="border-bottom border-top border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 8.png') }}" class="w-75" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">¿Debo realizar algún pago? ¿Cuánto?</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->pago}}</p></td>
+    </tr>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 9.png') }}" class="w-75" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">¿Cuánto tiempo dura el trámite?</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->duracion}}</p></td>
+    </tr>
+    <tr class="border-bottom border-danger m-0 p-0" >
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 10.png') }}" class="w-75" alt="..."></th>
+        <td><h5 class="fs-6 fw-bold w-100">¿Qué debo recibir al finalizar el trámite?</h5></td>
+        <td> <p class="fs-6 w-100">{{$tramite->termino}}</p></td>
+    </tr>
+
     </tbody>
 </table>
-
-
-
-            <div class="row pt-3 pb-3">
-                <div class="col-3 text-end">
-                    <img src="/imagenes/tramites/Recurso 5.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
-                </div>
-
-                <div class="col-9 pt-4 border-start border-danger  border-5">
-                    <h3 class="fw-bold">¿Dónde debo iniciar el trámite?</h3>
-                    <p class="fs-4">{{$tramite->inicio}}</p>
-                </div>
-            </div>
-
-            <div class="row pt-3 pb-3">
-                <div class="col-3 text-end">
-                    <img src="/imagenes/tramites/Recurso 6.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
-                </div>
-
-                <div class="col-9 pt-4 border-start border-danger  border-5">
-                    <h3 class="fw-bold">¿Cuáles son los días y horarios de atención?</h3>
-                    <p class="fs-4">{{$tramite->horario}}</p>
-                </div>
-            </div>
-
-            <div class="row pt-3 pb-3">
-                <div class="col-3 text-end">
-                    <img src="/imagenes/tramites/Recurso 7.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
-                </div>
-
-                <div class="col-9 pt-4 border-start border-danger  border-5">
-                    <h3 class="fw-bold">¿Cuáles son los requisitos?</h3>
-
-                    @for ($i = 0; $i < $var2; $i++)
-
-                        <p id="{{$var[$i]->nombre}}" class="fs-4 fw-bold text-danger">{{$var[$i]->nombre}}</p>
-
-
-                        @foreach($requisitos as $requisito)
-                            @if($requisito->id_tipoPersona == $var[$i]->id)
-                                <p class="fs-4">{{$requisito->dato}}</p>
-                            @else
-                            @endif
-                        @endforeach
-
-                    @endfor
-
-
-
-                    {{--  @foreach($tipoPersonas as $tipoPersona)
-                          @if(0 == 1)
-                              <p id="{{$tipoPersona->nombre}}" class="fs-4 fw-bold text-danger">{{$tipoPersona->nombre}}</p>
-                          @else
-                          @endif
-
-                          @foreach($requisitos as $requisito)
-                              @if($requisito->id_tipoPersona == $tipoPersona->id)
-                                  <p class="fs-4">{{$requisito->dato}}</p>
-                              @else
-                              @endif
-                          @endforeach
-
-                      @endforeach--}}
-
-
-                </div>
-            </div>
-
-            <div class="row pt-3 pb-3">
-                <div class="col-3 text-end">
-                    <img src="/imagenes/tramites/Recurso 8.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
-                </div>
-
-                <div class="col-9 pt-4 border-start border-danger  border-5">
-                    <h3 class="fw-bold">¿Debo realizar algún pago? ¿Cuánto?</h3>
-                    <p class="fs-4">{{$tramite->pago}}</p>
-                </div>
-            </div>
-
-            <div class="row pt-3 pb-3">
-                <div class="col-3 text-end">
-                    <img src="/imagenes/tramites/Recurso 9.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
-                </div>
-
-                <div class="col-9 pt-4 border-start border-danger  border-5">
-                    <h3 class="fw-bold">¿Cuánto tiempo dura el trámite?</h3>
-                    <p class="fs-4">{{$tramite->duracion}}</p>
-                </div>
-            </div>
-
-            <div class="row pt-3 pb-3">
-                <div class="col-3 text-end">
-                    <img src="/imagenes/tramites/Recurso 10.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
-                </div>
-
-                <div class="col-9 pt-4 border-start border-danger  border-5">
-                    <h3 class="fw-bold">¿Qué debo recibir al finalizar el trámite?</h3>
-                    <p class="fs-4">{{$tramite->termino}}</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    </div>
-</section>
-
 
 
 <!-- Optional JavaScript; choose one of the two! -->
