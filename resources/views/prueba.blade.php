@@ -11,11 +11,27 @@
     <link href="{{ asset('css/main2.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Hello, world!</title>
+    <title>AtencionCiudadana</title>
 </head>
-<body>
-<h2 class="text-center">Gobierno Autonomo Municipal de El Alto</h2>
+<body style="margin: 0; padding: 0;">
 
+
+<table class="table w-100" style="margin-bottom: -60px;margin-top: 0; padding-top: 0; ">
+    <thead>
+    <tr>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr >
+        <th scope="row" ><img  style="width: 60px;" src="{{ asset('imagenes/escudoElAlto.png') }}" alt="..."></th>
+        <td class="text-end"><img style="width: 80px;" src="{{ asset('imagenes/logoGamea.png') }}" alt="..."></td>
+    </tr>
+    </tbody>
+</table>
+
+<div  class="text-center" ><h2 class="fw-bolder" >Gobierno Autónomo Municipal de El Alto</h2></div>
 
 <!--========================================================== -->
 <!-- REQUISITOS -->
@@ -23,7 +39,7 @@
 
 
 
-<table class="table w-100">
+<table class="table w-100" style="margin-top: 50px;">
     <thead>
     <tr>
         <th scope="col"></th>
@@ -43,11 +59,6 @@
         <td><h5 class="fs-6 fw-bold w-100">¿De qué se trata el trámite?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->sobre}}</p></td>
 
-    </tr>
-    <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 4.png') }}" class="w-75" alt="..."></th>
-        <td><h2 class="fs-6 fw-bold w-100">¿Cuál es el área responsable?</h2></td>
-        <td> <p class="fs-6 w-100">{{$tramite->areaRes}}</p></td>
     </tr>
     <tr class="border-bottom border-danger m-0 p-0" >
         <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 4.png') }}" class="w-75" alt="..."></th>
