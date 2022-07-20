@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Area;
 use App\Models\Categoria;
+use App\Models\Direccion;
 use Illuminate\Http\Request;
 
 class CategoriaController extends Controller
@@ -19,6 +20,7 @@ class CategoriaController extends Controller
     return  $areas;
     }
      */
+
 
     public function byArea($id){
 

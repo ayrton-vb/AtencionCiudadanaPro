@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Direccion;
 use Illuminate\Http\Request;
 
 class DireccionController extends Controller
@@ -11,6 +12,9 @@ class DireccionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
     public function index()
     {
         return view('direccion.index');

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Area;
+use App\Models\Categoria;
 use App\Models\Direccion;
+use App\Models\Requisito;
+use App\Models\TipoPersona;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
 
@@ -27,23 +30,26 @@ class ClienteController extends Controller
 
     public function categoriasByArea($id)
     {
-        $direccionsi = Direccion::find($id);
-        $areasByDireccion = Area::where('id_direccion',$id)->get();
-        $direcciones = Direccion::all();
-        $areasList = array(0);
-        foreach ($direcciones as  $direccion) {
-            $var = Area::where('id_direccion',$id)->get();
-            $count = count($var);
-            if(! $count){
-                array_push($areasList,0);
-            }
-            else{
-                array_push($areasList,$count);
-            }
-        }
+        $Area = Area::find($id);
+        $categorias = Categoria::where('id_area',$id)->get();
+
+        $tramites = Tramite::all();
 
 
-        return view('cliente.categorias')->with('id',$id)->with('direccionsi', $direccionsi)->with('areasList',$areasList)->with('areasByDireccion',$areasByDireccion);
+        $var = array();
+
+        foreach ($categorias as $categoria){
+            foreach ($tramites as $tramite){
+                if($tramite->id_categoria == $categoria->id)
+                {
+                    array_push($var,$tramite);
+                }
+
+            }
+        };
+
+
+        return view('cliente.categorias')->with('categorias',$categorias)->with('Area',$Area)->with('var',$var);
     }
 
     public function index()

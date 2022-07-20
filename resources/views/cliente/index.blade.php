@@ -175,123 +175,72 @@
 
 
 <!-- =============================================== -->
-<!-- SERVICIOS-->
+<!-- SERVICIOS categorias-->
 <!-- =============================================== -->
+
 <section id="servicios" class="container-fluid pt-3 pb-3">
-  <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="text-danger text-decoration-underline">Categorias</span>  </h1>
-  <div class="row w-85 mx-auto servicio-fila ">
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="text-danger text-decoration-underline">Categorias</span>  </h1>
+    <div id="contenidoCategorias" class="row w-85 mx-auto servicio-fila ">
 
-    <div  data-aos="zoom-in-right" data-aos-delay="0" class="col-lg-6  col-md-12 col-sm-12 my-5 d-flex icono-wrap">
-      <img src="/imagenes/recaudaciones/servicio.png" alt="recaudaciones" width="180" height="160">
-      <div>
-        <h3 class="fs-3 mt-4 px-4 pb-1 fw-bold">Recaudaciones</h3>
-        <p class="fs-4 px-4 m-0">Actividades económicas</p>
-        <p class="fs-4 px-4 m-0">Inmuebles</p>
-        <p class="fs-4 px-4 m-0">Vehículos</p>
-        <a href="/clientes/1/categoriasByArea" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
 
-      </div>
+
     </div>
-
-    <div  data-aos="zoom-in-left"  data-aos-delay="100" class="col-lg-6  col-md-12 col-sm-12 my-5 d-flex icono-wrap">
-      <img src="./imagenes/catastro/servicio.png" alt="recaudaciones" width="180" height="160">
-      <div>
-        <div>
-          <h3 class="fs-3 mt-4 px-4 pb-1 icono-wrap fw-bold">Catastro</h3>
-          <p class="fs-4 px-4 m-0">Trámites Catastrales</p>
-          <p class="fs-4 px-4 m-0">Trámites de Urbanizaciones</p>
-          <p class="fs-4 px-4 m-0">Trámites de Planimetrías</p>
-          <a href="/clientes/2/categoriasByArea" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
-        </div>
-
-      </div>
-    </div>
-
-    <div  data-aos="zoom-in-right"  data-aos-delay="100" class="col-lg-6  col-md-12 col-sm-12 my-5 d-flex icono-wrap">
-      <img src="./imagenes/integral/servicio.png" alt="recaudaciones" width="180" height="160">
-      <div>
-        <div>
-          <h3 class="fs-3 mt-4 px-4 pb-1 fw-bold">Desarrollo Integral</h3>
-          <p class="fs-4 px-4 m-0">Pago de Bono Discapacidad</p>
-          <p class="fs-4 px-4 m-0">Actividades Juventudes</p>
-          <p class="fs-4 px-4 m-0">Atencion Adulto Mayor</p>
-          <a href="/clientes/3/categoriasByArea" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Detalles</a>
-      </div>
-
-      </div>
-    </div>
-
-    <div   data-aos="zoom-in-left"  data-aos-delay="200" class="col-lg-6  col-md-12 col-sm-12 my-5 d-flex icono-wrap">
-      <img src="./imagenes/sisco/servicio.png" alt="recaudaciones" width="180" height="160">
-      <div>
-        <div>
-          <h3 class="fs-3 mt-4 px-4 pb-1 fw-bold">Seguimiento a Trámites</h3>
-          <p class="fs-4 px-4 m-0">Seguimiento a Trámites Ingresados por Ventanilla Única</p>
-          <a href="http://consulta_sisco.elalto.gob.bo/" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Seguimiento</a>
-      </div>
-
-      </div>
-    </div>
-
-  </div>
 </section>
 
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script>
+    window.onload = function() {
+
+            var direccion = 1;
+            /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';
+                   $('#contenidoCategorias').html(html_label);*/
+            var contenidoCategorias = document.getElementById('contenidoCategorias');
+
+            const fracment = document.createDocumentFragment();
+
+
+            $.get('/api/cliente/areas', function (data){
+
+                for (var i=0; i<data.length; i++){
+
+                    const col = document.createElement("div");
+                    col.classList.add("col-lg-6","col-md-12","col-sm-12","my-5","d-flex","icono-wrap");
+                    col.setAttribute("data-aos","zoom-in-left");
+                    col.setAttribute("data-aos-delay","200");
+                    const img = document.createElement("img");
+                    img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recurso "+data[i].id+".png");
+                    img.setAttribute("width","180");
+                    img.setAttribute("height","160");
+                    const div = document.createElement("div");
+                    const div2 = document.createElement("div");
+                    const titulo = document.createElement("h3");
+                    titulo.classList.add("fs-3","mt-4","px-4","pb-1","fw-bold");
+                    titulo.innerText = data[i].alias;
+                    const enlace = document.createElement("a");
+                    enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                    enlace.innerText = "Tramites";
+                    enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
+
+
+                    col.appendChild(img);
+                    col.appendChild(div);
+                    div.appendChild(div2);
+                    div2.appendChild(titulo);
+                    div2.appendChild(enlace);
+
+                    fracment.appendChild(col);
+                    contenidoCategorias.appendChild(fracment);
+
+                }});
 
 
 
-<!-- =============================================== -->
-<!-- SLIDER DE IMAGENES -->
-<!-- =============================================== -->
 
-{{--<section id="actividades" class=" border-bottom border-2 pb-3 pt-3">
-  <div class="container w-60 m-auto text-center" id="actividades">
-    <h1 data-aos="zoom-in-up" class="fs-2 fw-bold">Actividades <span class="text-danger text-decoration-underline">Relevantes</span></h1>
-    <p data-aos="zoom-in-up" class="fs-3 ">Rebaja de impuestos, Capacitaciones gratuitas, Avisos </p><
-  </div>
-
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">/button>
-    </div>
-
-            <!-- IMAGENES DEBEN TENER EL MISMO TAMAÑO-->
-
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="./imagenes/recaudaciones/info.jpg" class="d-block w-50 mx-auto" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-
-          </div>
-      </div>--}}
-      <!-- <div class="carousel-item text-center" data-bs-interval="2000">
-        <img src="./img/catastro/info.jpg" class="d-block w-50 mx-auto" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-
-        </div>
-      </div> -->
-{{--      <div class="carousel-item " data-bs-interval="2000">
-        <img src="./imagenes/integral/info.jpg" class="d-block w-50 mx-auto" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-
-          </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    };
 
 
-
-</section>--}}
-
+</script>
 
     <!-- =============================================== -->
 <!-- UBICACION-->

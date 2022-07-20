@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Area;
+use App\Models\Categoria;
 use Illuminate\Http\Request;
 
 class AreaController extends Controller
@@ -12,6 +13,12 @@ class AreaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function todo()
+    {
+        $areas = Area::all();
+        return $areas;
+    }
 
     public function byDireccion($id){
 
