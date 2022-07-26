@@ -23,6 +23,7 @@ class CreateRequisitosTable extends Migration
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
 
+
             $table->foreignId('id_tipoPersona')
                 ->nullable()
                 ->constrained('tipo_personas')

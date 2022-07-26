@@ -13,6 +13,10 @@ class Requisito extends Model
         return $this->belongsTo(Tramite::class,'id_tramite');
     }
 
+    public function servicios(){
+        return $this->belongsTo(Servicio::class,'id_servicio');
+    }
+
     public function tipoPersonas(){
         return $this->belongsTo(TipoPersona::class,'id_tipoPersona');
     }

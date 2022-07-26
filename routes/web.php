@@ -54,4 +54,6 @@ Route::resource('direcciones','App\Http\Controllers\DireccionController');
 
 Route::resource('clientes','App\Http\Controllers\ClienteController');
 
+Route::resource('servicios','App\Http\Controllers\ServicioController');
+
 Route::get('/pdf/{id}/pdfrequisitobyTramite','App\Http\Controllers\PDFController@PDF');

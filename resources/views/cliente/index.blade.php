@@ -38,35 +38,35 @@
                 <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
 
         </div>
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                <h5 class="card-title">Empadronamiento por actividad económica.</h5>
+                <p class="card-text">Es el registro de toda actividad económica para la emisión de la licencia de funcionamiento.</p>
+                <a href="/clientes/1/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
             </div>
         </div>
 
 
-        <div class="card" >
-            <div class="card-body">
-        <div class="images-wrapper">
-            <img src="/imagenes/recaudaciones/categoria/Recurso 2.png"  alt="...">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-        </div>
-            </div>
-
-        </div>
         <div class="card" >
             <div class="card-body">
         <div class="images-wrapper">
             <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
         </div>
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            <h5 class="card-title">Cambio de radicatoria</h5>
+            <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+            <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+        </div>
+            </div>
+
+        </div>
+        <div class="card" >
+            <div class="card-body">
+        <div class="images-wrapper">
+            <img src="/imagenes/recaudaciones/categoria/Recurso 2.png"  alt="...">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Empadronamiento de bienes por cambio de jurisdicción</h5>
+            <p class="card-text">Cuando el ciudadano hace el pago en un municipio que no corresponde.</p>
+            <a href="/clientes/13/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
         </div>
             </div>
         </div>
@@ -79,13 +79,13 @@
         <div class="card" >
             <div class="card-body">
   <div class="images-wrapper">
-      <img src="./imagenes/recaudaciones/categoria/Recurso 4.png" alt="...">
+      <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
 
   </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+    <h5 class="card-title">Duplicado de placa</h5>
+    <p class="card-text">Se trata del duplicado de la placa, el cual se lo realiza por deterioro, pérdida o robo</p>
+    <a href="/clientes/32/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
             </div>
 </div>
@@ -95,9 +95,9 @@
     <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
 </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+    <h5 class="card-title">VISADO DE PLANO DE LOTE PARA CATASTRO</h5>
+    <p class="card-text">Consiste en la otorgación del visto bueno a documentación técnica con datos técnicos de su terreno, una vez perfeccionado su derecho propietario en oficinas de DDR</p>
+    <a href="/clientes/47/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
     </div>
 </div>
@@ -107,9 +107,9 @@
     <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
 </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+    <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
+    <p class="card-text">Obtención de certificación de número de puerta.</p>
+    <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
     </div>
 </div>
@@ -136,9 +136,9 @@
     <img src="./imagenes/recaudaciones/categoria/Recurso 6.png"  alt="...">
  </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+    <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
+    <p class="card-text">Obtención de certificación de número de puerta.</p>
+    <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
   </div>
     </div>
 </div>

@@ -47,7 +47,6 @@ class TramiteController extends Controller
             ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3);
 
 
-
     }
 
     public function byArea($id){
