@@ -15,22 +15,22 @@
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Categoria</label>
-                        <input style="display: none" id="categoria" name="id_categoria" type="text" class="form-control" tabindex="1" value="{{$tramite->id}}">
-                        <input id="" name="" type="text" class="form-control" tabindex="1" value="{{$tramite->categorias->alias}}" disabled>
+                        <input style="display: none" id="categoria" name="id_categoria" type="text" class="form-control" tabindex="1" value="{{$servicio->id}}">
+                        <input id="" name="" type="text" class="form-control" tabindex="1" value="{{$servicio->categorias->alias}}" disabled>
 
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nombre del trámite</label>
-                        <input id="nombre" name="nombre" type="text" class="form-control" tabindex="1" value="{{$tramite->nombre}}">
+                        <input id="nombre" name="nombre" type="text" class="form-control" tabindex="1" value="{{$servicio->nombre}}">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿De qué se trata el trámite?</label>
-                        <input id="sobre" name="sobre" type="text" class="form-control" tabindex="1" value="{{$tramite->sobre}}">
+                        <input id="sobre" name="sobre" type="text" class="form-control" tabindex="1" value="{{$servicio->sobre}}">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿Cuál es el área responsable?</label>
-                        <input id="areaRes" name="areaRes" type="text" class="form-control" tabindex="1" value="{{$tramite->areaRes}}">
+                        <input id="areaRes" name="areaRes" type="text" class="form-control" tabindex="1" value="{{$servicio->areaRes}}">
                     </div>
 
                 </div>
@@ -38,23 +38,23 @@
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿Dónde debo iniciar el trámite?</label>
-                        <input id="inicio" name="inicio" type="text" class="form-control" tabindex="1" value="{{$tramite->inicio}}">
+                        <input id="inicio" name="inicio" type="text" class="form-control" tabindex="1" value="{{$servicio->inicio}}">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿Cuáles son los días y horarios de atención?</label>
-                        <input id="horario" name="horario" type="text" class="form-control" tabindex="1" value="{{$tramite->horario}}">
+                        <input id="horario" name="horario" type="text" class="form-control" tabindex="1" value="{{$servicio->horario}}">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿Debo realizar algún pago? ¿Cuánto?</label>
-                        <input id="pago" name="pago" type="text" class="form-control" tabindex="1" value="{{$tramite->pago}}">
+                        <input id="pago" name="pago" type="text" class="form-control" tabindex="1" value="{{$servicio->pago}}">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿Cuánto tiempo dura el trámite?</label>
-                        <input id="duracion" name="duracion" type="text" class="form-control" tabindex="1" value="{{$tramite->duracion}}">
+                        <input id="duracion" name="duracion" type="text" class="form-control" tabindex="1" value="{{$servicio->duracion}}">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"> ¿Qué debo recibir al finalizar el trámite?</label>
-                        <input id="termino" name="termino" type="text" class="form-control" tabindex="1" value="{{$tramite->termino}}">
+                        <input id="termino" name="termino" type="text" class="form-control" tabindex="1" value="{{$servicio->termino}}">
                     </div>
 
                 </div>

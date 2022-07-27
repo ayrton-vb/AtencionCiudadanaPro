@@ -6,6 +6,7 @@ use App\Models\Area;
 use App\Models\Categoria;
 use App\Models\Direccion;
 use App\Models\Requisito;
+use App\Models\Servicio;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
@@ -34,9 +35,10 @@ class ClienteController extends Controller
         $categorias = Categoria::where('id_area',$id)->get();
 
         $tramites = Tramite::all();
-
+        $servicios = Servicio::all();
 
         $var = array();
+
 
         foreach ($categorias as $categoria){
             foreach ($tramites as $tramite){
@@ -48,9 +50,21 @@ class ClienteController extends Controller
             }
         };
 
+        foreach ($categorias as $categoria){
+            foreach ($servicios as $servicio){
+                if($servicio->id_categoria == $categoria->id)
+                {
+                    array_push($var,$servicio);
+                }
+
+            }
+        };
+
+
 
         return view('cliente.categorias')->with('categorias',$categorias)->with('Area',$Area)->with('var',$var);
     }
+
 
     public function index()
     {

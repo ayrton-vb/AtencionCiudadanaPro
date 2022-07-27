@@ -31,6 +31,9 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
+Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteController@serviciosByServicios');
+
 Route::get('/clientes/{id}/tramiteByTramite','App\Http\Controllers\TramiteController@tramiteByTramite');
 
 Route::get('/clientes/{id}/tramiteByArea','App\Http\Controllers\ClienteController@tramiteByArea');
@@ -41,9 +44,15 @@ Route::get('/clientes/{id}/categoriasByArea','App\Http\Controllers\ClienteContro
 
 Route::get('/requisitos/{id}/{id2}/editRequisitobyTramite','App\Http\Controllers\RequisitoController@editRequisitobyTramite');
 
+Route::get('/requisitos/{id}/{id2}/editRequisitobyServicio','App\Http\Controllers\RequisitoController@editRequisitobyServicio');
+
 Route::get('/tramites/{id}/requisitobyTramiteCreate','App\Http\Controllers\RequisitoController@requisitobyTramiteCreate');
 
+Route::get('/servicios/{id}/requisitobyServicioCreate','App\Http\Controllers\RequisitoController@requisitobyServicioCreate');
+
 Route::get('/tramites/{id}/requisitobyTramite','App\Http\Controllers\RequisitoController@requisitobyTramite');
+
+Route::get('/servicios/{id}/requisitobyServicio','App\Http\Controllers\RequisitoController@requisitobyServicio');
 
 Route::resource('requisitos','App\Http\Controllers\RequisitoController');
 

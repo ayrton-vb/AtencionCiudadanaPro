@@ -33,11 +33,11 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre del trámite</label>
+                    <label for="exampleInputEmail1" class="form-label">Nombre del servicio</label>
                     <input id="nombre" name="nombre" type="text" class="form-control" tabindex="1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">¿De qué se trata el trámite?</label>
+                    <label for="exampleInputEmail1" class="form-label">¿De qué se trata el servicio?</label>
                     <input id="sobre" name="sobre" type="text" class="form-control" tabindex="1">
                 </div>
                 <div class="mb-3">
@@ -49,7 +49,7 @@
             <div class="col-6">
 
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">¿Dónde debo iniciar el trámite?</label>
+                    <label for="exampleInputEmail1" class="form-label">¿Dónde debo solicitar el servicio?</label>
                     <input id="inicio" name="inicio" type="text" class="form-control" tabindex="1">
                 </div>
                 <div class="mb-3">
@@ -61,11 +61,11 @@
                     <input id="pago" name="pago" type="text" class="form-control" tabindex="1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">¿Cuánto tiempo dura el trámite?</label>
+                    <label for="exampleInputEmail1" class="form-label">¿En cuanto tiempo dura el servicio?</label>
                     <input id="duracion" name="duracion" type="text" class="form-control" tabindex="1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"> ¿Qué debo recibir al finalizar el trámite?</label>
+                    <label for="exampleInputEmail1" class="form-label"> ¿Qué debo recibir al término del servicio?</label>
                     <input id="termino" name="termino" type="text" class="form-control" tabindex="1">
                 </div>
 

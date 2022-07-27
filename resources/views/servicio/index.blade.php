@@ -3,7 +3,7 @@
 @section('contenido')
 
     <h1 class="text-center">Servicios</h1>
-    <a href="tramites/create" class="btn btn-primary mb-2">Crear</a>
+    <a href="servicios/create" class="btn btn-primary mb-2">Crear</a>
 
     <table id="table" class="table table-light table-striped mt-4">
         <thead class="bg-primary">
@@ -26,7 +26,7 @@
                 <td>{{$servicio->categorias->areas->alias}}</td>
                 <td>{{$servicio->categorias->areas->direccions->alias}}</td>
                 <td>
-                    <a href="/servicios/{{$servicio->id}}/requisitobyTramite" class="btn btn-dark">Ver</a>
+                    <a href="/servicios/{{$servicio->id}}/requisitobyServicio" class="btn btn-dark">Ver</a>
                 </td>
                 <td>
                    <form action="{{ route ('servicios.destroy',$servicio->id)}}" method="POST">
