@@ -22,7 +22,11 @@
                                       </div>
                                       <h5 class="card-title">{{$va->nombre}}</h5>
                                       <p class="card-text">{{$va->sobre}}</p>
-                                      <a href="/clientes/{{$va->id}}/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                                      @if($tra[1]==1)
+                                      <a href="/clientes/{{$va->id}}/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos1</a>
+                                      @else
+                                          <a href="/clientes/{{$va->id}}/servicioByServicio" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos2</a>
+                                      @endif
                                   </div>
                               </div>
                           </div>

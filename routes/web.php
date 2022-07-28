@@ -36,6 +36,8 @@ Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteCont
 
 Route::get('/clientes/{id}/tramiteByTramite','App\Http\Controllers\TramiteController@tramiteByTramite');
 
+Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteController@servicioByServicio');
+
 Route::get('/clientes/{id}/tramiteByArea','App\Http\Controllers\ClienteController@tramiteByArea');
 
 Route::get('/clientes/{id}/tramiteByArea','App\Http\Controllers\ClienteController@tramiteByArea');
@@ -69,3 +71,5 @@ Route::resource('clientes','App\Http\Controllers\ClienteController');
 Route::resource('servicios','App\Http\Controllers\ServicioController');
 
 Route::get('/pdf/{id}/pdfrequisitobyTramite','App\Http\Controllers\PDFController@PDF');
+
+Route::get('/pdf/{id}/pdfrequisitobyServicio','App\Http\Controllers\PDFController@pf');

@@ -38,6 +38,7 @@ class ClienteController extends Controller
         $servicios = Servicio::all();
 
         $var = array();
+        $tra = array(0);
 
 
         foreach ($categorias as $categoria){
@@ -45,6 +46,7 @@ class ClienteController extends Controller
                 if($tramite->id_categoria == $categoria->id)
                 {
                     array_push($var,$tramite);
+                    array_push($tra,1);
                 }
 
             }
@@ -55,6 +57,7 @@ class ClienteController extends Controller
                 if($servicio->id_categoria == $categoria->id)
                 {
                     array_push($var,$servicio);
+                    array_push($tra,2);
                 }
 
             }
@@ -62,7 +65,7 @@ class ClienteController extends Controller
 
 
 
-        return view('cliente.categorias')->with('categorias',$categorias)->with('Area',$Area)->with('var',$var);
+        return view('cliente.categorias')->with('categorias',$categorias)->with('Area',$Area)->with('var',$var)->with('tra',$tra);
     }
 
 

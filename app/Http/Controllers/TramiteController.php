@@ -6,6 +6,7 @@ use App\Models\Area;
 use App\Models\Categoria;
 use App\Models\Direccion;
 use App\Models\Requisito;
+use App\Models\Servicio;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
@@ -48,6 +49,37 @@ class TramiteController extends Controller
 
 
     }
+
+    public function servicioByServicio($id)
+    {
+
+        $servicio = Servicio::find($id);
+        $requisitos = Requisito::where('id_servicio',$id)->get();
+        $tipoPersonas = TipoPersona::all();
+
+        $var = array();
+
+        foreach ($tipoPersonas as $tipoPersona){
+            $var3 = 0;
+            foreach ($requisitos as $requisito){
+                if($requisito->id_tipoPersona == $tipoPersona->id
+                    and $requisito->id_servicio == $servicio->id)
+                {
+                    $var3 = $var3 + 1;
+                    if($var3 < 2){
+                        array_push($var,$tipoPersona);
+                    }
+                }
+            }
+        };
+        $var2 = count($var);
+
+        return view('cliente.datos2')->with('servicio',$servicio)->with('requisitos',$requisitos)
+            ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3);
+
+    }
+
+
 
     public function byArea($id){
         $categorias = Categoria::where('id_area',$id)->get();
