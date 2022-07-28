@@ -23,7 +23,7 @@
     </h1>
 
 
-<div data-aos="fade-right" id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3" data-bs-ride="carousel">
+<div data-aos="fade-right" id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-none d-lg-block" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -58,6 +58,7 @@
             </div>
 
         </div>
+
         <div class="card" >
             <div class="card-body">
         <div class="images-wrapper">
@@ -172,6 +173,162 @@
   </section>
 
 
+<!-- =============================================== -->
+<!-- TRMITES MAS DEMANDADOS 2-->
+<!-- =============================================== -->
+
+<div id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-lg-none" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de radicatoria</h5>
+                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 
 <!-- =============================================== -->
