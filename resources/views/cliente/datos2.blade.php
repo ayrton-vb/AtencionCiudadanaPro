@@ -144,7 +144,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿En cuanto tiempo dura el servicio?</h3>
+                        <h3 class="fw-bold">¿Cuanto tiempo dura el servicio?</h3>
                         <p class="fs-4">{{$servicio->duracion}}</p>
                     </div>
                 </div>

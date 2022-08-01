@@ -122,12 +122,12 @@
                 <div class="card" >
                     <div class="card-body">
                         <div class="images-wrapper">
-                            <img src="./imagenes/recaudaciones/categoria/Recurso 5.png"  alt="...">
+                            <img src="./imagenes/recaudaciones/categoria/Recurso 7.png"  alt="...">
                         </div>
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            <h5 class="card-title">Bono Mensual para Personas con Discapacidad Grave y Muy Grave</h5>
+            <p class="card-text">Efectiviza el pago del Bono Mensual para Personas con Discapacidad Grave y Muy Grave del Municipio del Alto.</p>
+            <a href="/clientes/1/servicioByServicio" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
         </div>
                     </div>
         </div>
@@ -146,12 +146,12 @@
         <div class="card" >
             <div class="card-body">
             <div class="images-wrapper">
-                <img src="./imagenes/recaudaciones/categoria/Recurso 7.png"  alt="...">
+                <img src="./imagenes/recaudaciones/categoria/Recurso 8.png"  alt="...">
             </div>
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            <h5 class="card-title">PROGRAMA VEJEZ ACTIVA Y SALUD INTEGRAL</h5>
+            <p class="card-text">Brinda servicios de salud integral en sus tres áreas, fisioterapia – kinesiología, enfermería y físico socio recreativa los cuales están dirigidas a promover un envejecimiento digno activo y saludable, a través de la implementación de actividades de participación e integración de la población adulta mayor.</p>
+            <a href="/clientes/4/servicioByServicio" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
         </div>
             </div>
         </div>
@@ -211,9 +211,9 @@
                     <p class="card-text">Se trata del duplicado de la placa, el cual se lo realiza por deterioro, pérdida o robo</p>
                      <a href="/clientes/32/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
                     </div>
-            
+
                     </div>
-     
+
                 </div>
              </div>
             </div>
@@ -231,9 +231,9 @@
                     <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)o</p>
                      <a href="/clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
                     </div>
-            
+
                     </div>
-     
+
                 </div>
              </div>
             </div>
