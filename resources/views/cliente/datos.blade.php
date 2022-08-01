@@ -10,7 +10,7 @@
         <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger text-decoration-underline">{{$tramite->nombre}}</span></h1>
 
         <div>
-            <a data-aos="fade-up" href="/clientes/1/categoriasByArea" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold">Volver</a>
+            <a data-aos="fade-up" href="/clientes/{{$tramite->categorias->id_area}}/categoriasByArea" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold">Volver</a>
 
             <a data-aos="fade-up" id="btnCrearPdf" type="button" class="btn btn-outline-primary  mx-2 fs-6 m-1  fw-bold" href="/pdf/{{$tramite->id}}/pdfrequisitobyTramite">Descargar</a>
         </div>
@@ -24,7 +24,7 @@
     <!--========================================================== -->
 
     <section>
-        <div class="w-75 pb-5" id="requisito">
+        <div class="w-100 pb-5" id="requisito">
 
             <div class="container">
 

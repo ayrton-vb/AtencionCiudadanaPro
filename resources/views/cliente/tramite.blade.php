@@ -25,7 +25,7 @@
     <!--========================================================== -->
 
     <section>
-        <div class="w-75 pb-5" id="requisito">
+        <div class="w-100 pb-5" id="requisito">
 
             <div class="container">
 

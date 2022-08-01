@@ -67,36 +67,44 @@ body {
 /*
 ============================TRAMITES DEMANDADOS==============================
 */
-#dentro{
-    width: 100% !important;
-}
-
-
-.cards-wrapper{
-    display: flex;
-    padding-bottom: 40px;
-    min-height: 100px;
-
-
-}
-
-#si{
-    width: 100% !important;
-}
-
 .card{
     text-align: center;
     margin: 0 .5em;
-    width: calc(100%/3);
 }
-
 .images-wrapper{
     height: 5vw;
 }
-
 .images-wrapper img{
     max-width: 100%;
     max-height: 100%;
+}
+
+@media (min-width:992px){
+
+    #dentro{
+        width: 100% !important;
+    }
+    .cards-wrapper{
+        display: flex;
+        padding-bottom: 40px;
+        min-height: 100px;
+    }
+    #si{
+        width: 100% !important;
+    }
+    .card{
+        text-align: center;
+        margin: 0 .5em;
+        width: calc(100%/3);
+    }
+
+    .images-wrapper{
+        height: 5vw;
+    }
+    .images-wrapper img{
+        max-width: 100%;
+        max-height: 100%;
+    }
 
 }
 
@@ -122,10 +130,6 @@ body {
 .mapa {
     background: url(/imagenes/mapa.png);
     width:100%;
-
-
-
-
  position: relative ;
 }
 
@@ -136,9 +140,6 @@ body {
 .logoB{
     content:url("/imagenes/LogoB.png");
 }
-
-
-
 
 .wrapper-local {
     width:75%;
@@ -368,5 +369,8 @@ footer p{
     #banner{
        margin-top: 10px;
     }
+
+
+
 
 }

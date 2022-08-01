@@ -8,327 +8,252 @@
 <!-- =============================================== -->
 
 <section  class="w-50 mx-auto text-center pt-3 pb-3 " id="intro">
-    <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="text-danger">servicios y tramites</span>
-      del Gobierno Autónomo Municipal de La Ciudad de El Alto
-    </h1>
+            <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="text-danger">servicios y trámites</span>
+            del Gobierno Autónomo Municipal de La Ciudad de El Alto
+            </h1>
 
-  </section>
+</section>
 
-  <!-- =============================================== -->
-<!-- TRMITES MAS DEMANDADOS-->
-<!-- =============================================== -->
+        <!-- =============================================== -->
+        <!-- TRMITES MAS DEMANDADOS-->
+        <!-- =============================================== -->
 
 <section  id="TramitesDem" class="container-fluid pt-3 pb-3" >
-    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="text-danger text-decoration-underline">Trámites Más Demandados</span>
-    </h1>
+            <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="text-danger text-decoration-underline">Trámites Más Demandados</span>
+            </h1>
 
 
-<div data-aos="fade-right" id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-none d-lg-block" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="cards-wrapper">
+    <div data-aos="fade-right" id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-none d-lg-block" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="cards-wrapper">
+                <div class="card" >
+                    <div class="card-body">
+                    <div class="images-wrapper">
+                        <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
+
+                </div>
+                        <h5 class="card-title">Empadronamiento por actividad económica.</h5>
+                        <p class="card-text">Es el registro de toda actividad económica para la emisión de la licencia de funcionamiento.</p>
+                        <a href="/clientes/1/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+                </div>
+
+
+                <div class="card" >
+                    <div class="card-body">
+                <div class="images-wrapper">
+                    <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cambio de radicatoria</h5>
+                    <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
+                    <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                </div>
+                    </div>
+
+                </div>
+
+                <div class="card" >
+                    <div class="card-body">
+                <div class="images-wrapper">
+                    <img src="/imagenes/recaudaciones/categoria/Recurso 2.png"  alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Empadronamiento de bienes por cambio de jurisdicción</h5>
+                    <p class="card-text">Cuando el ciudadano hace el pago en un municipio que no corresponde.</p>
+                    <a href="/clientes/13/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card" >
+                    <div class="card-body">
+        <div class="images-wrapper">
+            <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
+
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Duplicado de placa</h5>
+            <p class="card-text">Se trata del duplicado de la placa, el cual se lo realiza por deterioro, pérdida o robo</p>
+            <a href="/clientes/32/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+        </div>
+                    </div>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+        <div class="images-wrapper">
+            <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">VISADO DE PLANO DE LOTE PARA CATASTRO</h5>
+            <p class="card-text">Consiste en la otorgación del visto bueno a documentación técnica con datos técnicos de su terreno, una vez perfeccionado su derecho propietario en oficinas de DDR</p>
+            <a href="/clientes/47/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+        </div>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+        <div class="images-wrapper">
+            <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
+            <p class="card-text">Obtención de certificación de número de puerta.</p>
+            <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+        </div>
+            </div>
+        </div>
+
+            </div>
+            </div>
+            <div class="carousel-item">
+            <div class="cards-wrapper">
+                <div class="card" >
+                    <div class="card-body">
+                        <div class="images-wrapper">
+                            <img src="./imagenes/recaudaciones/categoria/Recurso 5.png"  alt="...">
+                        </div>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+        </div>
+                    </div>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+        <div class="images-wrapper">
+            <img src="./imagenes/recaudaciones/categoria/Recurso 6.png"  alt="...">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
+            <p class="card-text">Obtención de certificación de número de puerta.</p>
+            <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+        </div>
+            </div>
+        </div>
         <div class="card" >
             <div class="card-body">
             <div class="images-wrapper">
-                <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
-
-        </div>
-                <h5 class="card-title">Empadronamiento por actividad económica.</h5>
-                <p class="card-text">Es el registro de toda actividad económica para la emisión de la licencia de funcionamiento.</p>
-                <a href="/clientes/1/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                <img src="./imagenes/recaudaciones/categoria/Recurso 7.png"  alt="...">
             </div>
-        </div>
-
-
-        <div class="card" >
-            <div class="card-body">
-        <div class="images-wrapper">
-            <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-        </div>
         <div class="card-body">
-            <h5 class="card-title">Cambio de radicatoria</h5>
-            <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-            <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-        </div>
-            </div>
-
-        </div>
-
-        <div class="card" >
-            <div class="card-body">
-        <div class="images-wrapper">
-            <img src="/imagenes/recaudaciones/categoria/Recurso 2.png"  alt="...">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Empadronamiento de bienes por cambio de jurisdicción</h5>
-            <p class="card-text">Cuando el ciudadano hace el pago en un municipio que no corresponde.</p>
-            <a href="/clientes/13/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
         </div>
             </div>
         </div>
 
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="cards-wrapper">
-        <div class="card" >
-            <div class="card-body">
-  <div class="images-wrapper">
-      <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
-
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Duplicado de placa</h5>
-    <p class="card-text">Se trata del duplicado de la placa, el cual se lo realiza por deterioro, pérdida o robo</p>
-    <a href="/clientes/32/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-  </div>
             </div>
-</div>
-<div class="card" >
-    <div class="card-body">
-<div class="images-wrapper">
-    <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
-</div>
-  <div class="card-body">
-    <h5 class="card-title">VISADO DE PLANO DE LOTE PARA CATASTRO</h5>
-    <p class="card-text">Consiste en la otorgación del visto bueno a documentación técnica con datos técnicos de su terreno, una vez perfeccionado su derecho propietario en oficinas de DDR</p>
-    <a href="/clientes/47/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-  </div>
-    </div>
-</div>
-<div class="card" >
-    <div class="card-body">
-<div class="images-wrapper">
-    <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
-</div>
-  <div class="card-body">
-    <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
-    <p class="card-text">Obtención de certificación de número de puerta.</p>
-    <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-  </div>
-    </div>
-</div>
-
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="cards-wrapper">
-        <div class="card" >
-            <div class="card-body">
-                <div class="images-wrapper">
-                    <img src="./imagenes/recaudaciones/categoria/Recurso 5.png"  alt="...">
-                </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-  </div>
             </div>
-</div>
-<div class="card" >
-    <div class="card-body">
-<div class="images-wrapper">
-    <img src="./imagenes/recaudaciones/categoria/Recurso 6.png"  alt="...">
- </div>
-  <div class="card-body">
-    <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
-    <p class="card-text">Obtención de certificación de número de puerta.</p>
-    <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-  </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</div>
-<div class="card" >
-    <div class="card-body">
-    <div class="images-wrapper">
-        <img src="./imagenes/recaudaciones/categoria/Recurso 7.png"  alt="...">
-    </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-  </div>
-    </div>
-</div>
 
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-  </section>
-
-
-<!-- =============================================== -->
+    <!-- =============================================== -->
 <!-- TRMITES MAS DEMANDADOS 2-->
 <!-- =============================================== -->
 
-<div id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-lg-none" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <div data-aos="fade-right" id="carouselExampleIndicators2" class="carousel carousel-dark slide pt-3 pb-3 d-lg-none" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="cards-wrapper">
+                    <div class="card" >
+                        <div class="card-body">
+                        <div class="images-wrapper">
+                            <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
+
+                        </div>
+                            <h5 class="card-title">Empadronamiento por actividad económica.</h5>
+                            <p class="card-text">Es el registro de toda actividad económica para la emisión de la licencia de funcionamiento.</p>
+                            <a href="/clientes/1/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+             <div class="cards-wrapper">
+                <div class="card" >
+                    <div class="card-body">
+                    <div class="images-wrapper">
+                     <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
+
+                     </div>
+                     <div class="card-body">
+                    <h5 class="card-title">Duplicado de placa</h5>
+                    <p class="card-text">Se trata del duplicado de la placa, el cual se lo realiza por deterioro, pérdida o robo</p>
+                     <a href="/clientes/32/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+            
+                    </div>
+     
+                </div>
+             </div>
+            </div>
+
+            <div class="carousel-item">
+             <div class="cards-wrapper">
+                <div class="card" >
+                    <div class="card-body">
+                    <div class="images-wrapper">
+                     <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
+
+                     </div>
+                     <div class="card-body">
+                    <h5 class="card-title">Cambio de radicatoria</h5>
+                    <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)o</p>
+                     <a href="/clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+            
+                    </div>
+     
+                </div>
+             </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
+</section>
 
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card" >
-                <div class="card-body">
-                    <div class="images-wrapper">
-                        <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Cambio de radicatoria</h5>
-                        <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                        <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
 
 
 <!-- =============================================== -->
@@ -402,7 +327,7 @@
     <!-- =============================================== -->
 <!-- UBICACION-->
 <!-- =============================================== -->
-<section id="ubicacion" class=" pt-3 pb-3">
+<section id="ubicacion" class=" pt-3">
  <h1 data-aos="zoom-in-up" class="text-danger text-center fs-2 fw-bold text-decoration-underline">Puntos de Atención</h1>
 <div id="seccion-direccion" class="mt-3">
   <div class="mapa"> </div>
@@ -434,7 +359,7 @@
 <!-- SECCION SOBRE-->
 <!-- =============================================== -->
 
-<section id="nosotros" class="container-fluid pt-3 pb-3" >
+<!-- <section id="nosotros" class="container-fluid pt-3 pb-3" >
     <h1 data-aos="fade-down" class="text-center "><span class="text-danger">Atencion Ciudadadana </span></h1>
 
         <p data-aos="fade-down" class="text-center p-3  fs-3 ">
@@ -442,13 +367,13 @@
            información sobre los servicios y trámites que se desarrollan en el Gobierno Autónomo
            Municipal de La Ciudad de El Alto y sus dependencias.
        </p>
-</section>
+</section> -->
 
   <!--========================================================== -->
                         <!-- SECCION CONTACTOS-->
 <!--========================================================== -->
 
-<section id="seccion-contacto" class="pt-3 pb-3">
+<section id="seccion-contacto" class="pb-3">
 
     <div class="container">
         <div class="row">

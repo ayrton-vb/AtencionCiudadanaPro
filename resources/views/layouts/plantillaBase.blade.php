@@ -37,16 +37,16 @@
                         <a class="nav-link active mx-3 fs-5 fw-bold text-d redText lkm" aria-current="page" href="/clientes">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#servicios">Servicios</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#servicios">Categorías</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#ubicacion"">Puntos de Atención</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#ubicacion">Puntos de Atención</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#directorio">Directorio Institucional</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#nosotros">Contacto</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#seccion-contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
