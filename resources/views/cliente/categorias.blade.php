@@ -1,4 +1,4 @@
-@extends('layouts.plantillaBase')
+@extends('layouts.plantillaBase2')
 
 @section('contenido')
 
@@ -7,7 +7,7 @@
         <p data-aos="fade-down" class="pt-3  fs-2">
             <span class="text-danger text-decoration-underline">Trámites y servicios de {{$Area->alias}}</span>
         </p>
- 
+
             <a data-aos="fade-up" href="/clientes" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold mb-3 ">Volver</a>
 
     </section>
