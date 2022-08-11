@@ -2,10 +2,10 @@
 
 @section('contenido')
 
-    <section class="d-flex flex-column justify-content-center align-items-center pt-3  text-center w-50 m-auto" id="intro">
+    <section class="mt-5 d-flex flex-column justify-content-center align-items-center pt-3  text-center w-50 m-auto" id="intro">
 
         <p data-aos="fade-down" class="pt-3  fs-2">
-            <span class="text-danger text-decoration-underline">Trámites y servicios de {{$Area->alias}}</span>
+            <span class="text-danger fw-bold">Trámites y servicios de {{$Area->alias}}</span>
         </p>
 
             <a data-aos="fade-up" href="/clientes" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold mb-3 ">Volver</a>

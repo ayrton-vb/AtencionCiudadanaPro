@@ -6,8 +6,8 @@
     <!--========================================================== -->
 
 
-    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
-        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger text-decoration-underline">{{$tramite->nombre}}</span></h1>
+    <section class="mt-5 d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger fw-bold">{{$tramite->nombre}}</span></h1>
 
         <div>
             <a data-aos="fade-up" href="/clientes/{{$tramite->categorias->id_area}}/categoriasByArea" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold">Volver</a>
@@ -35,7 +35,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">Nombre del trámite:</h3>
+                        <h3 class="fw-bold redText">Nombre del trámite:</h3>
                         <p class="fs-4">{{$tramite->nombre}}</p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿De qué se trata el trámite?</h3>
+                        <h3 class="fw-bold redText">¿De qué se trata el trámite?</h3>
                         <p class="fs-4">{{$tramite->sobre}}</p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     </div>
 
                     <div data-aos="flip-up" data-aos-delay="350" class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Cuál es el área responsable?</h3>
+                        <h3 class="fw-bold redText">¿Cuál es el área responsable?</h3>
                         <p class="fs-4">{{$tramite->areaRes}}</p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Dónde debo iniciar el trámite?</h3>
+                        <h3 class="fw-bold redText">¿Dónde debo iniciar el trámite?</h3>
                         <p class="fs-4">{{$tramite->inicio}}</p>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Cuáles son los días y horarios de atención?</h3>
+                        <h3 class="fw-bold redText">¿Cuáles son los días y horarios de atención?</h3>
                         <p class="fs-4">{{$tramite->horario}}</p>
                     </div>
                 </div>
@@ -90,11 +90,11 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Cuáles son los requisitos?</h3>
+                        <h3 class="fw-bold redText">¿Cuáles son los requisitos?</h3>
 
                         @for ($i = 0; $i < $var2; $i++)
 
-                                <p id="{{$var[$i]->nombre}}" class="fs-4 fw-bold text-danger">{{$var[$i]->nombre}}</p>
+                                <p id="{{$var[$i]->nombre}}" class="fs-4 fw-bold redText">{{$var[$i]->nombre}}</p>
 
 
                             @foreach($requisitos as $requisito)
@@ -133,7 +133,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Debo realizar algún pago? ¿Cuánto?</h3>
+                        <h3 class="fw-bold redText">¿Debo realizar algún pago? ¿Cuánto?</h3>
                         <p class="fs-4">{{$tramite->pago}}</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Cuánto tiempo dura el trámite?</h3>
+                        <h3 class="fw-bold redText">¿Cuánto tiempo dura el trámite?</h3>
                         <p class="fs-4">{{$tramite->duracion}}</p>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Qué debo recibir al finalizar el trámite?</h3>
+                        <h3 class="fw-bold redText">¿Qué debo recibir al finalizar el trámite?</h3>
                         <p class="fs-4">{{$tramite->termino}}</p>
                     </div>
                 </div>

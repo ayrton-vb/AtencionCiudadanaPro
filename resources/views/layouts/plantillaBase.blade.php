@@ -57,13 +57,6 @@
 
 <div class="container">
 
-
-
-
-
-
-
-
     <!-- =============================================== -->
     <!-- ENCABEZADO -->
     <!-- =============================================== -->
@@ -85,6 +78,7 @@
 
 
 
+
     <!-- =============================================== -->
     <!--CONTENIDO -->
     <!-- =============================================== -->
@@ -93,11 +87,13 @@
     @yield('contenido')
 
 </div>
+</div>
 
-
+</body>
     <!--========================================================== -->
     <!--FOOTER-->
     <!--========================================================== -->
+
     <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap mt-1">
   <p class="fs-5 px-3  pt-3 fw-bold">Atención Ciudadana &copy; GAMEA Todos Los Derechos Reservados 2022</p>
   <div id="iconos" >
@@ -106,7 +102,6 @@
       <a href="https://www.instagram.com/alcaldiaelalto/?utm_medium=copy_link"><i class="bi bi-instagram"></i></a>
   </div>
 </footer>
-
 
 
 
@@ -123,5 +118,5 @@
     });
 </script>
 
-</body>
+
 </html>

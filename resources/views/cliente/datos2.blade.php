@@ -6,8 +6,8 @@
     <!--========================================================== -->
 
 
-    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
-        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger text-decoration-underline">{{$servicio->nombre}}</span></h1>
+    <section class="mt-5 d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger fw-bold">{{$servicio->nombre}}</span></h1>
 
         <div>
             <a data-aos="fade-up" href="/clientes/{{$servicio->categorias->id_area}}/categoriasByArea" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold">Volver</a>
@@ -144,7 +144,7 @@
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
-                        <h3 class="fw-bold">¿Cuanto tiempo dura el servicio?</h3>
+                        <h3 class="fw-bold">¿Cual es la duración del servicio?</h3>
                         <p class="fs-4">{{$servicio->duracion}}</p>
                     </div>
                 </div>

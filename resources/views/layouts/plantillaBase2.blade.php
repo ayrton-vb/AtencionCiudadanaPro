@@ -15,14 +15,14 @@
 </head>
 <body>
 
-    <!-- =============================================== -->
-    <!-- MENU -->
-    <!-- =============================================== -->
+<!-- =============================================== -->
+<!-- MENU -->
+<!-- =============================================== -->
 
 <header data-aos="" class="container-fluid text-center fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark " id="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark red" id="">
         <div class="container-fluid"  >
-            <img class="logoR"  src="" width="50">
+            <img class="logoB"  src="" width="50">
 
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,19 +31,19 @@
             <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item" >
-                        <a class="nav-link active mx-3 fs-5 fw-bold text-d redText lkm" aria-current="page" href="/clientes">Inicio</a>
+                        <a class="nav-link active mx-3 fs-5 fw-bold text-d redText whiteText" aria-current="page" href="/clientes">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#servicios">Categorías</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="#servicios">Categorías</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#ubicacion">Puntos de Atención</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="#ubicacion">Puntos de Atención</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#directorio">Directorio Institucional</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#seccion-contacto">Contacto</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="#seccion-contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -52,27 +52,23 @@
 
 </header>
 
-<div class="container">
-
-
-
-
-
-    <!-- =============================================== -->
-    <!--CONTENIDO -->
-    <!-- =============================================== -->
-<div id="contidoPrincipal">
+<!-- =============================================== -->
+<!--CONTENIDO -->
+<!-- =============================================== -->
+<div id="contidoPrincipal" >
 
     @yield('contenido')
 
 </div>
 
 
+</body>
+
     <!--========================================================== -->
     <!--FOOTER-->
     <!--========================================================== -->
     <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap mt-1">
-  <p class="fs-5 px-3  pt-3 fw-bold">Atención Ciudadana &copy; GAMEA Todos Los Derechos Reservados 2022</p>
+  <p class="fs-5 pt-3 fw-bold">Atención Ciudadana &copy; GAMEA Todos Los Derechos Reservados 2022</p>
   <div id="iconos" >
       <a href="https://www.facebook.com/ElAltoAlcaldia"><i class="bi bi-facebook"></i></a>
       <a href="https://twitter.com/renuevaelalto?t=9W6ixRI4MKKTbYUqmJxf6Q&s=09"><i class="bi bi-twitter"></i></a>
@@ -88,7 +84,7 @@
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="{{asset('js/main.js') }}" defer></script>
+<script src="{{asset('js/main2.js') }}" defer></script>
 <script>
     AOS.init({
         easing: 'ease-out-back',
@@ -96,5 +92,5 @@
     });
 </script>
 
-</body>
+
 </html>
