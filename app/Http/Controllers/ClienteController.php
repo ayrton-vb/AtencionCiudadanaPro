@@ -12,6 +12,7 @@ use App\Models\Tramite;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Storage;
 
 class ClienteController extends Controller
 {
@@ -75,6 +76,7 @@ class ClienteController extends Controller
     {
         Cache::flush();
 
+ 
 
         return view('cliente.index');
     }
