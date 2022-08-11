@@ -73,7 +73,10 @@ class ClienteController extends Controller
     public function index()
     {
         Artisan::call('config:cache');
+        Artisan::call('optimize');
+        Artisan::call('config:clear');
         Artisan::call('cache:clear');
+
 
         return view('cliente.index');
     }
