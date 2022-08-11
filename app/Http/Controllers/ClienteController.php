@@ -11,6 +11,7 @@ use App\Models\TipoPersona;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Cache;
 
 class ClienteController extends Controller
 {
@@ -72,10 +73,7 @@ class ClienteController extends Controller
 
     public function index()
     {
-        Artisan::call('cache:clear');
-        Artisan::call('route:cache');
-        Artisan::call('route:clear');
-        Artisan::call('view:clear');
+        Cache::flush();
 
 
         return view('cliente.index');
