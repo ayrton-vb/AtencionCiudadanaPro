@@ -77,7 +77,7 @@ class ClienteController extends Controller
         Artisan::call('route:cache');
         Artisan::call('route:clear');
         Artisan::call('view:clear');
-        Artisan::call('config:cache');
+ 
 
 
         return view('cliente.index');
