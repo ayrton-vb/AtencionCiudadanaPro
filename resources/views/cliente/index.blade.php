@@ -389,22 +389,22 @@
                         <div id="contactoNumero" class="text-center">
                             <img src="/imagenes/atencionCiudadana/servicioB.png" class="" style="width: 20%">
                             <h6 class="text-center text-white">Direccion de Atencion Ciudadana</h6>
-                            <h6 class="text-center text-white">2-22860457</h6>
+                            <h6 class="text-center text-white">22837573</h6>
                         </div>
                         <div id="contactoNumero" class="text-center">
                             <img src="/imagenes/recaudaciones/servicioB.png" class="w-25">
                             <h6 class="text-center text-white">Direccion de Recaudaciones</h6>
-                            <h6 class="text-center text-white">2-22860457</h6>
+                            <h6 class="text-center text-white">22837682</h6>
                         </div>
                         <div id="contactoNumero" class="text-center">
                             <img src="/imagenes/catastro/servicioB.png" class="w-25">
                             <h6 class="text-center text-white">Direccion de Catastro</h6>
-                            <h6 class="text-center text-white">2-22860457</h6>
+                            <h6 class="text-center text-white">22837421</h6>
                         </div>
                         <div id="contactoNumero" class="text-center">
                             <img src="/imagenes/integral/servicioB.png" class="w-25">
                             <h6 class="text-center text-white">Direccion de Desarrollo Integral</h6>
-                            <h6 class="text-center text-white">2-22860457</h6>
+                            <h6 class="text-center text-white">22837410</h6>
                         </div>
 
                     </div>
@@ -412,18 +412,18 @@
                         <h5 class="text-white text-center fw-bold " >Números de Emergencia</h5>
                         <div id="contactoNumero" class="text-center">
                             <img src="/imagenes/emergencia.png" class="w-25">
-                            <h6 class="text-center">Direccion de Recaudaciones</h6>
-                            <h6 class="text-center">2-22860457</h6>
+                            <h6 class="text-center">Adulto Mayor</h6>
+                            <h6 class="text-center">800164444</h6>
                         </div>
                         <div id="contactoNumero" class="text-center">
                             <img src="/imagenes/emergencia.png" class="w-25">
-                            <h6 class="text-center">Direccion de Recaudaciones</h6>
-                            <h6 class="text-center">2-22860457</h6>
+                            <h6 class="text-center">Dirección de  Niñez Genero y Atención Social</h6>
+                            <h6 class="text-center">22837408</h6>
                         </div>
                         <div id="contactoNumero" class="text-center">
                             <img src="/imagenes/emergencia.png" class="w-25">
-                            <h6 class="text-center">Direccion de Recaudaciones</h6>
-                            <h6 class="text-center">2-22860457</h6>
+                            <h6 class="text-center">S.U.M.A.</h6>
+                            <h6 class="text-center">161</h6>
                         </div>
                     </div>
                 </div>
