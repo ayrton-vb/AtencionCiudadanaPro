@@ -461,10 +461,10 @@
                         </div>
 
                         <div id="icono-w" class="mb-3 d-flex justify-content-center">
-                            <a   href="http://wa.me/59168018826?text=Hola%20necesito%20informacion%20sobre%20atención%20ciudadana">
+                            <a   href="http://wa.me/59167158245?text=Hola%20necesito%20informacion%20sobre%20atención%20ciudadana">
                                 <i class="bi bi-whatsapp "></i>
                             </a>
-                            <a href="http://wa.me/59168018826?text=Hola%20necesito%20informacion%20sobre%20atención%20ciudadana" type="button" id="boton-w" class="btn w-50 fs-5 text-ligth">
+                            <a href="http://wa.me/59167158245?text=Hola%20necesito%20informacion%20sobre%20atención%20ciudadana" type="button" id="boton-w" class="btn w-50 fs-5 text-ligth">
                                 Whatsapp
                             </a>
                         </div>
