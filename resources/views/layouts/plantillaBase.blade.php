@@ -20,8 +20,8 @@
     <!-- =============================================== -->
 
 <header data-aos="" class="container-fluid text-center fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark " id="nav">
-        <div class="container-fluid"  >
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+        <div class="container-fluid" >
 
             <img class="logoR"  src="" width="50">
 
@@ -71,36 +71,138 @@
                data-aos-once="false"
                data-aos-anchor-placement="top-center"
                id="bannerLetra" src="/imagenes/letrasBanner.png" width="100%">
-                <img src="/imagenes/banner.png" width="100%">
+                <img src="/imagenes/banner4.jpeg" width="100%">
 
     </div>
 
 
 
 
+    <div class="container">
+  <div class="row">
+    <div class="col">
+    <div class="text-end">
+    <img src="imagenes/1.png" alt="Image" class="img-fluid " width="160">
+    </div>
+    </div>
+    <div class="col">
+    <div class="text-center">
+    <img src="imagenes/2.png" alt="Image" class="img-fluid" width="90">
+    </div>
+    </div>
+    <div class="col">
+        <div class="text-start">
+        <img src="imagenes/3.png" alt="Image" class="img-fluid " width="95">   
+        </div>
+    </div>
+  </div>
+</div>
+    
+
+
 
     <!-- =============================================== -->
     <!--CONTENIDO -->
     <!-- =============================================== -->
+
+	
+    
+    
+    
+    
+    <!-- <div class="untree_co-section">
+		<div class="container">
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col-lg-7"><h2 class="section-title text-center"></h2></div>
+			</div>
+
+			<div class="owl-carousel owl-3-slider">
+
+				<div class="item">
+					<a class="media-thumb" href="images/1.png" data-fancybox="gallery"> -->
+						<!-- <div class="media-text">
+							<h3>SMGI</h3>
+							<span class="location">Secretaria Municipal Gestion Institucional</span>
+						</div> -->
+						<!-- <img src="imagenes/1.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/2.png" data-fancybox="gallery"> -->
+						<!-- <div class="media-text">
+							<h3>DAC</h3>
+							<span class="location">Dirección de Atencion Ciudadana</span>
+						</div> -->
+						<!-- <img src="imagenes/2.png" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/3.png" data-fancybox="gallery"> -->
+						<!-- <div class="media-text">
+							<h3>USUT</h3>
+							<span class="location">Unidad Sistema Unico de Tramites</span>
+						</div> -->
+						<!-- <img src="imagenes/3.png" alt="Image" class="img-fluid">
+					</a> 
+				</div> -->
+
+
+			<!-- 	<div class="item">
+					<a class="media-thumb" href="images/hero-slider-4.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Rialto Bridge</h3>
+							<span class="location">Italy</span>
+						</div>
+						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-5.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>San Francisco, United States</h3>
+							<span class="location">United States</span>
+						</div>
+						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Lake Thun</h3>
+							<span class="location">Switzerland</span>
+						</div>
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div> -->
+<!-- 
+			</div>
+
+		</div>
+	</div>  -->
+
 <div id="contidoPrincipal">
 
     @yield('contenido')
 
 </div>
-</div>
 
+</div>
 </body>
     <!--========================================================== -->
     <!--FOOTER-->
     <!--========================================================== -->
 
-    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap mt-1">
-  <p class="fs-5 px-3  pt-3 fw-bold">Atención Ciudadana &copy; GAMEA Todos Los Derechos Reservados 2022</p>
-  <div id="iconos" >
-      <a href="https://www.facebook.com/ElAltoAlcaldia"><i class="bi bi-facebook"></i></a>
-      <a href="https://twitter.com/renuevaelalto?t=9W6ixRI4MKKTbYUqmJxf6Q&s=09"><i class="bi bi-twitter"></i></a>
-      <a href="https://www.instagram.com/alcaldiaelalto/?utm_medium=copy_link"><i class="bi bi-instagram"></i></a>
-  </div>
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap mt-1">
+    <p class="fs-5 px-3  pt-3 fw-bold">Atención Ciudadana &copy; GAMEA Todos Los Derechos Reservados 2022</p>
+    <div id="iconos" >
+        <a href="https://www.facebook.com/ElAltoAlcaldia"><i class="bi bi-facebook"></i></a>
+        <a href="https://twitter.com/renuevaelalto?t=9W6ixRI4MKKTbYUqmJxf6Q&s=09"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com/alcaldiaelalto/?utm_medium=copy_link"><i class="bi bi-instagram"></i></a>
+    </div>
 </footer>
 
 

@@ -8,13 +8,13 @@ body {
 }
 
 .color{
-    color:#046f76;
+    color:#00C5F3;
 }
 .red {
-    background-color: #dc0a14 !important;
+    background-color: #E40428 !important;
 }
 .redText {
-    color: #dc0a14 !important;
+    color: #E40428 !important;
 }
 .whiteText {
     color: white !important;
@@ -186,7 +186,7 @@ body {
 }
 
 #seccion-contacto{
-    background-color: #046f76;
+    background-color: #E40428 !important;
     min-height:660px;
     position:relative;
 }
@@ -214,7 +214,7 @@ body {
 /*=========================FOOTER================================*/
 
 footer {
-    background-color: #046f76;
+    background-color: #E40428 !important;
     min-height: 60px;
 
 }
@@ -253,7 +253,7 @@ footer p{
 
 @media(max-width:991px){
     #nav {
-        background-color: #dc0a14;
+        background-color: #E40428;
     }
     .redText {
         color: white !important;
@@ -264,6 +264,22 @@ footer p{
     }
 
 }
+
+
+#container-boton2{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 12px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 2s infinite;
+}
+
+
 /*
 ============================MEDIA QUERY PANTALLA SM==============================
 */
@@ -314,7 +330,7 @@ footer p{
     }
 
     #nav {
-        background-color: #dc0a14;
+        background-color: #E40428;
     }
     .redText {
         color: white !important;
@@ -363,7 +379,7 @@ footer p{
     }
 
     #nav {
-        background-color: #dc0a14;
+        background-color: #E40428;
     }
     .redText {
         color: white !important;
@@ -373,7 +389,3 @@ footer p{
        margin-top: 10px;
     }
 
-
-
-
-}
