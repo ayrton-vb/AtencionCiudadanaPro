@@ -263,6 +263,11 @@ footer p{
        margin-top: 10px;
     }
 
+    .nav-item a{
+        color: white !important;
+    }
+    
+
 }
 
 
@@ -339,9 +344,13 @@ footer p{
     #banner{
        margin-top: 10px;
     }
-
+    .nav-item a{
+        color: white !important;
+    }
 
 }
+
+
 
 /*
 ============================MEDIA QUERY PANTALLA EXTRA - SM==============================
@@ -381,6 +390,11 @@ footer p{
     #nav {
         background-color: #E40428;
     }
+
+    .nav-item a{
+        color: white !important;
+    }
+
     .redText {
         color: #E40428 !important;
     }

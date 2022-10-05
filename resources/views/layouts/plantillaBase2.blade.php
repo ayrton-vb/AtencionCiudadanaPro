@@ -34,16 +34,16 @@
                         <a class="nav-link active mx-3 fs-5 fw-bold text-d redText whiteText" aria-current="page" href="/clientes">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="#servicios">Categorías</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="/clientes/#servicios">Categorías</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="#ubicacion">Puntos de Atención</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="/clientes/#ubicacion">Puntos de Atención</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#directorio">Directorio Institucional</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="#seccion-contacto">Contacto</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText whiteText" href="/clientes/#seccion-contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
