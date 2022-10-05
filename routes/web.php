@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Mail\PruebaMaill;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/', function () {
+//     Mail::to('elon@gmail.com')
+//     ->send(new PruebaMaill());
 //     return view('welcome');
 // });
 
@@ -73,3 +76,12 @@ Route::resource('servicios','App\Http\Controllers\ServicioController');
 Route::get('/pdf/{id}/pdfrequisitobyTramite','App\Http\Controllers\PDFController@PDF');
 
 Route::get('/pdf/{id}/pdfrequisitobyServicio','App\Http\Controllers\PDFController@pf');
+
+Route::get('maill','App\Mail\PruebaMaill@build');
+
+
+// Route::get('maill', function () {
+//     Mail::to('elon@gmail.com')
+//     ->send(new PruebaMaill());
+//     return view('cliente.index');
+// });

@@ -334,19 +334,22 @@
 
 
 <!-- =============================================== -->
-<!-- UBICACION-->
+<!-- PUNTOS DE ATENCION -->
 <!-- =============================================== -->
 <section id="ubicacion" class=" pt-3">
  <h1 data-aos="zoom-in-up" class="text-danger text-center fs-2 fw-bold text-decoration-underline">Puntos de Atención</h1>
-<div id="seccion-direccion" class="mt-3">
-  <div class="mapa"> </div>
+
+ <div id="seccion-direccion" class="mt-3">
+  <!-- <div class="mapa"> </div> -->
+  
+  <div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7650.369027973927!2d-68.21930977677047!3d-16.51677994473054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa8d350a625%3A0x5851be5b6c74cbde!2sAlcald%C3%ADa%20de%20El%20Alto%20%22Jach&#39;a%20Uta%22!5e0!3m2!1ses!2sbo!4v1664895689610!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
   <div>
       <div class="wrapper-local">
           <h2> Edificio JACHA U'TA Avenida Costanera entre puente Bolivia y Avenida Litoral</h2>
-          <h2 class="text-danger mb-4" id="typewriter"></h2>
-          <p class="fs-4 text-body">Distrito Municipal 1, Ceja calle 2, minibús 230</p>
-          <p class="fs-4 text-body">Distrito Municipal 4, Avenida costanera, minibús 236</p>
-          <p class="fs-4 text-body">Distrito Municipal 3, Avenida Bolivia, minibús 213</p>
+ 
           <section class="d-flex justify-content-start" id="numeros-local">
               <div>
                   <p class="text-danger fs-3 fw-bold">Horarios de Atención</p>
@@ -359,6 +362,35 @@
         </section>
       </div>
   </div>
+
+  
+</div>
+
+<div id="seccion-direccion" class="">
+  <!-- <div class="mapa"> </div> -->
+  
+  <div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.139134034695!2d-68.17632711313618!3d-16.519072043319053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf634acbe9f5%3A0xd40509c954aacfb6!2sTerminal%20Metropolitana%20de%20El%20Alto!5e0!3m2!1ses!2sbo!4v1664895976620!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div>
+      <div class="wrapper-local">
+          <h2>Terminal Metropolitana El Alto, Av. Ladislao Cabrera - Av Panamericana El Alto</h2>
+
+          <section class="d-flex justify-content-start" id="numeros-local">
+              <div>
+                  <p class="text-danger fs-3 fw-bold">Horarios de Atención</p>
+                  <p class="fs-4">De 8:00 a.m. a 16:00 p.m.</p>
+              </div>
+              <div>
+                  <!-- <p class="text-primary fs-5">Temperatura</p>
+                  <p>datos</p> -->
+              </div>
+        </section>
+      </div>
+  </div>
+
+  
 </div>
 
 </section>
@@ -440,6 +472,8 @@
                 <!-- CONTENEDOR DEL FORMULARIO -->
                 <!--========================================================== -->
                 <div id="contenedor-formulario" class="container">
+
+                
                     <div class="text-center text-white">
                         <div><img src="./imagenes/buzon.png" alt="" class="w-25 pt-1"></div>
 
@@ -450,7 +484,8 @@
                         </p>
                     </div>
 
-                    <form   method="POST" data-netlify="true" action="#">
+                    <form   action="/maill" method="GET">
+                    @csrf
                         <div class= "mb-3 d-flex">
                             <input type="email" class="form-control w-50 me-1"  id="email" name="email" placeholder="correoEjemplo@ejemplo.com">
                             <input type="input" class="form-control w-50" id="name" name="name" placeholder="Nombre Completo">
@@ -464,6 +499,7 @@
                         <div class="mb-3 d-flex">
 
                             <input type="tel" class="form-control w-50 me-1" name="phone" id="phone" placeholder="Celular">
+
                             <button type="submit" id="boton" class="btn w-50 fs-5 text-ligth">Enviar mensaje</button>
                         </div>
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Route;
 use App\Models\Area;
 use App\Models\Categoria;
 use Illuminate\Http\Request;
