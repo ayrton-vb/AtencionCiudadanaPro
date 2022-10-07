@@ -29,8 +29,8 @@ class PruebaMaill extends Mailable
      */
     public function build()
     {
-        // Mail::send(new PruebaMaill());
-        // return view('cliente.index');
+   
         return view('cliente.index');
+
     }
 }

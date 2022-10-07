@@ -484,8 +484,9 @@
                         </p>
                     </div>
 
-                    <form   action="/maill" method="GET">
-                    @csrf
+
+                    <form   action="" method="">
+           
                         <div class= "mb-3 d-flex">
                             <input type="email" class="form-control w-50 me-1"  id="email" name="email" placeholder="correoEjemplo@ejemplo.com">
                             <input type="input" class="form-control w-50" id="name" name="name" placeholder="Nombre Completo">
@@ -500,7 +501,9 @@
 
                             <input type="tel" class="form-control w-50 me-1" name="phone" id="phone" placeholder="Celular">
 
-                            <button type="submit" id="boton" class="btn w-50 fs-5 text-ligth">Enviar mensaje</button>
+                            <!-- <button type="submit" id="boton" class="btn w-50 fs-5 text-ligth">Enviar mensaje</button> -->
+
+                            <button href="clientes"  type="" id="boton" class="btn w-50 fs-5 text-ligth">mensaje</button>
                         </div>
 
                         <div id="icono-w" class="mb-3 d-flex justify-content-center">

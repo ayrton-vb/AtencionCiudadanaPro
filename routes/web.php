@@ -77,7 +77,8 @@ Route::get('/pdf/{id}/pdfrequisitobyTramite','App\Http\Controllers\PDFController
 
 Route::get('/pdf/{id}/pdfrequisitobyServicio','App\Http\Controllers\PDFController@pf');
 
-Route::get('maill','App\Mail\PruebaMaill@build');
+Route::get('maill','App\Http\Controllers\ClienteController@index');
+
 
 
 // Route::get('maill', function () {
