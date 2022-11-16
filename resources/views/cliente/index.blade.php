@@ -14,7 +14,7 @@
 
 <section  class="w-50 mx-auto text-center pt-3 pb-3 " id="intro">
             <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="fw-bold color">servicios y trámites</span>
-            del Gobierno Autónomo Municipal de La Ciudad de El Alto
+            del Gobierno Autónomo Municipal de la ciudad de El Alto
             </h1>
 
 </section>
@@ -28,7 +28,7 @@
 <!-- =============================================== -->
 
 <section id="servicios" class="container-fluid pt-3 pb-3">
-    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="text-danger text-decoration-underline">Categorias</span>  </h1>
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="text-danger text-decoration-underline">Categorías</span>  </h1>
     <div id="contenidoCategorias" class="row w-85 mx-auto servicio-fila ">
 
 
@@ -68,7 +68,7 @@
                     titulo.innerText = data[i].alias;
                     const enlace = document.createElement("a");
                     enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
-                    enlace.innerText = "Tramites";
+                    enlace.innerText = "Trámites";
                     enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
 
 

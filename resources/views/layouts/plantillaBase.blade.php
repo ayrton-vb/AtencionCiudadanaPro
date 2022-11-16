@@ -23,9 +23,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
         <div class="container-fluid" >
 
-            <img class="logoR"  src="" width="50">
-
-
+    
+      
+        <img class="logoR"  src="" height="25" style="padding-left:20px;">
 
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item" >
+          
+                    <li class="nav-item">
                         <a class="nav-link active mx-3 fs-5 fw-bold text-d redText lkm" aria-current="page" href="/clientes">Inicio</a>
                     </li>
                     <li class="nav-item">
@@ -48,6 +49,9 @@
                     <li class="nav-item">
                         <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#seccion-contacto">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="https://www.elalto.gob.bo/">-> Gamea</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,7 +65,7 @@
     <!-- ENCABEZADO -->
     <!-- =============================================== -->
     <div id="banner" >
-        <img  data-aos="zoom-in-up" id="bannerLogo" src="/imagenes/logoBanner.png" width="100%">
+        <img  data-aos="zoom-in-up" id="bannerLogo" src="/imagenes/logoBanner.png"  width="100%">
         <img   data-aos="zoom-in"
                data-aos-offset="200"
                data-aos-delay="50"
@@ -71,7 +75,7 @@
                data-aos-once="false"
                data-aos-anchor-placement="top-center"
                id="bannerLetra" src="/imagenes/letrasBanner.png" width="100%">
-                <img src="/imagenes/banner4.jpeg" width="100%">
+                <img src="/imagenes/banner6.jpeg" width="100%">
 
     </div>
 
