@@ -13,7 +13,7 @@
 <!-- =============================================== -->
 
 <section  class="w-50 mx-auto text-center pt-3 pb-3 " id="intro">
-            <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="fw-bold color">servicios y trámites</span>
+            <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="blueText">servicios y trámites</span>
             del Gobierno Autónomo Municipal de la ciudad de El Alto
             </h1>
 
@@ -28,7 +28,7 @@
 <!-- =============================================== -->
 
 <section id="servicios" class="container-fluid pt-3 pb-3">
-    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="text-danger text-decoration-underline">Categorías</span>  </h1>
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Categorías</span>  </h1>
     <div id="contenidoCategorias" class="row w-85 mx-auto servicio-fila ">
 
 
@@ -58,7 +58,7 @@
                     col.setAttribute("data-aos","zoom-in-left");
                     col.setAttribute("data-aos-delay","200");
                     const img = document.createElement("img");
-                    img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recurso "+data[i].id+".png");
+                    img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
                     img.setAttribute("width","150");
                     img.setAttribute("height","130");
                     const div = document.createElement("div");
@@ -97,7 +97,7 @@
 <!-- =============================================== -->
 
 <section  id="TramitesDem" class="container-fluid pt-3 pb-3" >
-    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="text-danger text-decoration-underline">Trámites Más Demandados</span>
+    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Trámites Más Demandados</span>
     </h1>
 
 
@@ -113,7 +113,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
+                                <img src="/imagenes/recaudaciones/categoria/Recursos 1.png"  alt="...">
 
                             </div>
                             <h5 class="card-title">Empadronamiento por actividad económica.</h5>
@@ -126,7 +126,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="/imagenes/recaudaciones/categoria/Recurso 3.png"  alt="...">
+                                <img src="/imagenes/recaudaciones/categoria/Recursos 3.png"  alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Cambio de radicatoria</h5>
@@ -140,7 +140,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="/imagenes/recaudaciones/categoria/Recurso 2.png"  alt="...">
+                                <img src="/imagenes/recaudaciones/categoria/Recursos 2.png"  alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Empadronamiento de bienes por cambio de jurisdicción</h5>
@@ -158,7 +158,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
+                                <img src="./imagenes/recaudaciones/categoria/Recursos 3.png" alt="...">
 
                             </div>
                             <div class="card-body">
@@ -171,7 +171,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
+                                <img src="./imagenes/recaudaciones/categoria/Recursos 4.png"  alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">VISADO DE PLANO DE LOTE PARA CATASTRO</h5>
@@ -183,7 +183,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 4.png"  alt="...">
+                                <img src="./imagenes/recaudaciones/categoria/Recursos 4.png"  alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
@@ -200,7 +200,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 7.png"  alt="...">
+                                <img src="./imagenes/recaudaciones/categoria/Recursos 7.png"  alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Bono Mensual para Personas con Discapacidad Grave y Muy Grave</h5>
@@ -212,7 +212,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 6.png"  alt="...">
+                                <img src="./imagenes/recaudaciones/categoria/Recursos 6.png"  alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
@@ -224,7 +224,7 @@
                     <div class="card" >
                         <div class="card-body">
                             <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 9.png"  alt="...">
+                                <img src="./imagenes/recaudaciones/categoria/Recursos 9.png"  alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Capacitación y orientación</h5>
@@ -337,7 +337,7 @@
 <!-- PUNTOS DE ATENCION -->
 <!-- =============================================== -->
 <section id="ubicacion" class=" pt-3">
- <h1 data-aos="zoom-in-up" class="text-danger text-center fs-2 fw-bold text-decoration-underline">Puntos de Atención</h1>
+ <h1 data-aos="zoom-in-up" class="redText text-center fs-2 fw-bold text-decoration-underline">Puntos de Atención</h1>
 
  <div id="seccion-direccion" class="mt-3">
   <!-- <div class="mapa"> </div> -->

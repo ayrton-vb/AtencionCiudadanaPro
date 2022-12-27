@@ -86,17 +86,17 @@
   <div class="row">
     <div class="col">
     <div class="text-end">
-    <img src="imagenes/1.png" alt="Image" class="img-fluid " width="160">
+    <img src="imagenes/11.png" alt="Image" class="img-fluid " width="150">
     </div>
     </div>
     <div class="col">
     <div class="text-center">
-    <img src="imagenes/2.png" alt="Image" class="img-fluid" width="90">
+    <img src="imagenes/22.png" alt="Image" class="img-fluid" width="90">
     </div>
     </div>
     <div class="col">
         <div class="text-start">
-        <img src="imagenes/3.png" alt="Image" class="img-fluid " width="95">   
+        <img src="imagenes/33.png" alt="Image" class="img-fluid " width="95">   
         </div>
     </div>
   </div>

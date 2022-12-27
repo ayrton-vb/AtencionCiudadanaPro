@@ -10,11 +10,18 @@ body {
 .color{
     color:#00C5F3;
 }
+
+.blueText{
+    color:#2dbdef !important;
+    font-weight: bold;
+}
+
+
 .red {
     background-color: #E40428 !important;
 }
 .redText {
-    color: #E40428 !important;
+    color: #e30613 !important;
 }
 .whiteText {
     color: white !important;
