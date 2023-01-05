@@ -30,7 +30,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end ">
-                        <img src="/imagenes/tramites/Recurso 2.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 2.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                         </span>
                     </div>
 
@@ -42,7 +42,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 3.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 3.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
@@ -53,7 +53,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 4.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 4.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div data-aos="flip-up" data-aos-delay="350" class="col-9 pt-4 border-start border-danger  border-5">
@@ -64,7 +64,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 5.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 5.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
@@ -75,7 +75,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 6.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 6.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
@@ -86,7 +86,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 7.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 7.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
@@ -129,7 +129,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 8.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 8.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
@@ -140,7 +140,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 9.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 9.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">
@@ -151,7 +151,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recurso 10.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                        <img src="/imagenes/tramites/Recursos 10.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
                     </div>
 
                     <div class="col-9 pt-4 border-start border-danger  border-5">

@@ -20,7 +20,7 @@
                               <div id="dentro" class="card" >
                                   <div class="card-body">
                                       <div class="images-wrapper">
-                                          <img src="/imagenes/recaudaciones/categoria/Recurso {{$va->categorias->id_area}}.png"  alt="...">
+                                          <img src="/imagenes/recaudaciones/categoria/Recursos {{$va->categorias->id_area}}.png"  alt="...">
 
                                       </div>
                                       <h5 class="card-title">{{$va->nombre}}</h5>

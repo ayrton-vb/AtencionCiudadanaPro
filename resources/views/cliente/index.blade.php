@@ -2,12 +2,7 @@
 
 @section('contenido')
 
-               
-
-
-
-
-
+            
 <!-- =============================================== -->
 <!-- INTRO-->
 <!-- =============================================== -->
@@ -16,11 +11,7 @@
             <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="blueText">servicios y trámites</span>
             del Gobierno Autónomo Municipal de la ciudad de El Alto
             </h1>
-
 </section>
-
-
-
 
 
 <!-- =============================================== -->
@@ -97,11 +88,11 @@
 <!-- =============================================== -->
 
 <section  id="TramitesDem" class="container-fluid pt-3 pb-3" >
-    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Trámites Más Demandados</span>
+    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Busqueda</span>
     </h1>
 
 
-    <div data-aos="fade-right" id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-none d-lg-block" data-bs-ride="carousel">
+    <!-- <div data-aos="fade-right" id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-none d-lg-block" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -245,7 +236,145 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
+<!-- 
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div> -->
+
+
+<div class="input-group mb-3">
+
+  <input onkeyup ="onBusqueda(busqueda.value);" onkeydown ="onBusqueda2(busqueda.value);" id="busqueda" type="text" class="form-control" placeholder="Palabra Clave" aria-label="Recipient's username" aria-describedby="button-addon2" >
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+  
+
+
+  
+</div>
+
+<section>
+<div id="area">
+   
+</div>
+<div id="">
+    <div class="container">
+        <div id="contenidoBusqueda" class="row">
+
+            
+        </div>
+    </div>        
+</div>
+</section>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+
+        function onBusqueda2($value){
+
+            let cupcakes = Array.prototype.slice.call(document.getElementsByClassName("cupcake"), 0);
+  
+            for(element of cupcakes){
+                console.log(element);
+                element.remove();
+            }  
+            var html_select = '';
+            $('#area').html(html_select);
+
+        }
+
+
+        function onBusqueda($value){
+
+            var palabra = $value;
+
+            var contenidoCategorias = document.getElementById('contenidoBusqueda');
+            const fracment = document.createDocumentFragment();
+
+      
+
+            console.log(palabra);
+ 
+            $.get('/api/tramites/'+palabra+'/palabra', function (data){
+                console.log(data);
+
+
+           
+    
+
+            for (var i=0; i<data.length; i++){
+                var html_select = '<h3  value="">Tramites:</h3></br>';
+
+                const col = document.createElement("div");
+                col.setAttribute("id","");
+                col.classList.add("col-lg-4", "col-md-6", "col-sm-12", "mb-2", "cupcake");
+
+                const card = document.createElement("div");
+                card.setAttribute("id","dentro");
+                card.classList.add("card");
+                
+                const cardBody = document.createElement("div");
+                cardBody.classList.add("card-body");
+                
+                const imagesWra = document.createElement("div");
+                imagesWra.classList.add("images-wrapper");
+                
+                const img = document.createElement("img");
+                const idCategoria = data[i].id_categoria;
+                const area = 0;
+
+
+                img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
+                
+                const h5 = document.createElement("h5");
+                h5.classList.add("card-title");
+                h5.innerText = data[i].nombre;
+                
+                const p = document.createElement("p");
+                p.classList.add("card-text");
+                p.innerText = data[i].sobre;
+
+                const enlace = document.createElement("a");
+                enlace.classList.add("fs-4", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
+                enlace.innerText = "Requisitos";
+                enlace.setAttribute("href","/clientes/"+data[i].id+"/tramiteByTramite");
+
+
+                col.appendChild(card);
+                card.appendChild(cardBody);
+                cardBody.appendChild(imagesWra);
+                imagesWra.appendChild(img);
+
+                cardBody.appendChild(h5);
+                cardBody.appendChild(p);
+                cardBody.appendChild(enlace);
+
+                
+                fracment.appendChild(col);
+            
+                contenidoCategorias.appendChild(fracment);
+            
+            
+                    
+            $('#area').html(html_select);
+
+                console.log(html_select);
+
+
+       
+            }});
+
+
+        }
+
+
+       
+    </script>
+
+
 
     <!-- =============================================== -->
     <!-- TRMITES MAS DEMANDADOS 2-->

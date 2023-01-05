@@ -29,3 +29,6 @@ Route::get('/tramites/{id}/area','App\Http\Controllers\CategoriaController@byAre
 Route::get('/tramites/{id}/area2','App\Http\Controllers\TramiteController@byArea');
 
 Route::get('/cliente/areas','App\Http\Controllers\AreaController@todo');
+
+
+Route::get('/tramites/{id}/palabra','App\Http\Controllers\TramiteController@byPalabra');

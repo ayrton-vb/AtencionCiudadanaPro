@@ -166,6 +166,8 @@ class RequisitoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $requisito = Requisito::find($id);
+        $requisito->delete();
+        return redirect('tramites/'.$id.'/requisitobyTramite');
     }
 }

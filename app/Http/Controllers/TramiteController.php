@@ -80,6 +80,10 @@ class TramiteController extends Controller
     }
 
 
+    public function byPalabra($palabra){
+        $tramites = Tramite::where('nombre','LIKE',"%$palabra%")->get();
+        return  $tramites;
+    }
 
     public function byArea($id){
         $categorias = Categoria::where('id_area',$id)->get();
