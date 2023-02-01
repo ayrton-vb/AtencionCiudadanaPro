@@ -28,9 +28,27 @@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
     window.onload = function() {
+     
+        $.getJSON("http://ip-api.com/json/?callback=?", function (data) {
+    console.log(data.country)
+    console.log(data.city)
+    console.log(data.lat)
+    console.log(data.lon)
+    console.log(data.query)
+    ;
+
+    $.get('/api/visitas/'+data.country+'/'+data.city+'/'+data.lat+'/'+data.lon+'/'+data.query+'/ip', function (data){
+                console.log(data)});
+});
+
+            
+                // var html_select = '<option  value="">-Selecciona-</option>';
+                // for (var i=0; i<data.length; i++)
+                //     html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
+                // $('#area').html(html_select);                                  
 
             var direccion = 1;
             /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';

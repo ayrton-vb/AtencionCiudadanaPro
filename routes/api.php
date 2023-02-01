@@ -32,3 +32,7 @@ Route::get('/cliente/areas','App\Http\Controllers\AreaController@todo');
 
 
 Route::get('/tramites/{id}/palabra','App\Http\Controllers\TramiteController@byPalabra');
+
+
+
+Route::get('/visitas/{id}/{id2}/{id3}/{id4}/{id5}/ip','App\Http\Controllers\VisitaController@byip');
