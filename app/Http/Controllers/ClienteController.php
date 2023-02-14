@@ -9,6 +9,7 @@ use App\Models\Requisito;
 use App\Models\Servicio;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
+use App\Models\Visita;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
@@ -76,9 +77,9 @@ class ClienteController extends Controller
     {
         Cache::flush();
 
- 
+        $visitas = Visita::count();
 
-        return view('cliente.index');
+        return view('cliente.index')->with('visitas',$visitas);
     }
 
     /**

@@ -611,6 +611,8 @@
                             <h6 class="text-center">S.U.M.A.</h6>
                             <h6 class="text-center">161</h6>
                         </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -671,7 +673,11 @@
     </div>
 
 
-
+    <div id="contactoNumero" class="text-center mx-auto" style="width: 400px;" >
+                            <img src="/imagenes/vistas.png" class="w-25">
+                            <h4 class="text-white text-center">Personas que visitaron la página:</h4>
+                            <h4 class="text-white text-center">{{$visitas}}</h4>
+    </div>
 
 
 
