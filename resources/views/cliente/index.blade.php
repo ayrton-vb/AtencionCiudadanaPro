@@ -13,6 +13,29 @@
             </h1>
 </section>
 
+<section id="" class="container-fluid pt-3 pb-3">
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevo Tramite</span>  </h1>
+    <div data-aos="fade-down"  class="card mb-3 mx-auto " style="max-width: 540px;">
+        <div class="row g-0">
+             <div class="images-wrapper ">
+             <img src="/imagenes/LOGOFOREPRO.png" class="img-fluid rounded-start pt-1" alt="...">
+            </div>
+          
+            <div class="col-md-12">
+            <div class="card-body">
+                <h5 class="card-title">FIDEICOMISO FOREPRO - GAMEA</h5>
+                <p class="card-text">Acceso a unidades económica productivas y artesanos a un crédito de Fomento</p>
+                <p class="card-text"><small class="text-muted">Objetivo: Otorgar créditos para la Reactivación Económica de la Producción Local 
+                    y las Actividades Productivas en el Municipio de El Alto.</small></p>
+                    <a href="ervicioForepro" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+</br>
 
 <!-- =============================================== -->
 <!-- SERVICIOS categorias-->
@@ -20,7 +43,7 @@
 
 <section id="servicios" class="container-fluid pt-3 pb-3">
     <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Categorías</span>  </h1>
-    <div id="contenidoCategorias" class="row w-85 mx-auto servicio-fila ">
+    <div id="contenidoCategorias" class="row mx-auto servicio-fila ">
 
 
 
@@ -63,10 +86,11 @@
                 for (var i=0; i<data.length; i++){
 
                     const col = document.createElement("div");
-                    col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap");
+                    col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
                     col.setAttribute("data-aos","zoom-in-left");
                     col.setAttribute("data-aos-delay","200");
                     const img = document.createElement("img");
+                    img.classList.add("imgTamaño");
                     img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
                     img.setAttribute("width","150");
                     img.setAttribute("height","130");
@@ -102,164 +126,15 @@
 
 
 <!-- =============================================== -->
-<!-- TRMITES MAS DEMANDADOS-->
+<!-- BUSQUEDA-->
 <!-- =============================================== -->
 
-<section  id="TramitesDem" class="container-fluid pt-3 pb-3" >
+<section  id="" class="container-fluid pt-3 pb-3" >
     <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Busqueda</span>
     </h1>
 
 
-    <!-- <div data-aos="fade-right" id="carouselExampleIndicators" class="carousel carousel-dark slide pt-3 pb-3 d-none d-lg-block" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="cards-wrapper">
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="/imagenes/recaudaciones/categoria/Recursos 1.png"  alt="...">
 
-                            </div>
-                            <h5 class="card-title">Empadronamiento por actividad económica.</h5>
-                            <p class="card-text">Es el registro de toda actividad económica para la emisión de la licencia de funcionamiento.</p>
-                            <a href="/clientes/1/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="/imagenes/recaudaciones/categoria/Recursos 3.png"  alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Cambio de radicatoria</h5>
-                                <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)</p>
-                                <a href="clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="/imagenes/recaudaciones/categoria/Recursos 2.png"  alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Empadronamiento de bienes por cambio de jurisdicción</h5>
-                                <p class="card-text">Cuando el ciudadano hace el pago en un municipio que no corresponde.</p>
-                                <a href="/clientes/13/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="cards-wrapper">
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recursos 3.png" alt="...">
-
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Duplicado de placa</h5>
-                                <p class="card-text">Se trata del duplicado de la placa, el cual se lo realiza por deterioro, pérdida o robo</p>
-                                <a href="/clientes/32/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recursos 4.png"  alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">VISADO DE PLANO DE LOTE PARA CATASTRO</h5>
-                                <p class="card-text">Consiste en la otorgación del visto bueno a documentación técnica con datos técnicos de su terreno, una vez perfeccionado su derecho propietario en oficinas de DDR</p>
-                                <a href="/clientes/47/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recursos 4.png"  alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
-                                <p class="card-text">Obtención de certificación de número de puerta.</p>
-                                <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="cards-wrapper">
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recursos 7.png"  alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Bono Mensual para Personas con Discapacidad Grave y Muy Grave</h5>
-                                <p class="card-text">Efectiviza el pago del Bono Mensual para Personas con Discapacidad Grave y Muy Grave del Municipio del Alto.</p>
-                                <a href="/clientes/1/servicioByServicio" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recursos 6.png"  alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">CERTIFICACIÓN DE NÚMERO DE DOMICILIO</h5>
-                                <p class="card-text">Obtención de certificación de número de puerta.</p>
-                                <a href="/clientes/62/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recursos 9.png"  alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Capacitación y orientación</h5>
-                                <p class="card-text">El objetivo es dar y reforzar conocimientos en jóvenes de 16 a 28 años en diferentes áreas de interés</p>
-                                <a href="/clientes/3/servicioByServicio" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> -->
-<!-- 
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div> -->
 
 
 <div class="input-group mb-3">
@@ -267,8 +142,6 @@
   <input onkeyup ="onBusqueda(busqueda.value);" onkeydown ="onBusqueda2(busqueda.value);" id="busqueda" type="text" class="form-control" placeholder="Palabra Clave" aria-label="Recipient's username" aria-describedby="button-addon2" >
   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
   
-
-
   
 </div>
 
@@ -276,6 +149,8 @@
 <div id="area">
    
 </div>
+
+
 <div id="">
     <div class="container">
         <div id="contenidoBusqueda" class="row">
@@ -394,90 +269,6 @@
 
 
 
-    <!-- =============================================== -->
-    <!-- TRMITES MAS DEMANDADOS 2-->
-    <!-- =============================================== -->
-
-
-    <div data-aos="fade-right" id="carouselExampleIndicators2" class="carousel carousel-dark slide pt-3 pb-3 d-lg-none" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                <div class="cards-wrapper">
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="/imagenes/recaudaciones/categoria/Recurso 1.png"  alt="...">
-
-                            </div>
-                            <h5 class="card-title">Empadronamiento por actividad económica.</h5>
-                            <p class="card-text">Es el registro de toda actividad económica para la emisión de la licencia de funcionamiento.</p>
-                            <a href="/clientes/1/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="cards-wrapper">
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
-
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Duplicado de placa</h5>
-                                <p class="card-text">Se trata del duplicado de la placa, el cual se lo realiza por deterioro, pérdida o robo</p>
-                                <a href="/clientes/32/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="cards-wrapper">
-                    <div class="card" >
-                        <div class="card-body">
-                            <div class="images-wrapper">
-                                <img src="./imagenes/recaudaciones/categoria/Recurso 3.png" alt="...">
-
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Cambio de radicatoria</h5>
-                                <p class="card-text">Cambio de radicación del vehículo de un determinado Gobierno Municipal a otro, (en este caso de cualquier municipio al municipio de El Alto)o</p>
-                                <a href="/clientes/30/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-
-</section>
-
-
 
 
 <!-- =============================================== -->
@@ -489,16 +280,22 @@
  <div id="seccion-direccion" class="mt-3">
   <!-- <div class="mapa"> </div> -->
   
-  <div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7650.369027973927!2d-68.21930977677047!3d-16.51677994473054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa8d350a625%3A0x5851be5b6c74cbde!2sAlcald%C3%ADa%20de%20El%20Alto%20%22Jach&#39;a%20Uta%22!5e0!3m2!1ses!2sbo!4v1664895689610!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div id="mapa_big">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.1889088972666!2d-68.22366828459147!3d-16.516557945531773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa8d350a625%3A0x5851be5b6c74cbde!2sAlcald%C3%ADa%20de%20El%20Alto%20%22Jach&#39;a%20Uta%22!5e0!3m2!1ses!2sbo!4v1681150233289!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
   </div>
+  <div id="mapa_small">  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.1889088972666!2d-68.22366828459147!3d-16.516557945531773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa8d350a625%3A0x5851be5b6c74cbde!2sAlcald%C3%ADa%20de%20El%20Alto%20%22Jach&#39;a%20Uta%22!5e0!3m2!1ses!2sbo!4v1681150233289!5m2!1ses!2sbo" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+  </div>
+
 
   <div>
       <div class="wrapper-local">
           <h2> Edificio JACHA U'TA Avenida Costanera entre puente Bolivia y Avenida Litoral</h2>
  
           <section class="d-flex justify-content-start" id="numeros-local">
-              <div>
+              <div class="horarios">
                   <p class="text-danger fs-3 fw-bold">Horarios de Atención</p>
                   <p class="fs-4">De 8:00 a.m. a 16:00 p.m.</p>
               </div>
@@ -516,16 +313,21 @@
 <div id="seccion-direccion" class="">
   <!-- <div class="mapa"> </div> -->
   
-  <div>
+  <div id="mapa_big2">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.139134034695!2d-68.17632711313618!3d-16.519072043319053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf634acbe9f5%3A0xd40509c954aacfb6!2sTerminal%20Metropolitana%20de%20El%20Alto!5e0!3m2!1ses!2sbo!4v1664895976620!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+
+  <div id="mapa_small2">  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.103801433186!2d-68.17936698459141!3d-16.52085644564368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa123a4c253%3A0x4c217d3abfd9e28c!2sTerminal%20de%20Buses%20El%20Alto!5e0!3m2!1ses!2sbo!4v1681141353534!5m2!1ses!2sbo" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
 
   <div>
       <div class="wrapper-local">
           <h2>Terminal Metropolitana El Alto, Av. Ladislao Cabrera - Av Panamericana El Alto</h2>
 
           <section class="d-flex justify-content-start" id="numeros-local">
-              <div>
+              <div class="horarios">
                   <p class="text-danger fs-3 fw-bold">Horarios de Atención</p>
                   <p class="fs-4">De 8:00 a.m. a 16:00 p.m.</p>
               </div>
@@ -673,9 +475,9 @@
     </div>
 
 
-    <div id="contactoNumero" class="text-center mx-auto" style="width: 400px;" >
+    <div id="contactoNumero" class="text-center mx-auto" style="width: 50%;" >
                             <img src="/imagenes/vistas.png" class="w-25">
-                            <h4 class="text-white text-center">Personas que visitaron la página:</h4>
+                            <h4 class="text-white d-flex justify-content-center">Personas que visitaron la página:</h4>
                             <h4 class="text-white text-center">{{$visitas}}</h4>
     </div>
 

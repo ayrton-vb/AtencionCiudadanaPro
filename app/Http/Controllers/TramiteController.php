@@ -50,6 +50,16 @@ class TramiteController extends Controller
 
     }
 
+    public function serviciosForepro()
+    {
+
+        return view('cliente.datos3');
+
+    }
+
+
+    
+
     public function servicioByServicio($id)
     {
 

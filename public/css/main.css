@@ -127,6 +127,23 @@ body {
 /*
 ============================UBICACION==============================
 */
+
+#mapa_big{
+    display: block;
+}
+#mapa_big2{
+    display: block;
+}
+#mapa_small{
+    display: none;
+}
+#mapa_small2{
+    display: none;
+}
+
+
+
+
 #seccion-direccion {
 
     background-color: #f3f3f3;
@@ -299,6 +316,73 @@ footer p{
 
 
 @media(max-width:768px){
+ 
+
+    .wrapper-local {
+        width:75%;
+        margin-left:0px;
+        padding-top:0px;
+        margin-bottom: 20px !important;
+    }
+
+
+    .logoTamaño img{
+        width : 75px;
+    }
+    .logoTamaño2 img{
+        width : 45px;
+    }
+    .logoTamaño3 img{
+        width : 48px;
+    }
+
+
+
+
+    .horarios p{
+        font-size: medium !important;
+    }
+
+    .wrapper-local h2{
+        font-size: medium;
+    }
+
+    .images-wrapper{
+        height: 25vw;
+    }
+
+    .colImagen{
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;  
+    }
+
+    .imgTamaño{
+        width : 90px;
+        height: 80px;
+    }
+
+    #seccion-direccion{
+
+        max-height:460px;
+
+    }
+
+
+    #mapa_big{
+        display: none;
+    }
+    #mapa_big2{
+        display: none;
+    }
+    #mapa_small{
+        display: block;
+    }
+    #mapa_small2{
+        display: block;
+    }
+
+    
+
     #intro  #equipo{
         width: 90% !important;
     }
@@ -327,12 +411,14 @@ footer p{
         margin-bottom: 200px;
     }
 
+
     #actividades {
         width:95%;
+        
     }
 
     #contenedor-formulario{
-        margin-top: 90px;
+        margin-top: 5px !important;
         padding: 0;
         width: 90%;
     }

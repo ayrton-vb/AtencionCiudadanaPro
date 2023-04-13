@@ -22,6 +22,7 @@ use App\Mail\PruebaMaill;
 
 Route::resource('/','App\Http\Controllers\ClienteController');
 
+
 Route::resource('clientes','App\Http\Controllers\ClienteController');
 
 Route::middleware([
@@ -34,6 +35,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('ervicioForepro','App\Http\Controllers\TramiteController@serviciosForepro');
 
 Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteController@serviciosByServicios');
 
@@ -76,6 +78,8 @@ Route::resource('servicios','App\Http\Controllers\ServicioController');
 Route::get('/pdf/{id}/pdfrequisitobyTramite','App\Http\Controllers\PDFController@PDF');
 
 Route::get('/pdf/{id}/pdfrequisitobyServicio','App\Http\Controllers\PDFController@pf');
+
+Route::get('pdfForepro','App\Http\Controllers\PDFController@pfFore');
 
 Route::get('maill','App\Http\Controllers\ClienteController@index');
 

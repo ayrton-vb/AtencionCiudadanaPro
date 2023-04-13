@@ -85,17 +85,17 @@
     <div class="container">
   <div class="row">
     <div class="col">
-    <div class="text-end">
+    <div class="text-end logoTamaño">
     <img src="imagenes/11.png" alt="Image" class="img-fluid " width="150">
     </div>
     </div>
     <div class="col">
-    <div class="text-center">
+    <div class="text-center logoTamaño2">
     <img src="imagenes/22.png" alt="Image" class="img-fluid" width="90">
     </div>
     </div>
     <div class="col">
-        <div class="text-start">
+        <div class="text-start logoTamaño3">
         <img src="imagenes/33.png" alt="Image" class="img-fluid " width="95">   
         </div>
     </div>

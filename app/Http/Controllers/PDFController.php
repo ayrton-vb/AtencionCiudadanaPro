@@ -11,6 +11,17 @@ use Illuminate\Http\Request;
 class PDFController extends Controller
 {
     //
+
+    public function pfFore(){
+
+       
+
+        $pdf = \PDF::loadView('prueba3');
+
+        return $pdf->stream('prueba.pdfFore');
+    }
+
+    
     public function PDF($id){
 
         $tramite = Tramite::find($id);
