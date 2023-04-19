@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link href="{{ asset('css/main2.css') }}" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>AtencionCiudadana</title>
@@ -48,35 +48,37 @@
     </tr>
     </thead>
     <tbody>
+
     <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 2.png') }}" class="w-75 mr-3" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 2.png') }}" class="w-25 mr-3" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">Nombre del trámite:</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->nombre}}</p></td>
 
     </tr>
+
     <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 3.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 3.png') }}" class="w-25" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">¿De qué se trata el trámite?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->sobre}}</p></td>
 
     </tr>
     <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 4.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 4.png') }}" class="w-25" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">¿Cuál es el área responsable?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->areaRes}}</p></td>
     </tr>
     <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 5.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 5.png') }}" class="w-25" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">¿Dónde debo iniciar el trámite?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->inicio}}</p></td>
     </tr>
     <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 6.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 6.png') }}" class="w-25" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">¿Cuáles son los días y horarios de atención?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->horario}}</p></td>
     </tr>
     <tr class="m-0 p-0" style="margin-bottom: -10px;">
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 7.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 7.png') }}" class="w-25" alt="..."></th>
         <td colspan="2"><h5 class="fs-6 fw-bold w-100">¿Cuáles son los requisitos?</h5></td>
         @for ($i = 0; $i < $var2; $i++)
 
@@ -99,17 +101,17 @@
     </tr>
 
     <tr class="border-bottom border-top border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 8.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 8.png') }}" class="w-25" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">¿Debo realizar algún pago? ¿Cuánto?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->pago}}</p></td>
     </tr>
     <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 9.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 9.png') }}" class="w-25" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">¿Cuánto tiempo dura el trámite?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->duracion}}</p></td>
     </tr>
     <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recurso 10.png') }}" class="w-75" alt="..."></th>
+        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 10.png') }}" class="w-25" alt="..."></th>
         <td><h5 class="fs-6 fw-bold w-100">¿Qué debo recibir al finalizar el trámite?</h5></td>
         <td> <p class="fs-6 w-100">{{$tramite->termino}}</p></td>
     </tr>

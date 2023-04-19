@@ -271,11 +271,11 @@ footer p{
 
 
 .wrapper-tramite h3{
-    font-size: large;
+    font-size: x-large;
 }
 
 .wrapper-tramite p{
-    font-size: medium;
+    font-size: x-large;
 }
 
 
@@ -288,11 +288,11 @@ footer p{
 @media(max-width:991px){
 
     .wrapper-tramite h3{
-        font-size: large;
+        font-size: x-large;
     }
 
     .wrapper-tramite p{
-        font-size: medium;
+        font-size: x-large;
     }
 
 
