@@ -1,5 +1,6 @@
 /* Globales */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
@@ -269,6 +270,14 @@ footer p{
 }
 
 
+.wrapper-tramite h3{
+    font-size: large;
+}
+
+.wrapper-tramite p{
+    font-size: medium;
+}
+
 
 
 /*
@@ -277,6 +286,16 @@ footer p{
 
 
 @media(max-width:991px){
+
+    .wrapper-tramite h3{
+        font-size: large;
+    }
+
+    .wrapper-tramite p{
+        font-size: medium;
+    }
+
+
     #nav {
         background-color: #E40428;
     }
@@ -317,6 +336,13 @@ footer p{
 
 @media(max-width:768px){
  
+    .wrapper-tramite h3{
+        font-size: medium;
+    }
+
+    .wrapper-tramite p{
+        font-size: small;
+    }
 
     .wrapper-local {
         width:75%;
@@ -348,7 +374,7 @@ footer p{
     }
 
     .images-wrapper{
-        height: 25vw;
+        height: 20vw;
     }
 
     .colImagen{

@@ -20,10 +20,10 @@
                               <div id="dentro" class="card" >
                                   <div class="card-body">
                                       <div class="images-wrapper">
-                                          <img src="/imagenes/recaudaciones/categoria/Recursos {{$va->categorias->id_area}}.png"  alt="...">
+                                          <img class="imgTamaño mb-0" src="/imagenes/recaudaciones/categoria/Recursos {{$va->categorias->id_area}}.png"  alt="...">
 
                                       </div>
-                                      <h5 class="card-title">{{$va->nombre}}</h5>
+                                      <h5 class="card-title mt-0">{{$va->nombre}}</h5>
                                       <p class="card-text">{{$va->sobre}}</p>
                                       @if($tra[1]==1)
                                       <a href="/clientes/{{$va->id}}/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
