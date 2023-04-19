@@ -29,67 +29,67 @@
             <div class="container">
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end ">
-                        <img src="/imagenes/tramites/Recursos 2.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end ">
+                        <img src="/imagenes/tramites/Recursos 2.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                         </span>
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">Nombre del trámite:</h3>
                         <p class="">{{$tramite->nombre}}</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 3.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 3.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿De qué se trata el trámite?</h3>
                         <p class="">{{$tramite->sobre}}</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 4.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 4.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div data-aos="flip-up" data-aos-delay="350" class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div data-aos="flip-up" data-aos-delay="350" class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿Cuál es el área responsable?</h3>
                         <p class="">{{$tramite->areaRes}}</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 5.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 5.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿Dónde debo iniciar el trámite?</h3>
                         <p class="">{{$tramite->inicio}}</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 6.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 6.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿Cuáles son los días y horarios de atención?</h3>
                         <p class="">{{$tramite->horario}}</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 7.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 7.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿Cuáles son los requisitos?</h3>
 
                         @for ($i = 0; $i < $var2; $i++)
@@ -128,33 +128,33 @@
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 8.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 8.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿Debo realizar algún pago? ¿Cuánto?</h3>
                         <p class="">{{$tramite->pago}}</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 9.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 9.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿Cuánto tiempo dura el trámite?</h3>
                         <p class="">{{$tramite->duracion}}</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 10.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 10.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold redText">¿Qué debo recibir al finalizar el trámite?</h3>
                         <p class="">{{$tramite->termino}}</p>
                     </div>

@@ -32,36 +32,36 @@
             <div class="container">
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end ">
-                        <img src="/imagenes/tramites/Recursos 2.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end ">
+                        <img src="/imagenes/tramites/Recursos 2.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                         </span>
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">Nombre del servicio:</h3>
-                        <p class="fs-4">FIDEICOMISO FOREPRO - GAMEA</p>
+                        <p class="">FIDEICOMISO FOREPRO - GAMEA</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 3.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 3.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿De qué se trata el servicio?</h3>
-                        <p class="fs-4">Otorgar créditos para la Reactivación Económica de la Producción Local y las Actividades Productivas en el Municipio de El Alto.</p>
+                        <p class="">Otorgar créditos para la Reactivación Económica de la Producción Local y las Actividades Productivas en el Municipio de El Alto.</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 4.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 4.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div data-aos="flip-up" data-aos-delay="350" class="col-9 pt-4 border-start border-danger  border-5">
+                    <div data-aos="flip-up" data-aos-delay="350" class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Cuál es el área responsable?</h3>
-                        <p class="fs-4">Secretaría Municipal de Desarrollo Económico -
+                        <p class="">Secretaría Municipal de Desarrollo Económico -
                             Dirección de Servicios Municipales e Iniciativas Económicas -
                             Unidad de Iniciativas Económicas.
                         </p>
@@ -69,13 +69,13 @@
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 5.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 5.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Dónde debo solicitar el servicio?</h3>
-                        <p class="fs-4">Avenida Costanera, Nro.:5022 Urbanización Libertad, entre calle J.J. Torrez y calle Hernán Siles Zuaso Casa Municipal 
+                        <p class="">Avenida Costanera, Nro.:5022 Urbanización Libertad, entre calle J.J. Torrez y calle Hernán Siles Zuaso Casa Municipal 
                             (Jach'a Uta), a media cuadra de la Estacion de Bomberos, El Alto,
                             5to piso oficina Secretaria Municipal de Desarrollo Económico.
                         </p>
@@ -83,33 +83,33 @@
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 6.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 6.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Cuáles son los días y horarios de atención?</h3>
-                        <p class="fs-4">Horas 08:00 A 12:00 y 14:00 A 18:00 de lunes a viernes.</p>
-                        <p class="fs-4">Número de Contacto: 64192381</p>
+                        <p class="">Horas 08:00 A 12:00 y 14:00 A 18:00 de lunes a viernes.</p>
+                        <p class="">Número de Contacto: 64192381</p>
                     </div>
                 </div>
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 7.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 7.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Cuáles son los requisitos?</h3>
 
-                                <p id="" class="fs-4 fw-bold text-danger">Persona Natural</p>
+                                <p id="" class="fw-bold text-danger">Persona Natural</p>
 
-                                    <p class="fs-4">-Fotocopia de cedula de identidad vigente de los solicitantes y garante (cuando corresponda). </p>
-                                    <p class="fs-4">-Declaración Patrimonial Jurada por los solicitantes y/o garantes del crédito.</p>
-                                    <p class="fs-4">-Fotocopia de Factura de los servicios básicos de agua, luz o gas del domicilio.</p>
-                                    <p class="fs-4">-Croquis de ubicación del domicilio y unidad productiva.</p>
-                                    <p class="fs-4">-Formulario para el destino del Crédito.</p>
-                                    <p class="fs-4">-En caso de tener pasivos deberá presentar el Plan de pagos, y las tres últimas bolitas de pago y/o el extracto de préstamo para créditos grupales o extracto.</p>
+                                    <p class="">-Fotocopia de cedula de identidad vigente de los solicitantes y garante (cuando corresponda). </p>
+                                    <p class="">-Declaración Patrimonial Jurada por los solicitantes y/o garantes del crédito.</p>
+                                    <p class="">-Fotocopia de Factura de los servicios básicos de agua, luz o gas del domicilio.</p>
+                                    <p class="">-Croquis de ubicación del domicilio y unidad productiva.</p>
+                                    <p class="">-Formulario para el destino del Crédito.</p>
+                                    <p class="">-En caso de tener pasivos deberá presentar el Plan de pagos, y las tres últimas bolitas de pago y/o el extracto de préstamo para créditos grupales o extracto.</p>
 
 
 
@@ -126,13 +126,13 @@
 
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 9.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 9.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">Descargables</h3>
-                        <p class="fs-4">
+                        <p class="">
 
                         <a class="btn btn-danger" href="/Archivos/jure.docx" target="blank_">Declaracion Jurada</a>
                         <a class="btn btn-info" href="/Archivos/nota.docx" target="blank_">Modelo Nota</a>
@@ -144,35 +144,35 @@
 
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 8.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 8.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Debo realizar algún pago? ¿Cuánto?</h3>
-                        <p class="fs-4">No tiene costo.</p>
+                        <p class="">No tiene costo.</p>
                     </div>
                 </div>
 
            
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
-                    <div class="col-3 text-end">
-                        <img src="/imagenes/tramites/Recursos 10.png" class="card-img-top w-25 mx-auto pt-3 me-5" alt="...">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 10.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
-                    <div class="col-9 pt-4 border-start border-danger  border-5">
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Qué debo recibir al término del servicio?</h3>
-                        <p class="fs-4">Prestamo FOREPRO </p>
-                        <p class="fs-4">
+                        <p class="">Prestamo FOREPRO </p>
+                        <p class="">
                              Interés y Plazo:                     
                         </p>
-                        <p class="fs-4">
+                        <p class="">
                              8% ANUAL y a un plazo de 18 meses                            
                         </p>
-                        <p class="fs-4">
+                        <p class="">
                         Monto del Préstamo:                        
                         </p>
-                        <p class="fs-4">
+                        <p class="">
                         Mínimo: 10.000,00 (Diez Mil 00/100 Bolivianos); Máximo: 25.000,00 (Veinticinco Mil 00/100 Bolivianos)                          
                         </p>
                     </div>
