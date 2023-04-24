@@ -14,7 +14,7 @@
 </section>
 
 <section id="" class="container-fluid pt-3 pb-3">
-    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevo Tramite</span>  </h1>
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevo Trámite</span>  </h1>
     <div data-aos="fade-down"  class="card mb-3 mx-auto " style="max-width: 540px;">
         <div class="row g-0">
              <div class="images-wrapper ">
