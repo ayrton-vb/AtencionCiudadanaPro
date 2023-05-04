@@ -17,4 +17,9 @@ class Tramite extends Model
         return $this->hasMany(Requisito::class,'id');
     }
 
+    public function descargables(){
+        return $this->hasMany(Descarga::class,'id');
+    }
+
+
 }

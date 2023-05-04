@@ -35,6 +35,13 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/tramites/{id}/descargablebyTramiteEdit','App\Http\Controllers\DescargaController@descargablebyTramiteEdit');
+
+Route::get('/tramites/{id}/descargablebyTramiteCreate','App\Http\Controllers\DescargaController@descargablebyTramiteCreate');
+
+Route::get('/tramites/{id}/descargablebyTramite','App\Http\Controllers\DescargaController@descargablebyTramite');
+
+
 Route::get('ervicioForepro','App\Http\Controllers\TramiteController@serviciosForepro');
 
 Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteController@serviciosByServicios');
@@ -60,6 +67,8 @@ Route::get('/servicios/{id}/requisitobyServicioCreate','App\Http\Controllers\Req
 Route::get('/tramites/{id}/requisitobyTramite','App\Http\Controllers\RequisitoController@requisitobyTramite');
 
 Route::get('/servicios/{id}/requisitobyServicio','App\Http\Controllers\RequisitoController@requisitobyServicio');
+
+Route::resource('descargables','App\Http\Controllers\DescargaController');
 
 Route::resource('requisitos','App\Http\Controllers\RequisitoController');
 

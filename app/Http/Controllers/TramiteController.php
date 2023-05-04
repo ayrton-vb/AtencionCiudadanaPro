@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Area;
 use App\Models\Categoria;
+use App\Models\Descarga;
 use App\Models\Direccion;
 use App\Models\Requisito;
 use App\Models\Servicio;
@@ -25,6 +26,7 @@ class TramiteController extends Controller
 
         $tramite = Tramite::find($id);
         $requisitos = Requisito::where('id_tramite',$id)->get();
+        $descargables = Descarga::where('id_tramite',$id)->get();
         $tipoPersonas = TipoPersona::all();
 
         $var = array();
@@ -45,10 +47,12 @@ class TramiteController extends Controller
         $var2 = count($var);
 
         return view('cliente.datos')->with('tramite',$tramite)->with('requisitos',$requisitos)
-            ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3);
+            ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3)->with('descargables',$descargables);
 
 
     }
+
+
 
     public function serviciosForepro()
     {
@@ -194,7 +198,7 @@ class TramiteController extends Controller
         $tramite->pago = $request->get('pago');
         $tramite->duracion = $request->get('duracion');
         $tramite->termino = $request->get('termino');
-        $tramite->id_categoria = $request->get('id_categoria');
+
         $tramite->save();
         return redirect('/tramites');
     }

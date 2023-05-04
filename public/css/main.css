@@ -336,6 +336,10 @@ footer p{
 
 @media(max-width:768px){
  
+    .wrapper-tramite a{
+        font-size: small !important;
+    }
+
     .wrapper-tramite h3{
         font-size: medium;
     }

@@ -13,6 +13,7 @@
             <th>Categoria</th>
             <th>Area</th>
             <th>Direccion</th>
+            <th>Descargables</th>
             <th>Requisitos</th>
             <th>Acciones</th>
         </tr>
@@ -25,6 +26,9 @@
                 <td>{{$tramite->categorias->alias}}</td>
                 <td>{{$tramite->categorias->areas->alias}}</td>
                 <td>{{$tramite->categorias->areas->direccions->alias}}</td>
+                <td>
+                    <a href="/tramites/{{$tramite->id}}/descargablebyTramite" class="btn btn-danger">Ver</a>
+                </td>
                 <td>
                     <a href="/tramites/{{$tramite->id}}/requisitobyTramite" class="btn btn-dark">Ver</a>
                 </td>
