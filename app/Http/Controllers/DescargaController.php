@@ -17,6 +17,19 @@ class DescargaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+     public function descargablebyServicioCreate($id){
+        $servicio = Servicio::find($id);
+        return view('descargable.createServicio')->with('servicio',$servicio);
+    }
+
+
+     public function descargablebyServicio($id){
+        $descargables = Descarga::where('id_servicio',$id)->get();
+        return view('descargable.descargableServicio')->with('descargables',$descargables)->with('id_servicio',$id);
+    }
+
+
+
 
 
      public function descargablebyTramiteCreate($id){
@@ -64,9 +77,16 @@ class DescargaController extends Controller
          $descargable->nombre=$archivo->getClientOriginalName();
          $descargable->save();
 
-         return redirect ("/tramites/$descargable->id_tramite/descargablebyTramite");
+         if($descargable->id_tramite){
+            return redirect ("/tramites/$descargable->id_tramite/descargablebyTramite");
+         }else{
+            return redirect ("/servicios/$descargable->id_servicio/descargablebyServicio");
+         }
+        
 
     }
+
+    
 
     /**
      * Display the specified resource.
@@ -114,6 +134,10 @@ class DescargaController extends Controller
 
         $descargable->delete();
 
-        return redirect ("/tramites/$descargable->id_tramite/descargablebyTramite");
+        if($descargable->id_tramite){
+            return redirect ("/tramites/$descargable->id_tramite/descargablebyTramite");
+         }else{
+            return redirect ("/servicios/$descargable->id_servicio/descargablebyServicio");
+         }
     }
 }

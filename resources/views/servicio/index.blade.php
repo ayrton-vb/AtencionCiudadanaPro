@@ -13,6 +13,7 @@
             <th>Categoria</th>
             <th>Area</th>
             <th>Direccion</th>
+            <th>Descargables</th>
             <th>Requisitos</th>
             <th>Acciones</th>
         </tr>
@@ -25,6 +26,9 @@
                 <td>{{$servicio->categorias->alias}}</td>
                 <td>{{$servicio->categorias->areas->alias}}</td>
                 <td>{{$servicio->categorias->areas->direccions->alias}}</td>
+                <td>
+                    <a href="/servicios/{{$servicio->id}}/descargablebyServicio" class="btn btn-danger">Ver</a>
+                </td>
                 <td>
                     <a href="/servicios/{{$servicio->id}}/requisitobyServicio" class="btn btn-dark">Ver</a>
                 </td>

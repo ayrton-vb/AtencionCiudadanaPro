@@ -66,7 +66,7 @@ class TramiteController extends Controller
 
     public function servicioByServicio($id)
     {
-
+        $descargables = Descarga::where('id_tramite',$id)->get();
         $servicio = Servicio::find($id);
         $requisitos = Requisito::where('id_servicio',$id)->get();
         $tipoPersonas = TipoPersona::all();
@@ -89,7 +89,7 @@ class TramiteController extends Controller
         $var2 = count($var);
 
         return view('cliente.datos2')->with('servicio',$servicio)->with('requisitos',$requisitos)
-            ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3);
+            ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3)->with('descargables',$descargables);
 
     }
 

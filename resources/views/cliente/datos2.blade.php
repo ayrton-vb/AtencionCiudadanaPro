@@ -127,9 +127,29 @@
                     </div>
                 </div>
 
+
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-2 text-end">
-                        <img src="/imagenes/tramites/Recursos 8.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
+                        <img src="/imagenes/tramites/Recursos 8.png" class="card-img-top w-25 mx-auto pt-3 " alt="...">
+                    </div>
+
+                    <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
+                        <h3 class="fw-bold redText">Descargables</h3>
+
+                        @foreach($descargables as $descargable)
+                              
+                            <a href="/Archivos/{{$descargable->nombre}}" class="btn btn-danger mx-2 my-2 wrapper-a" target="blank_">{{$descargable->nombre}}</a>
+                        @endforeach
+
+
+                    </div>
+                </div>
+
+
+
+                <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
+                    <div class="col-2 text-end">
+                        <img src="/imagenes/tramites/Recursos 9.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
                     <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
@@ -140,7 +160,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-2 text-end">
-                        <img src="/imagenes/tramites/Recursos 9.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
+                        <img src="/imagenes/tramites/Recursos 10.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
                     <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
@@ -151,7 +171,7 @@
 
                 <div data-aos="flip-up" data-aos-delay="350" class="row pt-3 pb-3">
                     <div class="col-2 text-end">
-                        <img src="/imagenes/tramites/Recursos 10.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
+                        <img src="/imagenes/tramites/Recursos 11.png" class="card-img-top w-25 mx-auto pt-3" alt="...">
                     </div>
 
                     <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">

@@ -35,6 +35,11 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/servicios/{id}/descargablebyServicioCreate','App\Http\Controllers\DescargaController@descargablebyServicioCreate');
+
+Route::get('/servicios/{id}/descargablebyServicio','App\Http\Controllers\DescargaController@descargablebyServicio');
+
+
 Route::get('/tramites/{id}/descargablebyTramiteEdit','App\Http\Controllers\DescargaController@descargablebyTramiteEdit');
 
 Route::get('/tramites/{id}/descargablebyTramiteCreate','App\Http\Controllers\DescargaController@descargablebyTramiteCreate');
