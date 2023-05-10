@@ -32,14 +32,15 @@
                         <label for="exampleInputEmail1" class="form-label">¿Cuál es el área responsable?</label>
                         <input id="areaRes" name="areaRes" type="text" class="form-control" tabindex="1" value="{{$tramite->areaRes}}">
                     </div>
-
-                </div>
-                <div class="col-6">
-
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿Dónde debo iniciar el trámite?</label>
                         <input id="inicio" name="inicio" type="text" class="form-control" tabindex="1" value="{{$tramite->inicio}}">
                     </div>
+
+                </div>
+                <div class="col-6">
+
+
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">¿Cuáles son los días y horarios de atención?</label>
                         <input id="horario" name="horario" type="text" class="form-control" tabindex="1" value="{{$tramite->horario}}">
@@ -57,6 +58,25 @@
                         <input id="termino" name="termino" type="text" class="form-control" tabindex="1" value="{{$tramite->termino}}">
                     </div>
 
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"> Tramite Nuevo</label>
+                        
+                        <select  id="direccion" name="nuevo" class="form-select" aria-label="Default select example" tabindex="1">
+                        <option  value="{{$tramite->nuevo}}">
+                           @if($tramite->nuevo==0)
+                           No
+                           @endif
+                           @if($tramite->nuevo==1)
+                           Si
+                           @endif
+                            </option>
+                      
+                            <option  value="1">Si</option>
+                            <option  value="0">No</option>
+
+                        </select>
+    
+                    </div>
                 </div>
             </div>
         </div>

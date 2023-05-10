@@ -77,9 +77,11 @@ class ClienteController extends Controller
     {
         Cache::flush();
 
+        $direccionesCont = Direccion::count();
+
         $visitas = Visita::count();
 
-        return view('cliente.index')->with('visitas',$visitas);
+        return view('cliente.index')->with('visitas',$visitas)->with('direccionesCont',$direccionesCont);
     }
 
     /**

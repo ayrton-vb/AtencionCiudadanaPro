@@ -21,7 +21,6 @@
                                   <div class="card-body">
                                       <div class="images-wrapper">
                                           <img class="imgTamaño mb-0" src="/imagenes/recaudaciones/categoria/Recursos {{$va->categorias->id_area}}.png"  alt="...">
-
                                       </div>
                                       <h5 class="card-title mt-0">{{$va->nombre}}</h5>
                                       <p class="card-text">{{$va->sobre}}</p>

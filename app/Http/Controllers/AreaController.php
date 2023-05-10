@@ -15,6 +15,13 @@ class AreaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+     
+    public function areasByDireccion($id)
+    {
+        $areas = Area::where('id_direccion',$id)->get();
+        return $areas;
+    }
+
     public function todo()
     {
         $areas = Area::all();

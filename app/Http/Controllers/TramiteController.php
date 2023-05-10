@@ -21,6 +21,22 @@ class TramiteController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+
+     
+
+
+    public function tramitesNuevos()
+    {
+        $tramitesNuevos = Tramite::where('nuevo',true)->get();
+
+        return $tramitesNuevos;
+
+    }
+
+
+
+
+
     public function tramiteBytramite($id)
     {
 
@@ -198,6 +214,7 @@ class TramiteController extends Controller
         $tramite->pago = $request->get('pago');
         $tramite->duracion = $request->get('duracion');
         $tramite->termino = $request->get('termino');
+        $tramite->nuevo = $request->get('nuevo');
 
         $tramite->save();
         return redirect('/tramites');

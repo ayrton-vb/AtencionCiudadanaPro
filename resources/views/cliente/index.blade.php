@@ -37,6 +37,29 @@
 
 </br>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+    <section >
+        <div class="container">
+        <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Trámites Nuevos</span>  </h1>
+            <div id="contenidoTramitesNuevos" class="row">
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+</br>
+
+
+
 <!-- =============================================== -->
 <!-- SERVICIOS categorias-->
 <!-- =============================================== -->
@@ -50,8 +73,7 @@
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <script>
     window.onload = function() {
      
@@ -65,7 +87,7 @@
 
     $.get('/api/visitas/'+data.country+'/'+data.city+'/'+data.lat+'/'+data.lon+'/'+data.query+'/ip', function (data){
                 console.log(data)});
-});
+    });
 
             
                 // var html_select = '<option  value="">-Selecciona-</option>';
@@ -77,12 +99,62 @@
             /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';
                    $('#contenidoCategorias').html(html_label);*/
             var contenidoCategorias = document.getElementById('contenidoCategorias');
+            var contenidoTramitesNuevos = document.getElementById('contenidoTramitesNuevos');
 
             const fracment = document.createDocumentFragment();
+            const fracment2 = document.createDocumentFragment();
 
+
+            $.get('/api/cliente/tramitesNuevos', function (data2){
+                console.log(data2);
+                for (var i=0; i<data2.length; i++){
+
+                    const col2 = document.createElement("div");
+                    col2.classList.add("col-lg-2", "col-md-2", "col-sm-6");
+                    col2.setAttribute("data-aos","zoom-in-left");
+                    col2.setAttribute("data-aos-delay","200");
+                    const card2 = document.createElement("div");
+                    card2.classList.add("card");
+                    card2.setAttribute("id","dentro");
+                    const cardBody2 = document.createElement("div");
+                    cardBody2.classList.add("card-body");
+                    const imagWrapper2 = document.createElement("div");
+                    imagWrapper2.classList.add("images-wrapper");
+                    const img2 = document.createElement("img");
+                    img2.classList.add("imgTamaño", "mb-0");
+                    img2.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
+                    const titulo2 = document.createElement("h6");
+                    titulo2.classList.add("fw-bold");
+                    titulo2.classList.add("card-title", "mt-0");
+                    titulo2.innerText = data2[i].nombre;
+                    const parafo2 = document.createElement("h6");
+                    parafo2.innerText = data2[i].sobre;
+                    const enlace2 = document.createElement("a");
+                    enlace2.classList.add("fs-6", "fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                    enlace2.innerText = "Requisitos";
+                    enlace2.setAttribute("href","/clientes/"+data2[i].id+"/tramiteByTramite");
+
+                    col2.appendChild(card2);
+                    card2.appendChild(cardBody2);
+                    cardBody2.appendChild(imagWrapper2);
+                    imagWrapper2.appendChild(img2);
+                    cardBody2.appendChild(titulo2);
+                    cardBody2.appendChild(parafo2);
+                    cardBody2.appendChild(enlace2);
+
+
+                    fracment2.appendChild(col2);
+                    contenidoTramitesNuevos.appendChild(fracment2);
+
+                }
+            });
+
+
+ 
 
             $.get('/api/cliente/areas', function (data){
 
+                console.log(data);
                 for (var i=0; i<data.length; i++){
 
                     const col = document.createElement("div");
@@ -104,7 +176,6 @@
                     enlace.innerText = "Trámites";
                     enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
 
-
                     col.appendChild(img);
                     col.appendChild(div);
                     div.appendChild(div2);
@@ -115,6 +186,11 @@
                     contenidoCategorias.appendChild(fracment);
 
                 }});
+
+
+
+                
+           
 
 
 
@@ -203,7 +279,7 @@
 
                 const col = document.createElement("div");
                 col.setAttribute("id","");
-                col.classList.add("col-lg-4", "col-md-6", "col-sm-12", "mb-2", "cupcake");
+                col.classList.add("col-lg-3", "col-md-3", "col-sm-6", "mb-2", "cupcake");
 
                 const card = document.createElement("div");
                 card.setAttribute("id","dentro");
@@ -222,16 +298,17 @@
 
                 img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
                 
-                const h5 = document.createElement("h5");
+                const h5 = document.createElement("h6");
+                h5.classList.add("fw-bold");
                 h5.classList.add("card-title");
                 h5.innerText = data[i].nombre;
                 
-                const p = document.createElement("p");
+                const p = document.createElement("h6");
                 p.classList.add("card-text");
                 p.innerText = data[i].sobre;
 
                 const enlace = document.createElement("a");
-                enlace.classList.add("fs-4", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
+                enlace.classList.add("fs-6", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
                 enlace.innerText = "Requisitos";
                 enlace.setAttribute("href","/clientes/"+data[i].id+"/tramiteByTramite");
 
