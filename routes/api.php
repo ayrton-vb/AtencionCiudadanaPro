@@ -28,10 +28,17 @@ Route::get('/tramites/{id}/area','App\Http\Controllers\CategoriaController@byAre
 
 Route::get('/tramites/{id}/area2','App\Http\Controllers\TramiteController@byArea');
 
+
 Route::get('/cliente/areas','App\Http\Controllers\AreaController@todo');
+
+Route::get('/cliente/{id}/areasByDireccion','App\Http\Controllers\AreaController@todoByDireccion');
+
 
 
 Route::get('/cliente/tramitesNuevos','App\Http\Controllers\TramiteController@tramitesNuevos');
+
+Route::get('/cliente/{id}/tramitesNuevos2','App\Http\Controllers\TramiteController@tramitesNuevos2');
+
 
 
 Route::get('/cliente/{id}/areasByDireccion','App\Http\Controllers\AreaController@areasByDireccion');

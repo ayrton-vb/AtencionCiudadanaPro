@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 use App\Models\Area;
 use App\Models\Categoria;
+use App\Models\Direccion;
 use Illuminate\Http\Request;
 
 class AreaController extends Controller
@@ -27,6 +28,15 @@ class AreaController extends Controller
         $areas = Area::all();
         return $areas;
     }
+
+    public function todoByDireccion($id)
+    {
+        $direccion = Direccion::find($id);
+        $areas = Area::where('id_direccion',$id)->get();
+        return $areas;
+    }
+
+
 
     public function byDireccion($id){
 

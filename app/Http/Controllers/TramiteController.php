@@ -22,7 +22,13 @@ class TramiteController extends Controller
      */
 
 
-     
+     public function tramitesNuevos2($id)
+     {
+         $categoria = Categoria::find($id);
+    
+ 
+         return $categoria;
+     }
 
 
     public function tramitesNuevos()

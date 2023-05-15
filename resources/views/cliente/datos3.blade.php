@@ -40,6 +40,18 @@
                     <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">Nombre del servicio:</h3>
                         <p class="">FIDEICOMISO FOREPRO - GAMEA</p>
+                          <p class="">
+                             Interés y Plazo:                     
+                        </p>
+                        <p class="">
+                             8% ANUAL y a un plazo de 18 meses                            
+                        </p>
+                        <p class="">
+                        Monto del Préstamo:                        
+                        </p>
+                        <p class="">
+                        Mínimo: 10.000,00 (Diez Mil 00/100 Bolivianos); Máximo: 25.000,00 (Veinticinco Mil 00/100 Bolivianos)                          
+                        </p>
                     </div>
                 </div>
 
@@ -77,7 +89,7 @@
                         <h3 class="fw-bold text-danger">¿Dónde debo solicitar el servicio?</h3>
                         <p class="">Avenida Costanera, Nro.:5022 Urbanización Libertad, entre calle J.J. Torrez y calle Hernán Siles Zuaso Casa Municipal 
                             (Jach'a Uta), a media cuadra de la Estacion de Bomberos, El Alto,
-                            5to piso oficina Secretaria Municipal de Desarrollo Económico.
+                            planta baja oficinas de FOREPRO.
                         </p>
                     </div>
                 </div>
@@ -162,19 +174,7 @@
 
                     <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Qué debo recibir al término del servicio?</h3>
-                        <p class="">Prestamo FOREPRO </p>
-                        <p class="">
-                             Interés y Plazo:                     
-                        </p>
-                        <p class="">
-                             8% ANUAL y a un plazo de 18 meses                            
-                        </p>
-                        <p class="">
-                        Monto del Préstamo:                        
-                        </p>
-                        <p class="">
-                        Mínimo: 10.000,00 (Diez Mil 00/100 Bolivianos); Máximo: 25.000,00 (Veinticinco Mil 00/100 Bolivianos)                          
-                        </p>
+                        <p class="">Prestamo FOREPRO para Producción Local y las Actividades Productivas en el Municipio de El Alto.</p>
                     </div>
                 </div>
 

@@ -43,7 +43,56 @@
 
 
 
-    <section >
+
+</br>
+
+
+
+<!-- =============================================== -->
+<!-- SERVICIOS categorias-->
+<!-- =============================================== -->
+
+<section id="" class="container-fluid pt-3 pb-3">
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Categorías</span>  </h1>
+    <div data-aos="zoom-in-up" id="contenidoCategorias" class="row mx-auto servicio-fila border border-3 border-danger rounded-3">
+
+    <div id="contenidoTitulo" class="">
+    </div>
+
+    </div>
+
+
+    <div data-aos="zoom-in-up" id="contenidoCategorias2" class="row mx-auto servicio-fila border border-3 border-danger rounded-3 mt-2 ">
+
+    <div id="contenidoTitulo2" class="">
+    </div>
+
+    </div>
+
+
+    <div data-aos="zoom-in-up" id="contenidoCategorias3" class="row mx-auto servicio-fila border border-3 border-danger rounded-3 mt-2">
+
+    <div id="contenidoTitulo3" class="">
+    </div>
+
+    </div>
+
+
+    <div data-aos="zoom-in-up" id="contenidoCategorias4" class="row mx-auto servicio-fila border border-3 border-danger rounded-3 mt-2">
+
+    <div id="contenidoTitulo4" class="">
+    </div>
+    <div id="contenidoTitulo5" class="">
+    </div>
+
+    </div>
+
+
+</section>
+
+
+
+<section >
         <div class="container">
         <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Trámites Nuevos</span>  </h1>
             <div id="contenidoTramitesNuevos" class="row">
@@ -55,23 +104,6 @@
 
 
 
-
-</br>
-
-
-
-<!-- =============================================== -->
-<!-- SERVICIOS categorias-->
-<!-- =============================================== -->
-
-<section id="servicios" class="container-fluid pt-3 pb-3">
-    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Categorías</span>  </h1>
-    <div id="contenidoCategorias" class="row mx-auto servicio-fila ">
-
-
-
-    </div>
-</section>
 
 
 <script>
@@ -86,7 +118,7 @@
     ;
 
     $.get('/api/visitas/'+data.country+'/'+data.city+'/'+data.lat+'/'+data.lon+'/'+data.query+'/ip', function (data){
-                console.log(data)});
+                });
     });
 
             
@@ -96,18 +128,78 @@
                 // $('#area').html(html_select);                                  
 
             var direccion = 1;
+            var direccion2 = 2;
+            var direccion3 = 3;
+            var direccion4 = 4;
+            var direccion5 = 6;
+            
+        
+
             /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';
                    $('#contenidoCategorias').html(html_label);*/
             var contenidoCategorias = document.getElementById('contenidoCategorias');
             var contenidoTramitesNuevos = document.getElementById('contenidoTramitesNuevos');
+            var contenidoTitulo = document.getElementById('contenidoTitulo');
+
+            var contenidoCategorias2 = document.getElementById('contenidoCategorias2');
+            var contenidoTitulo2 = document.getElementById('contenidoTitulo2');
+
+            var contenidoCategorias3 = document.getElementById('contenidoCategorias3');
+            var contenidoTitulo3 = document.getElementById('contenidoTitulo3');
+
+            var contenidoCategorias4 = document.getElementById('contenidoCategorias4');
+            var contenidoTitulo4 = document.getElementById('contenidoTitulo4');
+
 
             const fracment = document.createDocumentFragment();
             const fracment2 = document.createDocumentFragment();
 
+            const fracment3 = document.createDocumentFragment();
+
+            const fracment4 = document.createDocumentFragment();
+            const fracment5 = document.createDocumentFragment();
+
+            const fracment6 = document.createDocumentFragment();
+            const fracment7 = document.createDocumentFragment();
+
+            const fracment8 = document.createDocumentFragment();
+            const fracment9 = document.createDocumentFragment();
+
+            const fracment10 = document.createDocumentFragment();
+
+
 
             $.get('/api/cliente/tramitesNuevos', function (data2){
-                console.log(data2);
                 for (var i=0; i<data2.length; i++){
+
+                    var icono;
+
+                    switch (data2.id_categoria) {
+                    case 1:
+                        icono=1;
+                    case 2:
+                        icono=1;
+                        case 2:
+                        icono=1;
+                        case 2:
+                        icono=1;
+                    default:
+                     
+                    }
+
+                 
+                    
+                    
+
+                    $.get("/api/cliente/"+data2[i].id_categoria+"/tramitesNuevos2", function (data3){
+                        console.log(data3);
+                        icono = data3.id_area;
+                        console.log(icono);
+                        console.log(i);
+                        return icono;
+                    });
+
+                    console.log(icono);
 
                     const col2 = document.createElement("div");
                     col2.classList.add("col-lg-2", "col-md-2", "col-sm-6");
@@ -127,8 +219,7 @@
                     titulo2.classList.add("fw-bold");
                     titulo2.classList.add("card-title", "mt-0");
                     titulo2.innerText = data2[i].nombre;
-                    const parafo2 = document.createElement("h6");
-                    parafo2.innerText = data2[i].sobre;
+
                     const enlace2 = document.createElement("a");
                     enlace2.classList.add("fs-6", "fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
                     enlace2.innerText = "Requisitos";
@@ -139,60 +230,231 @@
                     cardBody2.appendChild(imagWrapper2);
                     imagWrapper2.appendChild(img2);
                     cardBody2.appendChild(titulo2);
-                    cardBody2.appendChild(parafo2);
                     cardBody2.appendChild(enlace2);
 
 
                     fracment2.appendChild(col2);
                     contenidoTramitesNuevos.appendChild(fracment2);
+                    
 
                 }
+                
             });
 
 
  
 
-            $.get('/api/cliente/areas', function (data){
 
-                console.log(data);
-                for (var i=0; i<data.length; i++){
+                $.get("/api/cliente/"+direccion+"/areasByDireccion", function (data){
 
-                    const col = document.createElement("div");
-                    col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
-                    col.setAttribute("data-aos","zoom-in-left");
-                    col.setAttribute("data-aos-delay","200");
-                    const img = document.createElement("img");
-                    img.classList.add("imgTamaño");
-                    img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
-                    img.setAttribute("width","150");
-                    img.setAttribute("height","130");
-                    const div = document.createElement("div");
-                    const div2 = document.createElement("div");
-                    const titulo = document.createElement("h5");
-                    titulo.classList.add("fs-5","mt-4","px-4","pb-1","fw-bold");
-                    titulo.innerText = data[i].alias;
-                    const enlace = document.createElement("a");
-                    enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
-                    enlace.innerText = "Trámites";
-                    enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
+                    const tituloPrincipal = document.createElement("h1");
+                    tituloPrincipal.setAttribute("data-aos","zoom-in-up");
+                    tituloPrincipal.classList.add("fs-2","text-center","fw-bold","mt-2");
+                    const spam = document.createElement("span");
+                    spam.classList.add("redText");
+                    spam.innerText = "Recaudaciones";
 
-                    col.appendChild(img);
-                    col.appendChild(div);
-                    div.appendChild(div2);
-                    div2.appendChild(titulo);
-                    div2.appendChild(enlace);
+                    tituloPrincipal.appendChild(spam);
+                    fracment3.appendChild(tituloPrincipal);
+                    contenidoTitulo.appendChild(fracment3);
 
-                    fracment.appendChild(col);
-                    contenidoCategorias.appendChild(fracment);
+                    for (var i=0; i<data.length; i++){    
+                        const col = document.createElement("div");
+                        col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
+                        col.setAttribute("data-aos","zoom-in-left");
+                        col.setAttribute("data-aos-delay","200");
+                        const img = document.createElement("img");
+                        img.classList.add("imgTamaño");
+                        img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
+                        img.setAttribute("width","150");
+                        img.setAttribute("height","130");
+                        const div = document.createElement("div");
+                        const div2 = document.createElement("div");
+                        const titulo = document.createElement("h5");
+                        titulo.classList.add("fs-5","mt-4","px-4","pb-1","fw-bold");
+                        titulo.innerText = data[i].alias;
+                        const enlace = document.createElement("a");
+                        enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                        enlace.innerText = "Trámites";
+                        enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
+    
+                        col.appendChild(img);
+                        col.appendChild(div);
+                        div.appendChild(div2);
+                        div2.appendChild(titulo);
+                        div2.appendChild(enlace);
+    
+                        fracment.appendChild(col);
+                        contenidoCategorias.appendChild(fracment);
+    
+                    }});
 
-                }});
+                    $.get("/api/cliente/"+direccion2+"/areasByDireccion", function (data){
+
+                    const tituloPrincipal = document.createElement("h1");
+                    tituloPrincipal.setAttribute("data-aos","zoom-in-up");
+                    tituloPrincipal.classList.add("fs-2","text-center","fw-bold","mt-2");
+                    const spam = document.createElement("span");
+                    spam.classList.add("redText");
+                    spam.innerText = "Catastro";
+
+                    tituloPrincipal.appendChild(spam);
+                    fracment4.appendChild(tituloPrincipal);
+                    contenidoTitulo2.appendChild(fracment4);
+
+                    for (var i=0; i<data.length; i++){    
+                        const col = document.createElement("div");
+                        col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
+                        col.setAttribute("data-aos","zoom-in-left");
+                        col.setAttribute("data-aos-delay","200");
+                        const img = document.createElement("img");
+                        img.classList.add("imgTamaño");
+                        img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
+                        img.setAttribute("width","150");
+                        img.setAttribute("height","130");
+                        const div = document.createElement("div");
+                        const div2 = document.createElement("div");
+                        const titulo = document.createElement("h5");
+                        titulo.classList.add("fs-5","mt-4","px-4","pb-1","fw-bold");
+                        titulo.innerText = data[i].alias;
+                        const enlace = document.createElement("a");
+                        enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                        enlace.innerText = "Trámites";
+                        enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
+
+                        col.appendChild(img);
+                        col.appendChild(div);
+                        div.appendChild(div2);
+                        div2.appendChild(titulo);
+                        div2.appendChild(enlace);
+
+                        fracment5.appendChild(col);
+                        contenidoCategorias2.appendChild(fracment5);
+
+                    }});
 
 
+                    $.get("/api/cliente/"+direccion3+"/areasByDireccion", function (data){
 
-                
-           
+                    const tituloPrincipal = document.createElement("h1");
+                    tituloPrincipal.setAttribute("data-aos","zoom-in-up");
+                    tituloPrincipal.classList.add("fs-2","text-center","fw-bold","mt-2");
+                    const spam = document.createElement("span");
+                    spam.classList.add("redText");
+                    spam.innerText = "Desarrollo Integral";
+
+                    tituloPrincipal.appendChild(spam);
+                    fracment5.appendChild(tituloPrincipal);
+                    contenidoTitulo3.appendChild(fracment5);
+
+                    for (var i=0; i<data.length; i++){    
+                        const col = document.createElement("div");
+                        col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
+                        col.setAttribute("data-aos","zoom-in-left");
+                        col.setAttribute("data-aos-delay","200");
+                        const img = document.createElement("img");
+                        img.classList.add("imgTamaño");
+                        img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
+                        img.setAttribute("width","150");
+                        img.setAttribute("height","130");
+                        const div = document.createElement("div");
+                        const div2 = document.createElement("div");
+                        const titulo = document.createElement("h5");
+                        titulo.classList.add("fs-5","mt-4","px-4","pb-1","fw-bold");
+                        titulo.innerText = data[i].alias;
+                        const enlace = document.createElement("a");
+                        enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                        enlace.innerText = "Trámites";
+                        enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
+
+                        col.appendChild(img);
+                        col.appendChild(div);
+                        div.appendChild(div2);
+                        div2.appendChild(titulo);
+                        div2.appendChild(enlace);
+
+                        fracment6.appendChild(col);
+                        contenidoCategorias3.appendChild(fracment6);
+
+                    }});
 
 
+                    $.get("/api/cliente/"+direccion4+"/areasByDireccion", function (data){
+
+                    const tituloPrincipal = document.createElement("h1");
+                    tituloPrincipal.setAttribute("data-aos","zoom-in-up");
+                    tituloPrincipal.classList.add("fs-2","text-center","fw-bold","mt-2");
+                    const spam = document.createElement("span");
+                    spam.classList.add("redText");
+                    spam.innerText = "Otros";
+
+                    tituloPrincipal.appendChild(spam);
+                    fracment6.appendChild(tituloPrincipal);
+                    contenidoTitulo4.appendChild(fracment6);
+
+                    for (var i=0; i<data.length; i++){    
+                        const col = document.createElement("div");
+                        col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
+                        col.setAttribute("data-aos","zoom-in-left");
+                        col.setAttribute("data-aos-delay","200");
+                        const img = document.createElement("img");
+                        img.classList.add("imgTamaño");
+                        img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
+                        img.setAttribute("width","150");
+                        img.setAttribute("height","130");
+                        const div = document.createElement("div");
+                        const div2 = document.createElement("div");
+                        const titulo = document.createElement("h5");
+                        titulo.classList.add("fs-5","mt-4","px-4","pb-1","fw-bold");
+                        titulo.innerText = data[i].alias;
+                        const enlace = document.createElement("a");
+                        enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                        enlace.innerText = "Trámites";
+                        enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
+
+                        col.appendChild(img);
+                        col.appendChild(div);
+                        div.appendChild(div2);
+                        div2.appendChild(titulo);
+                        div2.appendChild(enlace);
+
+                        fracment7.appendChild(col);
+                        contenidoCategorias4.appendChild(fracment7);
+
+                    }});
+
+                    $.get("/api/cliente/"+direccion5+"/areasByDireccion", function (data){
+
+                    for (var i=0; i<data.length; i++){    
+                        const col = document.createElement("div");
+                        col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
+                        col.setAttribute("data-aos","zoom-in-left");
+                        col.setAttribute("data-aos-delay","200");
+                        const img = document.createElement("img");
+                        img.classList.add("imgTamaño");
+                        img.setAttribute("src", "/imagenes/recaudaciones/categoria/Recursos "+data[i].id+".png");
+                        img.setAttribute("width","150");
+                        img.setAttribute("height","130");
+                        const div = document.createElement("div");
+                        const div2 = document.createElement("div");
+                        const titulo = document.createElement("h5");
+                        titulo.classList.add("fs-5","mt-4","px-4","pb-1","fw-bold");
+                        titulo.innerText = data[i].alias;
+                        const enlace = document.createElement("a");
+                        enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
+                        enlace.innerText = "Trámites";
+                        enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
+
+                        col.appendChild(img);
+                        col.appendChild(div);
+                        div.appendChild(div2);
+                        div2.appendChild(titulo);
+                        div2.appendChild(enlace);
+
+                        fracment10.appendChild(col);
+                        contenidoCategorias4.appendChild(fracment10);
+
+                    }});
 
 
     };
@@ -279,7 +541,7 @@
 
                 const col = document.createElement("div");
                 col.setAttribute("id","");
-                col.classList.add("col-lg-3", "col-md-3", "col-sm-6", "mb-2", "cupcake");
+                col.classList.add("col-lg-3", "col-md-3", "col-sm-6","col-12", "mb-2", "cupcake");
 
                 const card = document.createElement("div");
                 card.setAttribute("id","dentro");

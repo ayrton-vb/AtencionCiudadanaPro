@@ -50,7 +50,7 @@
                         <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="#seccion-contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="https://www.elalto.gob.bo/">-> Gamea</a>
+                        <a class="nav-link active mx-4 fs-5 fw-bold redText lkm" href="https://www.elalto.gob.bo/">-> GAMEA</a>
                     </li>
                 </ul>
             </div>
