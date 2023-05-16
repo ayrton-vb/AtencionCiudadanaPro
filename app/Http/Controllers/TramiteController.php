@@ -174,6 +174,8 @@ class TramiteController extends Controller
         $tramite->pago = $request->get('pago');
         $tramite->duracion = $request->get('duracion');
         $tramite->termino = $request->get('termino');
+        $tramite->nuevo = true;
+        $tramite->demandado = false;
         $tramite->id_categoria = $request->get('id_categoria');
         $tramite->save();
         return redirect('/tramites');

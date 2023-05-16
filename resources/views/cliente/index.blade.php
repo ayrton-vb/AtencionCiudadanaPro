@@ -636,7 +636,7 @@
           <section class="d-flex justify-content-start" id="numeros-local">
               <div class="horarios">
                   <p class="text-danger fs-3 fw-bold">Horarios de Atención</p>
-                  <p class="fs-4">De 8:00 a.m. a 16:00 p.m.</p>
+                  <p class="fs-4">De 8:00 a.m. a 12:00 p.m. y 14:00 p.m. a 18:00 p.m.</p>
               </div>
               <div>
                   <!-- <p class="text-primary fs-5">Temperatura</p>
@@ -668,7 +668,7 @@
           <section class="d-flex justify-content-start" id="numeros-local">
               <div class="horarios">
                   <p class="text-danger fs-3 fw-bold">Horarios de Atención</p>
-                  <p class="fs-4">De 8:00 a.m. a 16:00 p.m.</p>
+                  <p class="fs-4">De 8:00 a.m. a 12:00 p.m. y 14:00 p.m. a 18:00 p.m.</p>
               </div>
               <div>
                   <!-- <p class="text-primary fs-5">Temperatura</p>

@@ -58,6 +58,8 @@ class ServicioController extends Controller
         $servicio->pago = $request->get('pago');
         $servicio->duracion = $request->get('duracion');
         $servicio->termino = $request->get('termino');
+        $servicio->nuevo = true;
+        $servicio->demandado = false;
         $servicio->id_categoria = $request->get('id_categoria');
         $servicio->save();
         return redirect('/servicios');
