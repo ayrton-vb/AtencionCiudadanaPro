@@ -34,10 +34,11 @@ class ClienteController extends Controller
     }
 
 
-    public function categoriasByArea($id)
+    public function categoriasByArea($id,Request $request)
     {
         $vistasAreas = new Visitasarea();
         $vistasAreas->id_area = $id;
+        $vistasAreas->ip = $request->ip();
         $vistasAreas->save();
         
         $Area = Area::find($id);

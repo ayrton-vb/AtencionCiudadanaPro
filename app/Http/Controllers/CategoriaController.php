@@ -16,9 +16,7 @@ class CategoriaController extends Controller
      *
      *   public function byDireccion($id){
 
-    $areas = Area::where('id_direccion',$id)->get();
-    return  $areas;
-    }
+   
      */
 
 
