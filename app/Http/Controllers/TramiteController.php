@@ -10,6 +10,8 @@ use App\Models\Requisito;
 use App\Models\Servicio;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
+use App\Models\Visitasservicios;
+use App\Models\Visitastramites;
 use Illuminate\Http\Request;
 use phpDocumentor\Reflection\PseudoTypes\TraitString;
 
@@ -45,6 +47,10 @@ class TramiteController extends Controller
 
     public function tramiteBytramite($id)
     {
+        $visitasTramites = new Visitastramites();
+        $visitasTramites->id_tramite = $id;
+        $visitasTramites->save();
+        
 
         $tramite = Tramite::find($id);
         $requisitos = Requisito::where('id_tramite',$id)->get();
@@ -88,6 +94,13 @@ class TramiteController extends Controller
 
     public function servicioByServicio($id)
     {
+
+        $visitasServicios = new Visitasservicios();
+        $visitasServicios->id_servicio = $id;
+        $visitasServicios->save();
+        
+
+
         $descargables = Descarga::where('id_tramite',$id)->get();
         $servicio = Servicio::find($id);
         $requisitos = Requisito::where('id_servicio',$id)->get();

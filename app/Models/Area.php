@@ -14,4 +14,9 @@ class Area extends Model
     public function categorias(){
         return $this->hasMany(Categoria::class,'id');
     }
+
+    public function visitasareas(){
+        return $this->hasMany(Visitasarea::class,'id');
+    }
+
 }

@@ -10,6 +10,7 @@ use App\Models\Servicio;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
 use App\Models\Visita;
+use App\Models\Visitasarea;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
@@ -35,6 +36,10 @@ class ClienteController extends Controller
 
     public function categoriasByArea($id)
     {
+        $vistasAreas = new Visitasarea();
+        $vistasAreas->id_area = $id;
+        $vistasAreas->save();
+        
         $Area = Area::find($id);
         $categorias = Categoria::where('id_area',$id)->get();
 

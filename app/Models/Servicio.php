@@ -21,5 +21,9 @@ class Servicio extends Model
         return $this->hasMany(Descarga::class,'id');
     }
 
+    public function visitasservicios(){
+        return $this->hasMany(Visitasservicios::class,'id');
+    }
+
 
 }

@@ -21,5 +21,9 @@ class Tramite extends Model
         return $this->hasMany(Descarga::class,'id');
     }
 
+    public function visitasareas(){
+        return $this->hasMany(Visitasarea::class,'id');
+    }
+
 
 }
