@@ -45,10 +45,11 @@ class TramiteController extends Controller
 
 
 
-    public function tramiteBytramite($id)
+    public function tramiteBytramite($id,Request $request)
     {
         $visitasTramites = new Visitastramites();
         $visitasTramites->id_tramite = $id;
+        $visitasTramites->ip = $request->ip();
         $visitasTramites->save();
         
 
@@ -92,11 +93,12 @@ class TramiteController extends Controller
 
     
 
-    public function servicioByServicio($id)
+    public function servicioByServicio($id,Request $request)
     {
 
         $visitasServicios = new Visitasservicios();
         $visitasServicios->id_servicio = $id;
+        $visitasServicios->ip = $request->ip();
         $visitasServicios->save();
         
 
