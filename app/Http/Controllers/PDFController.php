@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Area;
+use App\Models\Categoria;
+use App\Models\Direccion;
 use App\Models\Requisito;
 use App\Models\Servicio;
 use App\Models\TipoPersona;
@@ -11,6 +14,38 @@ use Illuminate\Http\Request;
 class PDFController extends Controller
 {
     //
+
+    public function pf2($id){
+
+        $direcciones = Direccion::find($id);
+
+        $areas = Area::where('id_direccion',$id)->get();
+
+        $categorias = Categoria::all();
+        $categorias2 =  array();
+
+        $tramites = Tramite::all();
+
+        $servicios = Servicio::all();
+
+        $requisitos = Requisito::all();
+
+        $tipoPersonas = TipoPersona::all();
+
+        $tramitesTipoPersona = array();
+
+        $var = array();
+        $var3 = 0;
+        $var2 = 0;
+
+
+        $pdf = \PDF::loadView('prueba3',compact('direcciones','areas','categorias','tramites',
+            'requisitos','tipoPersonas','servicios'));
+
+        return $pdf->stream('prueba.pdf');
+    }
+
+
 
     public function pfFore(){
 

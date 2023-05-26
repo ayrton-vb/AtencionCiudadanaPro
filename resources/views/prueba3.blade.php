@@ -38,118 +38,461 @@
 <!--========================================================== -->
 
 
+<div  class="text-center mb-4 mt-4" ><h3 class="fw-bolder" >{{$direcciones->nombre}}</h3></div>
 
-<table class="table w-100" style="margin-top: 50px;">
+
+
+@foreach($areas as $area)
+
+
+@switch($area->id)
+
+                @case(1)
+                    <table class="table w-100 " style="border: solid red 1px">
+                        <thead>
+                        <tr>
+                            <th scope="col" ></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="border-bottom border-danger m-0 p-0" >
+                                <th scope="row" class="text-center">
+                                    <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                    <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 1.png') }}">
+                                </th>
+
+                            </tr>
+
+                    
+                        </tbody>
+                    </table>
+                    @break
+
+
+
+                @case(2)
+
+                <table class="table w-100 " style="border: solid red 1px">
+                        <thead>
+                        <tr>
+                            <th scope="col" ></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="border-bottom border-danger m-0 p-0" >
+                                <th scope="row" class="text-center">
+                                    <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                    <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 2.png') }}">
+                                </th>
+
+                            </tr>
+
+                    
+                        </tbody>
+                    </table>
+
+                    @break
+
+                    @case(3)
+
+            <table class="table w-100 " style="border: solid red 1px">
+                    <thead>
+                    <tr>
+                        <th scope="col" ></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th scope="row" class="text-center">
+                                <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 3.png') }}">
+                            </th>
+
+                        </tr>
+
+                
+                    </tbody>
+                </table>
+
+                @break
+
+                @case(4)
+
+            <table class="table w-100 " style="border: solid red 1px">
+                    <thead>
+                    <tr>
+                        <th scope="col" ></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th scope="row" class="text-center">
+                                <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 4.png') }}">
+                            </th>
+
+                        </tr>
+
+                
+                    </tbody>
+                </table>
+
+                @break
+
+                @case(5)
+
+            <table class="table w-100 " style="border: solid red 1px">
+                    <thead>
+                    <tr>
+                        <th scope="col" ></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th scope="row" class="text-center">
+                                <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 5.png') }}">
+                            </th>
+
+                        </tr>
+
+                
+                    </tbody>
+                </table>
+
+                @break
+
+                @case(6)
+
+            <table class="table w-100 " style="border: solid red 1px">
+                    <thead>
+                    <tr>
+                        <th scope="col" ></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th scope="row" class="text-center">
+                                <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 6.png') }}">
+                            </th>
+
+                        </tr>
+
+                
+                    </tbody>
+                </table>
+
+                @break
+
+                @case(7)
+
+            <table class="table w-100 " style="border: solid red 1px">
+                    <thead>
+                    <tr>
+                        <th scope="col" ></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th scope="row" class="text-center">
+                                <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recurso 7.png') }}">
+                            </th>
+
+                        </tr>
+
+                
+                    </tbody>
+                </table>
+
+                @break
+                @case(8)
+
+            <table class="table w-100 " style="border: solid red 1px">
+                    <thead>
+                    <tr>
+                        <th scope="col" ></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th scope="row" class="text-center">
+                                <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 8.png') }}">
+                            </th>
+
+                        </tr>
+
+                
+                    </tbody>
+                </table>
+
+                @break
+                @case(9)
+
+            <table class="table w-100 " style="border: solid red 1px">
+                    <thead>
+                    <tr>
+                        <th scope="col" ></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th scope="row" class="text-center">
+                                <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                                <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 9.png') }}">
+                            </th>
+
+                        </tr>
+
+                
+                    </tbody>
+                </table>
+
+                @break
+
+                @case(10)
+
+<table class="table w-100 " style="border: solid red 1px">
+        <thead>
+        <tr>
+            <th scope="col" ></th>
+        </tr>
+        </thead>
+        <tbody>
+
+            <tr class="border-bottom border-danger m-0 p-0" >
+                <th scope="row" class="text-center">
+                    <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                    <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 10.png') }}">
+                </th>
+
+            </tr>
+
+    
+        </tbody>
+    </table>
+
+    @break
+
+    @case(11)
+
+<table class="table w-100 " style="border: solid red 1px">
+        <thead>
+        <tr>
+            <th scope="col" ></th>
+        </tr>
+        </thead>
+        <tbody>
+
+            <tr class="border-bottom border-danger m-0 p-0" >
+                <th scope="row" class="text-center">
+                    <h3 class="" style="font-size: 20px;">Categoria en el sistema: {{$area->alias}}</h3>
+                    <img style="width: 90px;" src="{{ asset('/imagenes/recaudaciones/categoria/Recursos 11.png') }}">
+                </th>
+
+            </tr>
+
+    
+        </tbody>
+    </table>
+
+    @break
+
+
+
+                @default
+
+    
+@endswitch
+
+
+@foreach($categorias as $categoria)
+@if($categoria->id_area == $area->id)
+
+<table class="table w-100 " style="border: solid red 1px;" >
     <thead>
     <tr>
-        <th scope="col"></th>
-        <th scope="col"></th>
-        <th scope="col"></th>
+        <th scope="col-2" style="width: 80px !important;"></th>
+        <th scope="col-5" class="w-25"></th>
+        <th scope="col-1" class="w-25" style="width:20px !important;"></th>
+        <th scope="col-4" ></th>
     </tr>
     </thead>
     <tbody>
-    <tr class="border-bottom border-danger m-0 p-0" >
-    {{ asset('imagenes/escudoElAlto.png') }}
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 2.png') }}" class="w-50 mr-3" alt="..."></th>
-        <td><h5 class="fs-6 fw-bold w-100">Nombre del servicio:</h5></td>
-        <td> <p class="fs-6 w-100"></p>FIDEICOMISO FOREPRO - GAMEA</td>
 
-    </tr>
-    <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 3.png') }}" class="w-50" alt="..."></th>
-        <td><h5 class="fs-6 fw-bold w-100">¿De qué se trata el servicio?</h5></td>
-        <td> <p class="fs-6 w-100">Otorgar créditos para la Reactivación Económica de la Producción Local y las Actividades Productivas en el Municipio de El Alto.</p></td>
+        <tr class="border-bottom border-danger m-0 p-0" >
+            <th  scope="row"><h2 class="fw-bolder" style="font-size: 15px;" >Area:  </h2></th>
+            <td class="d-flex fw-bolder" style=""><h3 class="" style="font-size: 15px;">{{$area->nombre}}</h3></td>
+            <td><h3 class="text-center fw-bolder" style="font-size: 15px;">Revizado</h3></td>
+            <td><h3 class="text-center fw-bolder" style="font-size: 15px; ">Observaciones</h3></td>
+        </tr>
 
-    </tr>
-    <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 4.png') }}" class="w-50" alt="..."></th>
-        <td><h5 class="fs-6 fw-bold w-100">¿Cuál es el área responsable?</h5></td>
-        <td> <p class="fs-6 w-100"></p>Secretaría Municipal de Desarrollo Económico -
-                            Dirección de Servicios Municipales e Iniciativas Económicas -
-                            Unidad de Iniciativas Económicas.</td>
-    </tr>
-    <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 5.png') }}" class="w-50" alt="..."></th>
-        <td><h5 class="fs-6 fw-bold w-100">¿Dónde debo solicitar el servicio?</h5></td>
-        <td> <p class="fs-6 w-100"></p>Avenida Costanera, Nro.:5022 Urbanización Libertad, entre calle J.J. Torrez y calle Hernán Siles Zuaso Casa Municipal 
-                            (Jach'a Uta), a media cuadra de la Estacion de Bomberos, El Alto,
-                            5to piso oficina Secretaria Municipal de Desarrollo Económico.</td>
-    </tr>
-    <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 6.png') }}" class="w-50" alt="..."></th>
-        <td><h5 class="fs-6 fw-bold w-100">¿Cuáles son los días y horarios de atención?</h5></td>
-        <td> <p class="fs-6 w-100">Horas 08:00 A 12:00 y 14:00 A 18:00 de lunes a viernes.</p>
-        <p class="fs-6 w-100">Número de Contacto: 64192381</p></td>
-   
-    </tr>
-    <tr class="m-0 p-0" style="margin-bottom: -10px;">
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 7.png') }}" class="w-50" alt="..."></th>
-        <td colspan="2"><h5 class="fs-6 fw-bold w-100">¿Cuáles son los requisitos?</h5></td>
-    </tr>
-    <tr class="m-0 p-0">
-        <th></th>
-        <td colspan="2">   <p id="" class="m-0 p-0 fs-4 fw-bold text-danger w-100">Persona Natural</p></td>
-        </td>
-    </tr>
-    <tr class="m-0 p-0">
-        <th></th>
-        <td colspan="2"><p class="fs-6 m-0 p-0 w-100">*Fotocopia de cedula de identidad vigente de los solicitantes y garante (cuando corresponda). </p></td>
-        </td>
-    </tr>
-    <tr class="m-0 p-0">
-        <th></th>
-        <td colspan="2"><p class="fs-6 m-0 p-0 w-100">*Declaración Patrimonial Jurada por los solicitantes y/o garantes del crédito. </p></td>
-        </td>
-    </tr>
-    <tr class="m-0 p-0">
-        <th></th>
-        <td colspan="2"><p class="fs-6 m-0 p-0 w-100">*Fotocopia de Factura de los servicios básicos de agua, luz o gas del domicilio. </p></td>
-        </td>
-    </tr>
-    <tr class="m-0 p-0">
-        <th></th>
-        <td colspan="2"><p class="fs-6 m-0 p-0 w-100">*Croquis de ubicación del domicilio y unidad productiva. </p></td>
-        </td>
-    </tr>
-    <tr class="m-0 p-0">
-        <th></th>
-        <td colspan="2"><p class="fs-6 m-0 p-0 w-100">*Formulario para el destino del Crédito. </p></td>
-        </td>
-    </tr>
-    <tr class="m-0 p-0">
-        <th></th>
-        <td colspan="2"><p class="fs-6 m-0 p-0 w-100">*En caso de tener pasivos deberá presentar el Plan de pagos, y las tres últimas bolitas de pago y/o el extracto de préstamo para créditos grupales o extracto. </p></td>
-        </td>
-    </tr>
+            <tr class="border-bottom border-danger m-0 p-0" >
+                <th scope="row"><h2 style="font-size: 15px; min-height: 40px;" class="fw-bolder" >Categoria:  </h2></th>
+                <td><h2 class="fw-bolder" style="font-size: 15px;">{{$categoria->nombre}}</h2></td>
+                <td style="border: solid 1px red;" class="text-center">
+                <div>
+                <input type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                </div>
+                </td>
+                <td style="height:80px !important;"></td>
+            </tr>
+                <!-- @foreach($tramites as $tramite)
+                    @if($tramite->id_categoria == $categoria->id)
+
+                    <tr class="border-bottom border-danger border-top border-danger m-0 p-0" style="" >
+                        <th scope="row"><h3 style="font-size: 15px; min-height: 40px;" class="" >Tramite:</h3></th>
+                        <td><h3 class="" style="font-size: 15px;">{{$tramite->nombre}}</h3></div> </td>
+                        <td style="border: solid 1px red;" class="text-center">
+                        <div>
+                        <input type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                        </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                 
+                    @endif
+                @endforeach -->
+
+                
+                @foreach($tramites as $tramite)
+                    @if($tramite->id_categoria == $categoria->id)
+                        <tr class="border-bottom border-danger m-0 p-0" >
+                            <th  scope="row"><h3 class="" style="font-size: 15px;" >tramite:  </h3></th>
+                            <td class="d-flex" style=""><h3 class="" style="font-size: 15px;">{{$tramite->nombre}}</h3></td>
+                            <td style="border: solid 1px red;" class="text-center">
+                            <div>
+                            <input type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                            </div>
+                            </td>
+                            <td style="height:80px !important;">
+                            </td>
+                        </tr>
+
+                        @endif
+                    @endforeach
+                    
+                    
 
 
+                @foreach($servicios as $servicio)
+                    @if($servicio->id_categoria == $categoria->id)
 
-    <tr class="border-bottom border-top border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 8.png') }}" class="w-50" alt="..."></th>
-        <td><h5 class="fs-6 fw-bold w-100">¿Debo realizar algún pago? ¿Cuánto?</h5></td>
-        <td> <p class="fs-6 w-100"></p>No tiene costo.</td>
-    </tr>
+                    <tr class="border-bottom border-danger border-top border-danger m-0 p-0" style="" >
+                        <th scope="row"><h3 style="font-size: 15px; min-height: 40px;" class="" >Servicio:</h3></th>
+                        <td><h3 class="" style="font-size: 15px;">{{$servicio->nombre}}</h3></div> </td>
+                        <td style="border: solid 1px red;" class="text-center">
+                        <div>
+                        <input type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                        </div>
+                        </td>
+                        <td></td>
+                    </tr>
 
-    <tr class="border-bottom border-danger m-0 p-0" >
-        <th scope="row"> <img src="{{ asset('imagenes/tramites/Recursos 10.png') }}" class="w-50" alt="..."></th>
-        <td><h5 class="fs-6 fw-bold w-100">¿Qué debo recibir al término del servicio?</h5></td>
-        <p class="fs-4">Prestamo FOREPRO </p>
-                        <p class="fs-4">
-                             Interés y Plazo:                     
-                        </p>
-                        <p class="fs-4">
-                             8% ANUAL y a un plazo de 18 meses                            
-                        </p>
-                        <p class="fs-4">
-                        Monto del Préstamo:                        
-                        </p>
-                        <p class="fs-4">
-                        Mínimo: 10.000,00 (Diez Mil 00/100 Bolivianos); Máximo: 25.000,00 (Veinticinco Mil 00/100 Bolivianos)                          
-                        </p>
-    </tr>
+                    <tr class="border-bottom border-danger m-0 p-0" >
+                        <th  scope="row"><h3 class="" style="font-size: 15px;" >tramite:  </h3></th>
+                        <td class="d-flex" style=""><h3 class="" style="font-size: 15px;">{{$tramite->nombre}}</h3></td>
+                        <td><h3 class="text-center" style="font-size: 15px;">Revizado</h3></td>
+                        <td><h3 class="text-center" style="font-size: 15px; ">Observaciones</h3></td>
+                        </tr>
+
+                    <tr class="border-bottom border-danger m-0 p-0" >
+                        <th scope="row"><h3 style="font-size: 15px; min-height: 40px;" class="" >Categoria:  </h3></th>
+                        <td><h3 class="" style="font-size: 15px;">{{$categoria->nombre}}</h3></td>
+                        <td style="border: solid 1px red;" class="text-center">
+                        <div>
+                        <input type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                        </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+
+                
+
+
+                 
+                    @endif
+                @endforeach
+
+
+
 
     </tbody>
 </table>
+
+@endif
+@endforeach
+
+<table class="table w-100 " style="border: solid red 1px;" >
+    <thead>
+    <tr>
+        <th scope="col-2" ></th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr class="m-0 p-0" >
+            <th  scope="row"><h3 class="text-center" style="font-size: 15px; height: 100px;" >Validacion de categoria  </h3></th>
+           
+
+        </tr>
+        <tr class="m-0 p-0" >
+         
+            <td class="d-flex" style=""><h3 class="text-center" style="font-size: 15px; ">Firma y sello encargado de la validacion</h3></td>
+
+        </tr>
+        <tr class="m-0 p-0" >
+         
+         <td class="d-flex" style=""><h3 class="text-start" style="font-size: 15px; ">Numero de contacto del encargado de la validacion:</h3></td>
+
+     </tr>
+    </tbody>
+</table>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+@endforeach
+
+
+<!-- @foreach($areas as $area)
+<div  class="primary" ><h4 class="fw-bolder" >Area : {{$area->nombre}}</h3></div> 
+    @foreach($categorias as $categoria)
+        @if($categoria->id_area == $area->id)
+        <div  class="secondary" ><h4 class="fw-bolder" >Categoria : {{$categoria->nombre}}</h3></div> 
+            @foreach($tramites as $tramite)
+                @if($tramite->id_categoria == $categoria->id)
+                 <div  class="Success" ><h6 class="fw-bolder" >Tramite: {{$tramite->nombre}}</h6></div>
+                    @foreach($requisitos as $requisito)
+                        @if($requisito->id_tramite == $tramite->id)
+                                <div  class="Danger" ><h6 class="fw-bolder">{{$requisito->dato}}</h6></div>
+                        @endif
+                    @endforeach
+                @endif
+            @endforeach
+        @endif
+    @endforeach
+@endforeach -->
+
 
 
 <!-- Optional JavaScript; choose one of the two! -->

@@ -43,6 +43,51 @@ class TramiteController extends Controller
 
 
 
+    public function tramiteByTramiteSucursal2($id,Request $request)
+    {
+        $visitasTramites = new Visitastramites();
+        $visitasTramites->id_tramite = $id;
+        $visitasTramites->ip = $request->ip();
+        $visitasTramites->save();
+        
+
+        $tramite = Tramite::find($id);
+        $requisitos = Requisito::where('id_tramite',$id)->get();
+        $descargables = Descarga::where('id_tramite',$id)->get();
+        $tipoPersonas = TipoPersona::all();
+
+        $var = array();
+
+        foreach ($tipoPersonas as $tipoPersona){
+            $var3 = 0;
+            foreach ($requisitos as $requisito){
+                if($requisito->id_tipoPersona == $tipoPersona->id
+                    and $requisito->id_tramite == $tramite->id)
+                {
+                    $var3 = $var3 + 1;
+                    if($var3 < 2){
+                        array_push($var,$tipoPersona);
+                    }
+                }
+            }
+        };
+        $var2 = count($var);
+
+        return view('cliente.datosSucursal')->with('tramite',$tramite)->with('requisitos',$requisitos)
+            ->with('tipoPersonas',$tipoPersonas)->with('var',$var)->with('var2',$var2)->with('var3',$var3)->with('descargables',$descargables);
+
+    }
+
+    public function tramiteByTramiteSucursal($id)
+    {
+        $categoria = Categoria::find($id);
+        $tramites = Tramite::where('id_categoria',$id)->get();
+        return view('cliente.categoriaSucursal')->with('tramites',$tramites)->with('categoria',$categoria);
+
+    }
+
+
+
 
 
     public function tramiteBytramite($id,Request $request)
@@ -100,8 +145,6 @@ class TramiteController extends Controller
         $visitasServicios->id_servicio = $id;
         $visitasServicios->ip = $request->ip();
         $visitasServicios->save();
-        
-
 
         $descargables = Descarga::where('id_tramite',$id)->get();
         $servicio = Servicio::find($id);

@@ -45,8 +45,13 @@ Route::get('/tramites/{id}/descargablebyTramiteCreate','App\Http\Controllers\Des
 
 Route::get('/tramites/{id}/descargablebyTramite','App\Http\Controllers\DescargaController@descargablebyTramite');
 
-
 Route::get('ervicioForepro','App\Http\Controllers\TramiteController@serviciosForepro');
+
+
+Route::get('/clientes/{id}/tramiteByTramiteSucursal','App\Http\Controllers\TramiteController@tramiteByTramiteSucursal');
+
+Route::get('/clientes/{id}/tramiteByTramiteSucursal2','App\Http\Controllers\TramiteController@tramiteByTramiteSucursal2');
+
 
 Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteController@serviciosByServicios');
 
@@ -92,9 +97,15 @@ Route::get('/pdf/{id}/pdfrequisitobyTramite','App\Http\Controllers\PDFController
 
 Route::get('/pdf/{id}/pdfrequisitobyServicio','App\Http\Controllers\PDFController@pf');
 
+Route::get('/pdf/{id}/pdfTramitesByDireccion','App\Http\Controllers\PDFController@pf2');
+
+
 Route::get('pdfForepro','App\Http\Controllers\PDFController@pfFore');
 
 Route::get('maill','App\Http\Controllers\ClienteController@index');
+
+
+
 
 
 

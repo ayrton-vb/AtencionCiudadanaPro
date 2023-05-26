@@ -42,40 +42,49 @@ class ClienteController extends Controller
         $vistasAreas->save();
         
         $Area = Area::find($id);
-        $categorias = Categoria::where('id_area',$id)->get();
 
-        $tramites = Tramite::all();
-        $servicios = Servicio::all();
+        if ( $Area->sucursal == 1) {
+            $categorias = Categoria::where('id_area',$Area->id)->get();
+            return view('cliente.Sucursal')->with('categorias',$categorias)->with('Area',$Area);
 
-        $var = array();
-        $tra = array(0);
+        }else {
+            $categorias = Categoria::where('id_area',$id)->get();
 
-
-        foreach ($categorias as $categoria){
-            foreach ($tramites as $tramite){
-                if($tramite->id_categoria == $categoria->id)
-                {
-                    array_push($var,$tramite);
-                    array_push($tra,1);
+            $tramites = Tramite::all();
+            $servicios = Servicio::all();
+    
+            $var = array();
+            $tra = array(0);
+    
+    
+            foreach ($categorias as $categoria){
+                foreach ($tramites as $tramite){
+                    if($tramite->id_categoria == $categoria->id)
+                    {
+                        array_push($var,$tramite);
+                        array_push($tra,1);
+                    }
+    
                 }
-
-            }
-        };
-
-        foreach ($categorias as $categoria){
-            foreach ($servicios as $servicio){
-                if($servicio->id_categoria == $categoria->id)
-                {
-                    array_push($var,$servicio);
-                    array_push($tra,2);
+            };
+    
+            foreach ($categorias as $categoria){
+                foreach ($servicios as $servicio){
+                    if($servicio->id_categoria == $categoria->id)
+                    {
+                        array_push($var,$servicio);
+                        array_push($tra,2);
+                    }
+    
                 }
+            };
+    
+    
+    
+            return view('cliente.categorias')->with('categorias',$categorias)->with('Area',$Area)->with('var',$var)->with('tra',$tra);
+        }
 
-            }
-        };
-
-
-
-        return view('cliente.categorias')->with('categorias',$categorias)->with('Area',$Area)->with('var',$var)->with('tra',$tra);
+      
     }
 
 
