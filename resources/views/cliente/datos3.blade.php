@@ -175,7 +175,7 @@
                     <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Qué debo recibir al término del servicio?</h3>
                         <p class="">
-                          Obtener el crédito a FOREPRO, para el capital de operación mediante la entidad financiera Banco Unión S.A. 
+                          Obtener el crédito solicitado a FOREPRO, para el capital de operación mediante la entidad financiera Banco Unión S.A. 
                           dirigido a artesanos micro y pequeños empresarios constituidos en el Municipio de El Alto.
                                                </p>
                     </div>
