@@ -1,6 +1,22 @@
 /* Globales */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+.images-wrapperDestacado{
+
+}
+
+.images-wrapperDestacado img{
+    width: 380px;
+}
+
+
+.cardDestacado{
+    width: ;
+}
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     /* overflow: hidden; */
@@ -389,6 +405,7 @@ footer p{
         height: 80px;
     }
 
+   
     #seccion-direccion{
 
         max-height:460px;
