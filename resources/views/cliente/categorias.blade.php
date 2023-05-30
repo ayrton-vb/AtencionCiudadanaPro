@@ -12,7 +12,7 @@
 
     </section>
 
-    <section class="d-flex flex-column justify-content-center align-items-center text-center w-50 m-auto" id="intro">
+    <!-- <section class="d-flex flex-column justify-content-center align-items-center text-center w-50 m-auto" id="intro">
         <p data-aos="fade-down" class="mt-4 fs-2">
             <span class="text-danger fw-bold">Destacados</span>
         </p>
@@ -38,7 +38,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="d-flex flex-column justify-content-center align-items-center text-center w-50 m-auto" id="intro">
         <p data-aos="fade-down" class="pt-3  fs-2">
