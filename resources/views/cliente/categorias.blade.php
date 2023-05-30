@@ -21,21 +21,16 @@
     <section>
     <div class="container">
             <div id="contenidoCategorias" class="row">
-      
                           <div  class="col-lg-4 col-md-6 col-sm-12 mb-2">
                               <div id="dentro" class="card" >
                                   <div class="cardDestacado card-body">
-                                        <h5 class="card-title mt-0">Cronograma Mantenimieto de Luminarias</h5>
+                                      <h5 class="card-title mt-0">Cronograma Mantenimieto de Luminarias</h5>
                                       <div class="images-wrapperDestacado">
                                       <a title="Los Tejos" href="/Archivos/CRONOGRAMA DE MANTENIMIENTO PRIMERA SEMANA MAYO (1).jpg" target="blank_"><img src="/Archivos/CRONOGRAMA DE MANTENIMIENTO PRIMERA SEMANA MAYO (1).jpg" alt="Cronograma" /></a>
-                                    
                                       </div>
-                                   
-               
                                   </div>
                               </div>
                           </div>
-
             </div>
         </div>
     </section> -->
