@@ -7,7 +7,7 @@
 
 
     <section class="mt-5 d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
-        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger fw-bold">LANZAMIENTO FIDEICOMISO FOREPRO - GAMEA</span></h1>
+        <h1 data-aos="fade-down" class="p-3 fs-2 fw-bold"><span class="text-danger fw-bold">FIDEICOMISO FOREPRO - GAMEA</span></h1>
 
         <div>
             <a data-aos="fade-up" href="clientes" type="button" class="btn btn-outline-danger  mx-2 fs-6 m-1  fw-bold">Volver</a>
@@ -121,7 +121,7 @@
                                     <p class="">-Fotocopia de Factura de los servicios básicos de agua, luz o gas del domicilio.</p>
                                     <p class="">-Croquis de ubicación del domicilio y unidad productiva.</p>
                                     <p class="">-Formulario para el destino del Crédito.</p>
-                                    <p class="">-En caso de tener pasivos deberá presentar el Plan de pagos, y las tres últimas bolitas de pago y/o el extracto de préstamo para créditos grupales o extracto.</p>
+                                    <p class="">-En caso de tener pasivos deberá presentar el Plan de pagos, y las tres últimas boletas de pago y/o el extracto de préstamo para créditos grupales.</p>
 
 
 
@@ -174,7 +174,10 @@
 
                     <div class="col-10 pt-4 border-start border-danger  border-5 wrapper-tramite">
                         <h3 class="fw-bold text-danger">¿Qué debo recibir al término del servicio?</h3>
-                        <p class="">Prestamo FOREPRO para Producción Local y las Actividades Productivas en el Municipio de El Alto.</p>
+                        <p class="">
+                          Obtener el crédito a FOREPRO, para el capital de operación mediante la entidad financiera Banco Unión S.A. 
+                          dirigido a artesanos micro y pequeños empresarios constituidos en el Municipio de El Alto.
+                                               </p>
                     </div>
                 </div>
 
