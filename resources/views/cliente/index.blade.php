@@ -767,7 +767,7 @@
                     <div class="text-center text-white">
                         <div><img src="./imagenes/buzon.png" alt="" class="w-25 pt-1"></div>
 
-                        <h3 class="fw-bold">Buzón de Sugerencias</h3>
+                        <h3 class="fw-bold">Buzón de Sugerencias y Reclamos</h3>
                         <p class="fs-4">Estamos en constante mejora para entregar un mejor servicio a la población déjanos
                             saber tus sugerencias de mejora
 
