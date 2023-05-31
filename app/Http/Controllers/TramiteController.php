@@ -10,6 +10,7 @@ use App\Models\Requisito;
 use App\Models\Servicio;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
+use App\Models\Visitaforepro;
 use App\Models\Visitasservicios;
 use App\Models\Visitastramites;
 use Illuminate\Http\Request;
@@ -131,6 +132,8 @@ class TramiteController extends Controller
     public function serviciosForepro()
     {
 
+        $visitaForepro =new Visitaforepro();
+        $visitaForepro->save();
         return view('cliente.datos3');
 
     }

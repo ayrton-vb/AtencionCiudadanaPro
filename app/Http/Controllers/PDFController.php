@@ -9,6 +9,7 @@ use App\Models\Requisito;
 use App\Models\Servicio;
 use App\Models\TipoPersona;
 use App\Models\Tramite;
+use App\Models\Visitadescarga;
 use Illuminate\Http\Request;
 
 class PDFController extends Controller
@@ -59,6 +60,10 @@ class PDFController extends Controller
     
     public function PDF($id){
 
+        $visitaDescar = new Visitadescarga();
+        $visitaDescar->id_tramite = $id;
+        $visitaDescar->save();
+
         $tramite = Tramite::find($id);
         $requisitos = Requisito::where('id_tramite',$id)->get();
         $tipoPersonas = TipoPersona::all();
@@ -88,6 +93,9 @@ class PDFController extends Controller
     }
 
     public function pf($id){
+        $visitaDescar = new Visitadescarga();
+        $visitaDescar->id_servicio = $id;
+        $visitaDescar->save();
 
         $servicio = Servicio::find($id);
         $requisitos = Requisito::where('id_servicio',$id)->get();
