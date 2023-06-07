@@ -138,6 +138,13 @@ class TramiteController extends Controller
 
     }
 
+    public function restriccion()
+    {
+        return view('cliente.datos4');
+
+    }
+
+
 
     
 

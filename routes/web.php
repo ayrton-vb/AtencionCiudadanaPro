@@ -47,6 +47,9 @@ Route::get('/tramites/{id}/descargablebyTramite','App\Http\Controllers\DescargaC
 
 Route::get('ervicioForepro','App\Http\Controllers\TramiteController@serviciosForepro');
 
+Route::get('restriccion','App\Http\Controllers\TramiteController@restriccion');
+
+
 
 Route::get('/clientes/{id}/tramiteByTramiteSucursal','App\Http\Controllers\TramiteController@tramiteByTramiteSucursal');
 
@@ -99,6 +102,8 @@ Route::get('/pdf/{id}/pdfrequisitobyServicio','App\Http\Controllers\PDFControlle
 
 Route::get('/pdf/{id}/pdfTramitesByDireccion','App\Http\Controllers\PDFController@pf2');
 
+
+Route::get('pdfrestriccion','App\Http\Controllers\PDFController@pfRes');
 
 Route::get('pdfForepro','App\Http\Controllers\PDFController@pfFore');
 

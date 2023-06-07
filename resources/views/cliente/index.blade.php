@@ -14,14 +14,16 @@
 </section>
 
 <section id="" class="container-fluid pt-3 pb-3">
-    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevo Trámite</span>  </h1>
-    <div data-aos="fade-down"  class="card mb-3 mx-auto " style="max-width: 540px;">
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
+   
         <div class="row g-0">
+        <div class="col-md-6">
+        <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%;">
              <div class="images-wrapper ">
              <img src="/imagenes/LOGOFOREPRO.png" class="img-fluid rounded-start pt-1" alt="...">
             </div>
           
-            <div class="col-md-12">
+        
             <div class="card-body">
                 <h5 class="card-title">FIDEICOMISO FOREPRO - GAMEA</h5>
                 <p class="card-text">Acceso a unidades económica productivas y artesanos a un crédito de Fomento</p>
@@ -32,7 +34,27 @@
             
             </div>
         </div>
+
+        <div class="col-md-6">
+        <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
+             <div class="images-wrapper ">
+             <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
+            </div>
+          
+        
+            <div class="card-body">
+                <h5 class="card-title">PERMISO EXCEPCIONAL PARA CIRCULAR EN EL AREA DE RESTRICCION</h5>
+                <p class="card-text">Acceso a permiso excepcional para circular en el area de restriccion vehicular</p>
+                
+                    <a href="restriccion" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            </div>
+            
+            </div>
+        </div>
+
     </div>
+
+   
 </section>
 
 </br>

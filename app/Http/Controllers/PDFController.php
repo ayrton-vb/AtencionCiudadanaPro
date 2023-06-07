@@ -52,10 +52,23 @@ class PDFController extends Controller
 
        
 
-        $pdf = \PDF::loadView('prueba3');
+        $pdf = \PDF::loadView('prueba4');
 
-        return $pdf->stream('prueba.pdfFore');
+        return $pdf->stream('prueba.pdf');
     }
+
+
+    
+
+    public function pfRes(){
+
+       
+
+        $pdf = \PDF::loadView('prueba5');
+
+        return $pdf->stream('prueba.pdf');
+    }
+
 
     
     public function PDF($id){
