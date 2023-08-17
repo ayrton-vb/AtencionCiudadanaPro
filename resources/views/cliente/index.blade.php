@@ -17,7 +17,7 @@
     <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
    
         <div class="row g-0">
-        <div class="col-md-6">
+        <div class="col-md-4">
         <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%;">
              <div class="images-wrapper ">
              <img src="/imagenes/LOGOFOREPRO.png" class="img-fluid rounded-start pt-1" alt="...">
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
         <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
              <div class="images-wrapper ">
              <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
@@ -51,6 +51,26 @@
             
             </div>
         </div>
+
+
+        <div class="col-md-4">
+        <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
+             <div class="images-wrapper ">
+             <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
+            </div>
+          
+        
+            <div class="card-body">
+                <h5 class="card-title">PERMISO EXCEPCIONAL PARA CIRCULAR EN EL AREA DE RESTRICCION</h5>
+                <p class="card-text">Acceso a permiso excepcional para circular en el area de restriccion vehicular</p>
+                
+                    <a href="restriccion" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            </div>
+            
+            </div>
+        </div>
+
+
 
     </div>
 
@@ -122,14 +142,33 @@
 
             </div>
         </div>
-    </section>
+</section>
 
-
-
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+    
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="/imagenes/denuncia.jpeg" class="w-100" alt="...">
+      </div>
+     
+    </div>
+  </div>
+</div>
 
 
 <script>
     window.onload = function() {
+
+
+        $(document).ready(function() {
+            $('#myModal').modal('show');
+        });
+
+
      
         $.getJSON("http://ip-api.com/json/?callback=?", function (data) {
     console.log(data.country)
@@ -554,10 +593,6 @@
             $.get('/api/tramites/'+palabra+'/palabra', function (data){
                 console.log(data);
 
-
-           
-    
-
             for (var i=0; i<data.length; i++){
                 var html_select = '<h3  value="">Tramites:</h3></br>';
 
@@ -578,7 +613,6 @@
                 const img = document.createElement("img");
                 const idCategoria = data[i].id_categoria;
                 const area = 0;
-
 
                 img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
                 
@@ -616,8 +650,6 @@
             $('#area').html(html_select);
 
                 console.log(html_select);
-
-
        
             }});
 
