@@ -94,7 +94,7 @@
 <!-- SERVICIOS categorias-->
 <!-- =============================================== -->
 
-<section id="" class="container-fluid pt-3 pb-3">
+<section id="categorias" class="container-fluid pt-3 pb-3">
     <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Categorías</span>  </h1>
     <div data-aos="zoom-in-up" id="contenidoCategorias" class="row mx-auto servicio-fila border border-3 border-danger rounded-3">
 
