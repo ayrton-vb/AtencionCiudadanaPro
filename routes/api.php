@@ -47,5 +47,7 @@ Route::get('/cliente/{id}/areasByDireccion','App\Http\Controllers\AreaController
 Route::get('/tramites/{id}/palabra','App\Http\Controllers\TramiteController@byPalabra');
 
 
-
 Route::get('/visitas/{id}/{id2}/{id3}/{id4}/{id5}/ip','App\Http\Controllers\VisitaController@byip');
+
+
+Route::get('/recorrido/{id}/palabra','App\Http\Controllers\RecorridoController@byPalabra');

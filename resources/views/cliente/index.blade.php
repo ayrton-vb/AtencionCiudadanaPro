@@ -13,6 +13,158 @@
             </h1>
 </section>
 
+<section  id="rutasVehiculos" class="container-fluid pt-3 pb-3" >
+    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Recorridos Lineas de Minibus</span>
+    </h1>
+
+    <div class="input-group mb-3">
+
+    <input onkeyup ="onBusqueda3(busqueda2.value);" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+    
+    </div>
+
+
+    <div id="area2">
+    
+    </div>
+
+
+    <div id="">
+        <div class="container">
+            <div id="contenidoBusqueda2" class="row">
+
+                
+            </div>
+        </div>        
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+
+        function onBusqueda4($value){
+
+            let cupcakes = Array.prototype.slice.call(document.getElementsByClassName("cupcake"), 0);
+  
+            for(element of cupcakes){
+                console.log(element);
+                element.remove();
+            }  
+            var html_select = '';
+            $('#area2').html(html_select);
+
+        }
+
+
+        function onBusqueda3($value){
+
+            var palabra = $value;
+
+            var contenidoCategorias = document.getElementById('contenidoBusqueda2');
+            const fracment = document.createDocumentFragment();
+
+      
+
+            console.log(palabra);
+ 
+            $.get('/api/recorrido/'+palabra+'/palabra', function (data){
+                console.log(data);
+
+            for (var i=0; i<data.length; i++){
+
+                var html_select = '<h3  value="">Líneas:</h3></br>';
+
+                const col = document.createElement("div");
+                col.setAttribute("id","");
+                col.classList.add("col-lg-3", "col-md-3", "col-sm-6","col-12", "mb-2", "cupcake");
+
+                const card = document.createElement("div");
+                card.setAttribute("id","dentro");
+                card.classList.add("card");
+                
+                const cardBody = document.createElement("div");
+                cardBody.classList.add("card-body");
+                
+                const imagesWra = document.createElement("div");
+                imagesWra.classList.add("images-wrapper");
+                
+                const img = document.createElement("img");
+                const idCategoria = data[i].id_categoria;
+                const area = 0;
+
+                img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
+                
+                const h5 = document.createElement("h5");
+                h5.classList.add("fw-bold");
+                h5.classList.add("card-title");
+                h5.innerText = "Línea: "+data[i].línea+"";
+                
+          
+                const titulo = document.createElement("h6");
+                titulo.classList.add("fw-bold");
+                titulo.innerText = "Sindicato :";
+
+                const p = document.createElement("h6");
+                p.classList.add("card-text");
+                p.innerText = data[i].sindicato;
+
+                const titulo2 = document.createElement("h6");
+                titulo2.classList.add("fw-bold");
+                titulo2.innerText = "Parada Inicial :";
+
+                const p2 = document.createElement("h6");
+                p2.classList.add("card-text");
+                p2.innerText = data[i].paradaInicial;
+
+                const titulo3 = document.createElement("h6");
+                titulo3.classList.add("fw-bold");
+                titulo3.innerText = "Parada Final :";
+
+                const p3 = document.createElement("h6");
+                p3.classList.add("card-text");
+                p3.innerText = data[i].paradaFinal;
+
+                const enlace = document.createElement("a");
+                enlace.classList.add("fs-6", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
+                enlace.innerText = "Ver Ruta";
+                enlace.setAttribute("href","/clientes/"+data[i].id+"/tramiteByTramite");
+
+                col.appendChild(card);
+                card.appendChild(cardBody);
+                cardBody.appendChild(imagesWra);
+                imagesWra.appendChild(img);
+
+                cardBody.appendChild(h5);
+                cardBody.appendChild(titulo);
+                cardBody.appendChild(p);
+                cardBody.appendChild(titulo2);
+                cardBody.appendChild(p2);
+                cardBody.appendChild(titulo3);
+                cardBody.appendChild(p3);
+                cardBody.appendChild(enlace);
+
+                
+                fracment.appendChild(col);
+            
+                contenidoCategorias.appendChild(fracment);
+            
+            
+                    
+            $('#area2').html(html_select);
+
+                console.log(html_select);
+       
+            }});
+
+
+        }
+
+    </script>
+
+
 <section id="" class="container-fluid pt-3 pb-3">
     <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
    
@@ -532,32 +684,27 @@
     <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Busqueda</span>
     </h1>
 
+    <div class="input-group mb-3">
+
+    <input onkeyup ="onBusqueda(busqueda.value);" onkeydown ="onBusqueda2(busqueda.value);" id="busqueda" type="text" class="form-control" placeholder="Palabra Clave" aria-label="Recipient's username" aria-describedby="button-addon2" >
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+    
+    </div>
 
 
+    <div id="area">
+    
+    </div>
 
 
-<div class="input-group mb-3">
+    <div id="">
+        <div class="container">
+            <div id="contenidoBusqueda" class="row">
 
-  <input onkeyup ="onBusqueda(busqueda.value);" onkeydown ="onBusqueda2(busqueda.value);" id="busqueda" type="text" class="form-control" placeholder="Palabra Clave" aria-label="Recipient's username" aria-describedby="button-addon2" >
-  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
-  
-  
-</div>
-
-<section>
-<div id="area">
-   
-</div>
-
-
-<div id="">
-    <div class="container">
-        <div id="contenidoBusqueda" class="row">
-
-            
-        </div>
-    </div>        
-</div>
+                
+            </div>
+        </div>        
+    </div>
 </section>
 
     
