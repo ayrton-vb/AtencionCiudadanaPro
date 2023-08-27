@@ -2,7 +2,7 @@
 
 @section('contenido')
 
-            
+
 <!-- =============================================== -->
 <!-- INTRO-->
 <!-- =============================================== -->
@@ -21,12 +21,11 @@
 
     <input onkeyup ="onBusqueda3(busqueda2.value);" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
-    
+
     </div>
 
 
     <div id="area2">
-    
     </div>
 
 
@@ -34,156 +33,201 @@
         <div class="container">
             <div id="contenidoBusqueda2" class="row">
 
-                
+
             </div>
-        </div>        
+        </div>
+    </div>
+    <div class="modal fade" id="modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title fw-bold">INFORMACIÓN DE RUTA</h6>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-5 col-12">
+                            <h6 class="fw-bold" id="sindicatoInfo"></h6>
+                            <fieldset class="border rounded p-2 mb-2">
+                                <legend>Parada Inicial:</legend>
+                                <p id="paradaInicialInfo"></p>
+                                <legend>Recorrido Ida:</legend>
+                                <p class="mb-0" id="recorridoIdaInfo"></p>
+                            </fieldset>
+                            <fieldset class="border rounded p-2 mb-2">
+                                <legend>Parada Final:</legend>
+                                <p id="paradaFinalInfo"></p>
+                                <legend>Parada Final:</legend>
+                                <p class="mb-0" id="recorridoVueltaInfo"></p>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-7 col-12">
+                            <div class="image-container">
+                                <img id="mapaInfo" class="img-fluid img-thumbnail zoom"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
-
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
 
-    <script>
+    function onBusqueda4($value){
 
-        function onBusqueda4($value){
+        let cupcakes = Array.prototype.slice.call(document.getElementsByClassName("cupcake"), 0);
 
-            let cupcakes = Array.prototype.slice.call(document.getElementsByClassName("cupcake"), 0);
-  
-            for(element of cupcakes){
-                console.log(element);
-                element.remove();
-            }  
-            var html_select = '';
-            $('#area2').html(html_select);
-
+        for(element of cupcakes){
+            element.remove();
         }
+        var html_select = '';
+        $('#area2').html(html_select);
+
+    }
 
 
-        function onBusqueda3($value){
+    function onBusqueda3($value){
 
-            var palabra = $value;
+        var palabra = $value;
 
-            var contenidoCategorias = document.getElementById('contenidoBusqueda2');
-            const fracment = document.createDocumentFragment();
+        var contenidoCategorias = document.getElementById('contenidoBusqueda2');
+        const fracment = document.createDocumentFragment();
 
-      
+        $.get('/api/recorrido/'+palabra+'/palabra', function (data){
 
-            console.log(palabra);
- 
-            $.get('/api/recorrido/'+palabra+'/palabra', function (data){
-                console.log(data);
+        for (var i=0; i<data.length; i++){
 
-            for (var i=0; i<data.length; i++){
+            var html_select = '<h3  value="">Líneas:</h3></br>';
 
-                var html_select = '<h3  value="">Líneas:</h3></br>';
+            const col = document.createElement("div");
+            col.setAttribute("id","");
+            col.classList.add("col-lg-3", "col-md-3", "col-sm-6","col-12", "mb-2", "cupcake");
 
-                const col = document.createElement("div");
-                col.setAttribute("id","");
-                col.classList.add("col-lg-3", "col-md-3", "col-sm-6","col-12", "mb-2", "cupcake");
+            const card = document.createElement("div");
+            card.setAttribute("id","dentro");
+            card.classList.add("card");
 
-                const card = document.createElement("div");
-                card.setAttribute("id","dentro");
-                card.classList.add("card");
-                
-                const cardBody = document.createElement("div");
-                cardBody.classList.add("card-body");
-                
-                const imagesWra = document.createElement("div");
-                imagesWra.classList.add("images-wrapper");
-                
-                const img = document.createElement("img");
-                const idCategoria = data[i].id_categoria;
-                const area = 0;
+            const cardBody = document.createElement("div");
+            cardBody.classList.add("card-body");
 
-                img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
-                
-                const h5 = document.createElement("h5");
-                h5.classList.add("fw-bold");
-                h5.classList.add("card-title");
-                h5.innerText = "Línea: "+data[i].línea+"";
-                
-          
-                const titulo = document.createElement("h6");
-                titulo.classList.add("fw-bold");
-                titulo.innerText = "Sindicato :";
+            const imagesWra = document.createElement("div");
+            imagesWra.classList.add("images-wrapper");
 
-                const p = document.createElement("h6");
-                p.classList.add("card-text");
-                p.innerText = data[i].sindicato;
+            const img = document.createElement("img");
+            const idCategoria = data[i].id_categoria;
+            const area = 0;
 
-                const titulo2 = document.createElement("h6");
-                titulo2.classList.add("fw-bold");
-                titulo2.innerText = "Parada Inicial :";
+            img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
 
-                const p2 = document.createElement("h6");
-                p2.classList.add("card-text");
-                p2.innerText = data[i].paradaInicial;
-
-                const titulo3 = document.createElement("h6");
-                titulo3.classList.add("fw-bold");
-                titulo3.innerText = "Parada Final :";
-
-                const p3 = document.createElement("h6");
-                p3.classList.add("card-text");
-                p3.innerText = data[i].paradaFinal;
-
-                const enlace = document.createElement("a");
-                enlace.classList.add("fs-6", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
-                enlace.innerText = "Ver Ruta";
-                enlace.setAttribute("href","/clientes/"+data[i].id+"/tramiteByTramite");
-
-                col.appendChild(card);
-                card.appendChild(cardBody);
-                cardBody.appendChild(imagesWra);
-                imagesWra.appendChild(img);
-
-                cardBody.appendChild(h5);
-                cardBody.appendChild(titulo);
-                cardBody.appendChild(p);
-                cardBody.appendChild(titulo2);
-                cardBody.appendChild(p2);
-                cardBody.appendChild(titulo3);
-                cardBody.appendChild(p3);
-                cardBody.appendChild(enlace);
-
-                
-                fracment.appendChild(col);
-            
-                contenidoCategorias.appendChild(fracment);
-            
-            
-                    
-            $('#area2').html(html_select);
-
-                console.log(html_select);
-       
-            }});
+            const h5 = document.createElement("h5");
+            h5.classList.add("fw-bold");
+            h5.classList.add("card-title");
+            h5.innerText = "Línea: "+data[i].línea+"";
 
 
-        }
+            const titulo = document.createElement("h6");
+            titulo.classList.add("fw-bold");
+            titulo.innerText = "Sindicato :";
 
-    </script>
+            const p = document.createElement("h6");
+            p.classList.add("card-text");
+            p.innerText = data[i].sindicato;
 
+            const titulo2 = document.createElement("h6");
+            titulo2.classList.add("fw-bold");
+            titulo2.innerText = "Parada Inicial :";
+
+            const p2 = document.createElement("h6");
+            p2.classList.add("card-text");
+            p2.innerText = data[i].paradaInicial;
+
+            const titulo3 = document.createElement("h6");
+            titulo3.classList.add("fw-bold");
+            titulo3.innerText = "Parada Final :";
+
+            const p3 = document.createElement("h6");
+            p3.classList.add("card-text");
+            p3.innerText = data[i].paradaFinal;
+
+            const enlace = document.createElement("button");
+            enlace.classList.add("fs-6", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
+            enlace.innerText = "Ver Ruta";
+            enlace.setAttribute("data-bs-toggle", "modal");
+            enlace.setAttribute("data-bs-target", "#modalId");
+            enlace.setAttribute("data-index", i)
+
+            enlace.addEventListener("click", function() {
+                var index = this.getAttribute("data-index");
+                var linea = data[index].línea;
+                var sindicato = data[index].sindicato;
+                var paradaInicial = data[index].paradaInicial;
+                var recorridoIda = data[index].recorridoIda;
+                var paradaFinal = data[index].paradaFinal;
+                var recorridoVuelta = data[index].recorridoVuelta;
+                var mapa = data[index].mapa;
+
+                document.getElementById("sindicatoInfo").innerText = sindicato + ' ' + '('+ linea + ')';
+                document.getElementById("paradaInicialInfo").innerText = paradaInicial;
+                document.getElementById("recorridoIdaInfo").innerText = recorridoIda;
+                document.getElementById("paradaFinalInfo").innerText = paradaFinal;
+                document.getElementById("recorridoVueltaInfo").innerText = recorridoVuelta;
+                document.getElementById("mapaInfo").setAttribute("src", "/storage/mapas/" + mapa);
+            });
+
+            col.appendChild(card);
+            card.appendChild(cardBody);
+            cardBody.appendChild(imagesWra);
+            imagesWra.appendChild(img);
+
+            cardBody.appendChild(h5);
+            cardBody.appendChild(titulo);
+            cardBody.appendChild(p);
+            cardBody.appendChild(titulo2);
+            cardBody.appendChild(p2);
+            cardBody.appendChild(titulo3);
+            cardBody.appendChild(p3);
+            cardBody.appendChild(enlace);
+
+
+            fracment.appendChild(col);
+
+            contenidoCategorias.appendChild(fracment);
+
+
+
+        $('#area2').html(html_select);
+
+
+        }});
+
+
+    }
+
+
+
+</script>
 
 <section id="" class="container-fluid pt-3 pb-3">
     <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
-   
+
         <div class="row g-0">
         <div class="col-md-4">
         <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%;">
              <div class="images-wrapper ">
              <img src="/imagenes/LOGOFOREPRO.png" class="img-fluid rounded-start pt-1" alt="...">
             </div>
-          
-        
+
+
             <div class="card-body">
                 <h5 class="card-title">FIDEICOMISO FOREPRO - GAMEA</h5>
                 <p class="card-text">Acceso a unidades económica productivas y artesanos a un crédito de Fomento</p>
-                <p class="card-text"><small class="text-muted">Objetivo: Otorgar créditos para la Reactivación Económica de la Producción Local 
+                <p class="card-text"><small class="text-muted">Objetivo: Otorgar créditos para la Reactivación Económica de la Producción Local
                     y las Actividades Productivas en el Municipio de El Alto.</small></p>
                     <a href="ervicioForepro" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
             </div>
-            
+
             </div>
         </div>
 
@@ -192,15 +236,15 @@
              <div class="images-wrapper ">
              <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
             </div>
-          
-        
+
+
             <div class="card-body">
                 <h5 class="card-title">PERMISO EXCEPCIONAL PARA CIRCULAR EN EL AREA DE RESTRICCION</h5>
                 <p class="card-text">Acceso a permiso excepcional para circular en el area de restriccion vehicular</p>
-                
+
                     <a href="restriccion" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
             </div>
-            
+
             </div>
         </div>
 
@@ -210,15 +254,15 @@
              <div class="images-wrapper ">
              <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
             </div>
-          
-        
+
+
             <div class="card-body">
                 <h5 class="card-title">PERMISO EXCEPCIONAL PARA CIRCULAR EN EL AREA DE RESTRICCION</h5>
                 <p class="card-text">Acceso a permiso excepcional para circular en el area de restriccion vehicular</p>
-                
+
                     <a href="restriccion" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
             </div>
-            
+
             </div>
         </div>
 
@@ -226,7 +270,7 @@
 
     </div>
 
-   
+
 </section>
 
 </br>
@@ -300,13 +344,13 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-    
+
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <img src="/imagenes/denuncia.jpeg" class="w-100" alt="...">
       </div>
-     
+
     </div>
   </div>
 </div>
@@ -321,7 +365,7 @@
         });
 
 
-     
+
         $.getJSON("http://ip-api.com/json/?callback=?", function (data) {
     console.log(data.country)
     console.log(data.city)
@@ -334,11 +378,11 @@
                 });
     });
 
-            
+
                 // var html_select = '<option  value="">-Selecciona-</option>';
                 // for (var i=0; i<data.length; i++)
                 //     html_select += '<option  value="'+data[i].id+'">'+data[i].alias+'</option>';
-                // $('#area').html(html_select);                                  
+                // $('#area').html(html_select);
 
             var direccion = 1;
             var direccion2 = 2;
@@ -346,7 +390,7 @@
             var direccion4 = 4;
             var direccion5 = 5;
 
-        
+
 
             /*       var html_label = '<label> tramites categoria: '+categoria+'</label>';
                    $('#contenidoCategorias').html(html_label);*/
@@ -397,22 +441,17 @@
                         case 2:
                         icono=1;
                     default:
-                     
+
                     }
 
-                 
-                    
-                    
+
+
+
 
                     $.get("/api/cliente/"+data2[i].id_categoria+"/tramitesNuevos2", function (data3){
-                        console.log(data3);
                         icono = data3.id_area;
-                        console.log(icono);
-                        console.log(i);
                         return icono;
                     });
-
-                    console.log(icono);
 
                     const col2 = document.createElement("div");
                     col2.classList.add("col-lg-2", "col-md-2", "col-sm-6");
@@ -448,14 +487,14 @@
 
                     fracment2.appendChild(col2);
                     contenidoTramitesNuevos.appendChild(fracment2);
-                    
+
 
                 }
-                
+
             });
 
 
- 
+
 
 
                 $.get("/api/cliente/"+direccion+"/areasByDireccion", function (data){
@@ -471,7 +510,7 @@
                     fracment3.appendChild(tituloPrincipal);
                     contenidoTitulo.appendChild(fracment3);
 
-                    for (var i=0; i<data.length; i++){    
+                    for (var i=0; i<data.length; i++){
                         const col = document.createElement("div");
                         col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
                         col.setAttribute("data-aos","zoom-in-left");
@@ -490,16 +529,16 @@
                         enlace.classList.add("fs-4","fw-bold", "btn", "btn-outline-secondary", "mx-4", "mt-2");
                         enlace.innerText = "Trámites";
                         enlace.setAttribute("href","/clientes/"+data[i].id+"/categoriasByArea");
-    
+
                         col.appendChild(img);
                         col.appendChild(div);
                         div.appendChild(div2);
                         div2.appendChild(titulo);
                         div2.appendChild(enlace);
-    
+
                         fracment.appendChild(col);
                         contenidoCategorias.appendChild(fracment);
-    
+
                     }});
 
                     $.get("/api/cliente/"+direccion2+"/areasByDireccion", function (data){
@@ -515,7 +554,7 @@
                     fracment4.appendChild(tituloPrincipal);
                     contenidoTitulo2.appendChild(fracment4);
 
-                    for (var i=0; i<data.length; i++){    
+                    for (var i=0; i<data.length; i++){
                         const col = document.createElement("div");
                         col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
                         col.setAttribute("data-aos","zoom-in-left");
@@ -560,7 +599,7 @@
                     fracment5.appendChild(tituloPrincipal);
                     contenidoTitulo3.appendChild(fracment5);
 
-                    for (var i=0; i<data.length; i++){    
+                    for (var i=0; i<data.length; i++){
                         const col = document.createElement("div");
                         col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
                         col.setAttribute("data-aos","zoom-in-left");
@@ -605,7 +644,7 @@
                     fracment6.appendChild(tituloPrincipal);
                     contenidoTitulo4.appendChild(fracment6);
 
-                    for (var i=0; i<data.length; i++){    
+                    for (var i=0; i<data.length; i++){
                         const col = document.createElement("div");
                         col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
                         col.setAttribute("data-aos","zoom-in-left");
@@ -638,7 +677,7 @@
 
                     $.get("/api/cliente/"+direccion5+"/areasByDireccion", function (data){
 
-                    for (var i=0; i<data.length; i++){    
+                    for (var i=0; i<data.length; i++){
                         const col = document.createElement("div");
                         col.classList.add("col-lg-4","col-md-12","col-sm-12","my-5","d-flex","icono-wrap","colImagen");
                         col.setAttribute("data-aos","zoom-in-left");
@@ -688,12 +727,12 @@
 
     <input onkeyup ="onBusqueda(busqueda.value);" onkeydown ="onBusqueda2(busqueda.value);" id="busqueda" type="text" class="form-control" placeholder="Palabra Clave" aria-label="Recipient's username" aria-describedby="button-addon2" >
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
-    
+
     </div>
 
 
     <div id="area">
-    
+
     </div>
 
 
@@ -701,13 +740,13 @@
         <div class="container">
             <div id="contenidoBusqueda" class="row">
 
-                
+
             </div>
-        </div>        
+        </div>
     </div>
 </section>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
     <script>
@@ -715,11 +754,11 @@
         function onBusqueda2($value){
 
             let cupcakes = Array.prototype.slice.call(document.getElementsByClassName("cupcake"), 0);
-  
+
             for(element of cupcakes){
                 console.log(element);
                 element.remove();
-            }  
+            }
             var html_select = '';
             $('#area').html(html_select);
 
@@ -733,12 +772,12 @@
             var contenidoCategorias = document.getElementById('contenidoBusqueda');
             const fracment = document.createDocumentFragment();
 
-      
 
-            console.log(palabra);
- 
+
+
+
             $.get('/api/tramites/'+palabra+'/palabra', function (data){
-                console.log(data);
+
 
             for (var i=0; i<data.length; i++){
                 var html_select = '<h3  value="">Tramites:</h3></br>';
@@ -750,24 +789,24 @@
                 const card = document.createElement("div");
                 card.setAttribute("id","dentro");
                 card.classList.add("card");
-                
+
                 const cardBody = document.createElement("div");
                 cardBody.classList.add("card-body");
-                
+
                 const imagesWra = document.createElement("div");
                 imagesWra.classList.add("images-wrapper");
-                
+
                 const img = document.createElement("img");
                 const idCategoria = data[i].id_categoria;
                 const area = 0;
 
                 img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
-                
+
                 const h5 = document.createElement("h6");
                 h5.classList.add("fw-bold");
                 h5.classList.add("card-title");
                 h5.innerText = data[i].nombre;
-                
+
                 const p = document.createElement("h6");
                 p.classList.add("card-text");
                 p.innerText = data[i].sobre;
@@ -787,24 +826,23 @@
                 cardBody.appendChild(p);
                 cardBody.appendChild(enlace);
 
-                
+
                 fracment.appendChild(col);
-            
+
                 contenidoCategorias.appendChild(fracment);
-            
-            
-                    
+
+
+
             $('#area').html(html_select);
 
-                console.log(html_select);
-       
+
             }});
 
 
         }
 
 
-       
+
     </script>
 
 
@@ -819,21 +857,21 @@
 
  <div id="seccion-direccion" class="mt-3">
   <!-- <div class="mapa"> </div> -->
-  
+
   <div id="mapa_big">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.1889088972666!2d-68.22366828459147!3d-16.516557945531773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa8d350a625%3A0x5851be5b6c74cbde!2sAlcald%C3%ADa%20de%20El%20Alto%20%22Jach&#39;a%20Uta%22!5e0!3m2!1ses!2sbo!4v1681150233289!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
+
   </div>
-  <div id="mapa_small">  
+  <div id="mapa_small">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.1889088972666!2d-68.22366828459147!3d-16.516557945531773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa8d350a625%3A0x5851be5b6c74cbde!2sAlcald%C3%ADa%20de%20El%20Alto%20%22Jach&#39;a%20Uta%22!5e0!3m2!1ses!2sbo!4v1681150233289!5m2!1ses!2sbo" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
+
   </div>
 
 
   <div>
       <div class="wrapper-local">
           <h2> Edificio JACHA U'TA Avenida Costanera entre puente Bolivia y Avenida Litoral</h2>
- 
+
           <section class="d-flex justify-content-start" id="numeros-local">
               <div class="horarios">
                   <p class="text-danger fs-3 fw-bold">Horarios de Atención</p>
@@ -847,17 +885,17 @@
       </div>
   </div>
 
-  
+
 </div>
 
 <div id="seccion-direccion" class="">
   <!-- <div class="mapa"> </div> -->
-  
+
   <div id="mapa_big2">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.139134034695!2d-68.17632711313618!3d-16.519072043319053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf634acbe9f5%3A0xd40509c954aacfb6!2sTerminal%20Metropolitana%20de%20El%20Alto!5e0!3m2!1ses!2sbo!4v1664895976620!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <div id="mapa_small2">  
+  <div id="mapa_small2">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.103801433186!2d-68.17936698459141!3d-16.52085644564368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfa123a4c253%3A0x4c217d3abfd9e28c!2sTerminal%20de%20Buses%20El%20Alto!5e0!3m2!1ses!2sbo!4v1681141353534!5m2!1ses!2sbo" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
@@ -879,7 +917,7 @@
       </div>
   </div>
 
-  
+
 </div>
 
 </section>
@@ -953,8 +991,8 @@
                             <h6 class="text-center">S.U.M.A.</h6>
                             <h6 class="text-center">161</h6>
                         </div>
-                        
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -964,7 +1002,7 @@
                 <!--========================================================== -->
                 <div id="contenedor-formulario" class="container">
 
-                
+
                     <div class="text-center text-white">
                         <div><img src="./imagenes/buzon.png" alt="" class="w-25 pt-1"></div>
 
@@ -977,7 +1015,7 @@
 
 
                     <form   action="" method="">
-           
+
                         <div class= "mb-3 d-flex">
                             <input type="email" class="form-control w-50 me-1"  id="email" name="email" placeholder="correoEjemplo@ejemplo.com">
                             <input type="input" class="form-control w-50" id="name" name="name" placeholder="Nombre Completo">

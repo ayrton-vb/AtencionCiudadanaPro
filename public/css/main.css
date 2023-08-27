@@ -324,7 +324,7 @@ footer p{
     .nav-item a{
         color: white !important;
     }
-    
+
 
 }
 
@@ -349,7 +349,7 @@ footer p{
 
 
 @media(max-width:768px){
- 
+
     .wrapper-tramite a{
         font-size: small !important;
     }
@@ -397,7 +397,7 @@ footer p{
 
     .colImagen{
       margin-top: 10px !important;
-      margin-bottom: 10px !important;  
+      margin-bottom: 10px !important;
     }
 
     .imgTamaño{
@@ -405,7 +405,7 @@ footer p{
         height: 80px;
     }
 
-   
+
     #seccion-direccion{
 
         max-height:460px;
@@ -426,7 +426,7 @@ footer p{
         display: block;
     }
 
-    
+
 
     #intro  #equipo{
         width: 90% !important;
@@ -459,7 +459,7 @@ footer p{
 
     #actividades {
         width:95%;
-        
+
     }
 
     #contenedor-formulario{

@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        legend{
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .image-container {
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .zoom {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover .zoom {
+            transform: scale(1.2);
+        }
+    </style>
 
     <title>Atención Ciudadana</title>
 </head>
@@ -23,8 +42,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
         <div class="container-fluid" >
 
-    
-      
+
+
         <img class="logoR"  src="" height="25" style="padding-left:20px;">
 
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -33,7 +52,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav mx-auto">
-          
+
                     <li class="nav-item">
                         <a class="nav-link active mx-3 fs-5 fw-bold text-d redText lkm" aria-current="page" href="/clientes">Inicio</a>
                     </li>
@@ -96,12 +115,12 @@
     </div>
     <div class="col">
         <div class="text-start logoTamaño3">
-        <img src="imagenes/33.png" alt="Image" class="img-fluid " width="95">   
+        <img src="imagenes/33.png" alt="Image" class="img-fluid " width="95">
         </div>
     </div>
   </div>
 </div>
-    
+
 
 
 
@@ -109,11 +128,11 @@
     <!--CONTENIDO -->
     <!-- =============================================== -->
 
-	
-    
-    
-    
-    
+
+
+
+
+
     <!-- <div class="untree_co-section">
 		<div class="container">
 			<div class="row text-center justify-content-center mb-5">
@@ -129,7 +148,7 @@
 							<span class="location">Secretaria Municipal Gestion Institucional</span>
 						</div> -->
 						<!-- <img src="imagenes/1.png" alt="Image" class="img-fluid">
-					</a> 
+					</a>
 				</div>
 
 				<div class="item">
@@ -139,7 +158,7 @@
 							<span class="location">Dirección de Atencion Ciudadana</span>
 						</div> -->
 						<!-- <img src="imagenes/2.png" alt="Image" class="img-fluid">
-					</a> 
+					</a>
 				</div>
 
 				<div class="item">
@@ -149,7 +168,7 @@
 							<span class="location">Unidad Sistema Unico de Tramites</span>
 						</div> -->
 						<!-- <img src="imagenes/3.png" alt="Image" class="img-fluid">
-					</a> 
+					</a>
 				</div> -->
 
 
@@ -160,7 +179,7 @@
 							<span class="location">Italy</span>
 						</div>
 						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
-					</a> 
+					</a>
 				</div>
 
 				<div class="item">
@@ -170,7 +189,7 @@
 							<span class="location">United States</span>
 						</div>
 						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
-					</a> 
+					</a>
 				</div>
 
 				<div class="item">
@@ -180,9 +199,9 @@
 							<span class="location">Switzerland</span>
 						</div>
 						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
-					</a> 
+					</a>
 				</div> -->
-<!-- 
+<!--
 			</div>
 
 		</div>
@@ -212,15 +231,15 @@
 
 
 <script src="https://kit.fontawesome.com/655d53150e.js" crossorigin="anonymous"></script>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-    
-    
 
-    
+
+
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
@@ -230,14 +249,14 @@
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.bootstrap5.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
-    
+
     <script>
         $(document).ready(function() {
         $('#table').DataTable({
              "lengthMenu":[[50,150,-1],[50,150,300,"All"]],
             responsive: "true",
-            dom: 'Bfrtilp',       
-              buttons:[ 
+            dom: 'Bfrtilp',
+              buttons:[
                         {
                           extend:    'excelHtml5',
                           text:      '<i class="fas fa-file-excel"></i> ',
@@ -256,7 +275,7 @@
                           titleAttr: 'Imprimir',
                           className: 'btn btn-info'
                         },
-                      ]	      
+                      ]
           });
 
         } );
@@ -278,6 +297,5 @@
         duration: 1000
     });
 </script>
-
 
 </html>
