@@ -164,7 +164,7 @@
                 var linea = data[index].línea;
                 var sindicato = data[index].sindicato;
                 var paradaInicial = data[index].paradaInicial;
-                var recorridoIda = data[index].RecorridoIda;
+                var recorridoIda = data[index].recorridoIda;
                 var paradaFinal = data[index].paradaFinal;
                 var recorridoVuelta = data[index].recorridoVuelta;
                 var mapa = data[index].mapa;
