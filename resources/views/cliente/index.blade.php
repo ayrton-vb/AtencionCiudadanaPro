@@ -19,7 +19,7 @@
 
     <div class="input-group mb-3">
 
-    <input onkeyup ="onBusqueda3(busqueda2.value);" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
+    <input onkeyup ="onBusqueda3(busqueda2.value);" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Ingrese el numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
 
     </div>
@@ -58,7 +58,7 @@
                             <fieldset class="border rounded p-2 mb-2">
                                 <legend>Parada Final:</legend>
                                 <p id="paradaFinalInfo"></p>
-                                <legend>Parada Final:</legend>
+                                <legend>Recorrido Final:</legend>
                                 <p class="mb-0" id="recorridoVueltaInfo"></p>
                             </fieldset>
                         </div>
@@ -120,11 +120,11 @@
             const idCategoria = data[i].id_categoria;
             const area = 0;
 
-            img.setAttribute("src", "/imagenes/tramites/Recursos 7.png");
+            img.setAttribute("src", "/imagenes/tramites/mini.png");
 
             const h5 = document.createElement("h5");
             h5.classList.add("fw-bold");
-            h5.classList.add("card-title");
+            h5.classList.add("card-title","mt-2");
             h5.innerText = "Línea: "+data[i].línea+"";
 
 
@@ -164,7 +164,7 @@
                 var linea = data[index].línea;
                 var sindicato = data[index].sindicato;
                 var paradaInicial = data[index].paradaInicial;
-                var recorridoIda = data[index].recorridoIda;
+                var recorridoIda = data[index].RecorridoIda;
                 var paradaFinal = data[index].paradaFinal;
                 var recorridoVuelta = data[index].recorridoVuelta;
                 var mapa = data[index].mapa;
@@ -185,8 +185,8 @@
             cardBody.appendChild(h5);
             cardBody.appendChild(titulo);
             cardBody.appendChild(p);
-            cardBody.appendChild(titulo2);
-            cardBody.appendChild(p2);
+            // cardBody.appendChild(titulo2);
+            // cardBody.appendChild(p2);
             // cardBody.appendChild(titulo3);
             // cardBody.appendChild(p3);
             cardBody.appendChild(enlace);
