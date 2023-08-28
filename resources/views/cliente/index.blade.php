@@ -187,8 +187,8 @@
             cardBody.appendChild(p);
             cardBody.appendChild(titulo2);
             cardBody.appendChild(p2);
-            cardBody.appendChild(titulo3);
-            cardBody.appendChild(p3);
+            // cardBody.appendChild(titulo3);
+            // cardBody.appendChild(p3);
             cardBody.appendChild(enlace);
 
 
