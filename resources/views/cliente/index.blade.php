@@ -41,6 +41,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
+                    <img class="img-fluid me-2" src="{{asset('imagenes/logos_rojo.png')}}" alt="Logo GAMEA" width="100" />
                     <h6 class="modal-title fw-bold">INFORMACIÓN DE RUTA</h6>
                     <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
