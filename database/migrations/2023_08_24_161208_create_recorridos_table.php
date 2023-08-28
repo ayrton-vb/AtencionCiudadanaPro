@@ -18,7 +18,7 @@ class CreateRecorridosTable extends Migration
             $table->string('sindicato');
             $table->string('línea');
             $table->string('paradaInicial');
-            $table->string('RecorridoIda');
+            $table->string('recorridoIda');
             $table->string('paradaFinal');
             $table->string('recorridoVuelta');
 

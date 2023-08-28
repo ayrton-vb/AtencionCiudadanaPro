@@ -43,6 +43,7 @@
                 <div class="modal-header">
                     <img class="img-fluid me-2" src="{{asset('imagenes/logos_rojo.png')}}" alt="Logo GAMEA" width="100" />
                     <h6 class="modal-title fw-bold">INFORMACIÓN DE RUTA</h6>
+                    <h6 class="modal-title fw-light mx-auto">Decreto Municipal N°78 Gestión 2017-2018</h6>
                     <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -65,6 +66,8 @@
                         <div class="col-lg-7 col-12">
                             <div class="image-container">
                                 <img id="mapaInfo" class="img-fluid img-thumbnail zoom"/>
+                                <p id="" class="mt-1">Si algun conductor no cumple esta ruta toma una fotografía a la placa y denuncia.</p>
+                                <a id="linkDenuncia" class="btn btn-danger mt-0 mt-0" type="submit">DENUNCIAR</a>
                             </div>
                         </div>
                     </div>
@@ -169,12 +172,14 @@
                 var recorridoVuelta = data[index].recorridoVuelta;
                 var mapa = data[index].mapa;
 
+
                 document.getElementById("sindicatoInfo").innerText = sindicato + ' ' + '('+ linea + ')';
                 document.getElementById("paradaInicialInfo").innerText = paradaInicial;
                 document.getElementById("recorridoIdaInfo").innerText = recorridoIda;
                 document.getElementById("paradaFinalInfo").innerText = paradaFinal;
                 document.getElementById("recorridoVueltaInfo").innerText = recorridoVuelta;
                 document.getElementById("mapaInfo").setAttribute("src", "/storage/mapas/" + mapa);
+                document.getElementById("linkDenuncia").setAttribute("href", "http://wa.me/59177719628?text=Buenas%20quisiera%20realizar%20la%20denuncia%20de%20la%20la%20linea: "+linea+" del Sindicato: "+sindicato);
             });
 
             col.appendChild(card);
