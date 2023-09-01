@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Recorrido;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\Paginator;
 
 class RecorridoController extends Controller
 {
@@ -15,7 +16,7 @@ class RecorridoController extends Controller
 
 
     public function byPalabra($palabra){
-        $tramites = Recorrido::where('línea','LIKE',"%$palabra%")->get();
+        $tramites = Recorrido::where('línea','LIKE', "%$palabra%")->get();
         return  $tramites;
     }
 

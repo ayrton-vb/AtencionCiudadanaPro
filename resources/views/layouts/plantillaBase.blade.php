@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -78,12 +79,12 @@
 
 </header>
 
-<div class="container">
+<div class="container-fluid">
 
     <!-- =============================================== -->
     <!-- ENCABEZADO -->
     <!-- =============================================== -->
-    <div id="banner" >
+    <div id="banner" class="container" >
         <img  data-aos="zoom-in-up" id="bannerLogo" src="/imagenes/logoBanner.png"  width="100%">
         <img   data-aos="zoom-in"
                data-aos-offset="200"
@@ -102,24 +103,33 @@
 
 
     <div class="container">
-  <div class="row">
-    <div class="col">
-    <div class="text-end logoTamaño">
-    <img src="imagenes/11.png" alt="Image" class="img-fluid " width="150">
-    </div>
-    </div>
-    <div class="col">
-    <div class="text-center logoTamaño2">
-    <img src="imagenes/22.png" alt="Image" class="img-fluid" width="90">
-    </div>
-    </div>
-    <div class="col">
-        <div class="text-start logoTamaño3">
-        <img src="imagenes/33.png" alt="Image" class="img-fluid " width="95">
+        <div class="row">
+            <div class="col">
+                <div class="text-end logoTamaño">
+                    <img src="imagenes/11.png" alt="Image" class="img-fluid " width="150">
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center logoTamaño2">
+                    <img src="imagenes/22.png" alt="Image" class="img-fluid" width="90">
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-start logoTamaño3">
+                <img src="imagenes/33.png" alt="Image" class="img-fluid " width="95">
+                </div>
+            </div>
         </div>
     </div>
-  </div>
-</div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="#tramitesNuevos" class="btn btn-primary btn-lg">Comenzar <i class="fas fa-arrow-alt-circle-down"></i></a>
+                <a href="#rutasVehiculos" class="btn btn-danger btn-lg">Buscar <i class="fas fas fa-shuttle-van"></i></a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -219,7 +229,7 @@
     <!--FOOTER-->
     <!--========================================================== -->
 
-<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap mt-1">
+<footer class="container w-100  d-flex  align-items-center justify-content-center flex-wrap mt-1">
     <p class="fs-5 px-3  pt-3 fw-bold">Atención Ciudadana &copy; GAMEA Todos Los Derechos Reservados 2022</p>
     <div id="iconos" >
         <a href="https://www.facebook.com/ElAltoAlcaldia"><i class="bi bi-facebook"></i></a>

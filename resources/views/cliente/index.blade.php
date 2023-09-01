@@ -7,77 +7,96 @@
 <!-- INTRO-->
 <!-- =============================================== -->
 
-<section  class="w-50 mx-auto text-center pt-3 pb-3 " id="intro">
+<section id="rutasVehiculos"  class="w-50 mx-auto text-center pt-3 pb-3 " id="intro">
             <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="blueText">servicios y trámites</span>
             del Gobierno Autónomo Municipal de la ciudad de El Alto
             </h1>
 </section>
 
-<section  id="rutasVehiculos" class="container-fluid pt-3 pb-3" >
-    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Recorridos Lineas de Minibus</span>
-    </h1>
+<div class="mt-4" style="background-color: #F5F5F5; display: box; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; max-width: none;">
+    <img class="img-fluid" src="{{asset('imagenes/banner_vehiculos.png')}}" alt="banner">
+    <section class="container pt-3 pb-3">
+        <h1 data-aos="fade-down" class="fs-2 text-center fw-bold my-4"><span class="redText">Ingresa el número de línea:</span>
+        </h1>
+        <div class="input-group my-4">
 
-    <div class="input-group mb-3">
+            <input onkeyup ="onBusqueda3(this.value)" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Ingrese el numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
+            <button class="btn btn-danger" onclick="limpiarBusqueda()"><i class="fas fa-xmark"></i></button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
 
-    <input onkeyup ="onBusqueda3(busqueda2.value);" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Ingrese el numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
-
-    </div>
-
-
-    <div id="area2">
-    </div>
+        </div>
 
 
-    <div id="">
-        <div class="container">
-            <div id="contenidoBusqueda2" class="row">
+        <div id="area2">
+            <h3  value="">Líneas:</h3></br>
+        </div>
 
 
+        <div id="">
+            <div class="container">
+                <div id="contenidoBusqueda2" class="row">
+
+                </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img class="img-fluid me-2" src="{{asset('imagenes/logos_rojo.png')}}" alt="Logo GAMEA" width="100" />
-                    <h6 class="modal-title fw-bold">INFORMACIÓN DE RUTA</h6>
-                    <h6 class="modal-title fw-light mx-auto">Decreto Municipal N°78 Gestión 2017-2018</h6>
-                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-5 col-12">
-                            <h6 class="fw-bold" id="sindicatoInfo"></h6>
-                            <fieldset class="border rounded p-2 mb-2">
-                                <legend>Parada Inicial:</legend>
-                                <p id="paradaInicialInfo"></p>
-                                <legend>Recorrido Ida:</legend>
-                                <p class="mb-0" id="recorridoIdaInfo"></p>
-                            </fieldset>
-                            <fieldset class="border rounded p-2 mb-2">
-                                <legend>Parada Final:</legend>
-                                <p id="paradaFinalInfo"></p>
-                                <legend>Recorrido Final:</legend>
-                                <p class="mb-0" id="recorridoVueltaInfo"></p>
-                            </fieldset>
+      <!--   <div id="paginationContainer">
+
+        </div> -->
+        <div class="modal fade" id="modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img class="img-fluid me-2" src="{{asset('imagenes/logos_rojo.png')}}" alt="Logo GAMEA" width="100" />
+                        <h6 class="modal-title fw-bold">INFORMACIÓN DE RUTA</h6>
+                        <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="fw-bold" id="sindicatoInfo"></h6>
+                            </div>
                         </div>
-                        <div class="col-lg-7 col-12">
-                            <div class="image-container">
-                                <img id="mapaInfo" class="img-fluid img-thumbnail zoom"/>
-                                <p id="" class="mt-1">Si algun conductor no cumple esta ruta toma una fotografía a la placa y denuncia.</p>
-                                <a id="linkDenuncia" class="btn btn-danger mt-0 mt-0" type="submit">DENUNCIAR</a>
+                        <div class="row">
+                            <div class="col-lg-5 col-12">
+                                <fieldset class="border rounded p-2 mb-2">
+                                    <legend>Parada Inicial:</legend>
+                                    <p id="paradaInicialInfo"></p>
+                                    <legend>Recorrido Ida:</legend>
+                                    <p class="mb-0" id="recorridoIdaInfo"></p>
+                                </fieldset>
+                                <fieldset class="border rounded p-2 mb-2">
+                                    <legend>Parada Final:</legend>
+                                    <p id="paradaFinalInfo"></p>
+                                    <legend>Recorrido Vuelta:</legend>
+                                    <p class="mb-0" id="recorridoVueltaInfo"></p>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-7 col-12">
+                                <div class="container">
+                                </div>
+                                <div class="image-container">
+                                    <img id="mapaInfo" class="img-fluid img-thumbnail zoom"/>
+                                    <p id="" class="mt-1">Si algun conductor no cumple esta ruta toma una fotografía a la placa y denuncia.</p>
+                                    <a id="linkDenuncia" class="btn btn-danger mt-0 mt-0" type="submit">DENUNCIAR</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
+    var busquedaAjax;
+
+    function limpiarBusqueda() {
+        var inputBusqueda = document.getElementById('busqueda2');
+        inputBusqueda.value = '';
+        contenidoCategorias = document.getElementById('contenidoBusqueda2');
+        contenidoCategorias.innerHTML = '';
+    }
 
     function onBusqueda4($value){
 
@@ -91,132 +110,131 @@
 
     }
 
-
     function onBusqueda3($value){
+
+        if (busquedaAjax) {
+            busquedaAjax.abort();
+        }
 
         var palabra = $value;
 
         var contenidoCategorias = document.getElementById('contenidoBusqueda2');
         const fracment = document.createDocumentFragment();
 
-        $.get('/api/recorrido/'+palabra+'/palabra', function (data){
+        busquedaAjax = $.get('/api/recorrido/'+palabra+'/palabra', function (data){
 
-        for (var i=0; i<data.length; i++){
+            for (var i=0; i<data.length; i++){
 
-            var html_select = '<h3  value="">Líneas:</h3></br>';
+                var html_select = '<h3  value="">Líneas:</h3></br>';
 
-            const col = document.createElement("div");
-            col.setAttribute("id","");
-            col.classList.add("col-lg-3", "col-md-3", "col-sm-6","col-12", "mb-2", "cupcake");
+                const col = document.createElement("div");
+                col.setAttribute("id","");
+                col.classList.add("col-lg-3", "col-md-3", "col-sm-6","col-12", "mb-2", "cupcake");
 
-            const card = document.createElement("div");
-            card.setAttribute("id","dentro");
-            card.classList.add("card");
+                const card = document.createElement("div");
+                card.setAttribute("id","dentro");
+                card.classList.add("card");
 
-            const cardBody = document.createElement("div");
-            cardBody.classList.add("card-body");
+                const cardBody = document.createElement("div");
+                cardBody.classList.add("card-body");
 
-            const imagesWra = document.createElement("div");
-            imagesWra.classList.add("images-wrapper");
+                const imagesWra = document.createElement("div");
+                imagesWra.classList.add("images-wrapper");
 
-            const img = document.createElement("img");
-            const idCategoria = data[i].id_categoria;
-            const area = 0;
+                const img = document.createElement("img");
+                const idCategoria = data[i].id_categoria;
+                const area = 0;
 
-            img.setAttribute("src", "/imagenes/tramites/mini.png");
+                img.setAttribute("src", "/imagenes/tramites/mini.png");
 
-            const h5 = document.createElement("h5");
-            h5.classList.add("fw-bold");
-            h5.classList.add("card-title","mt-2");
-            h5.innerText = "Línea: "+data[i].línea+"";
-
-
-            const titulo = document.createElement("h6");
-            titulo.classList.add("fw-bold");
-            titulo.innerText = "Sindicato :";
-
-            const p = document.createElement("h6");
-            p.classList.add("card-text");
-            p.innerText = data[i].sindicato;
-
-            const titulo2 = document.createElement("h6");
-            titulo2.classList.add("fw-bold");
-            titulo2.innerText = "Parada Inicial :";
-
-            const p2 = document.createElement("h6");
-            p2.classList.add("card-text");
-            p2.innerText = data[i].paradaInicial;
-
-            const titulo3 = document.createElement("h6");
-            titulo3.classList.add("fw-bold");
-            titulo3.innerText = "Parada Final :";
-
-            const p3 = document.createElement("h6");
-            p3.classList.add("card-text");
-            p3.innerText = data[i].paradaFinal;
-
-            const enlace = document.createElement("button");
-            enlace.classList.add("fs-6", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
-            enlace.innerText = "Ver Ruta";
-            enlace.setAttribute("data-bs-toggle", "modal");
-            enlace.setAttribute("data-bs-target", "#modalId");
-            enlace.setAttribute("data-index", i)
-
-            enlace.addEventListener("click", function() {
-                var index = this.getAttribute("data-index");
-                var linea = data[index].línea;
-                var sindicato = data[index].sindicato;
-                var paradaInicial = data[index].paradaInicial;
-                var recorridoIda = data[index].recorridoIda;
-                var paradaFinal = data[index].paradaFinal;
-                var recorridoVuelta = data[index].recorridoVuelta;
-                var mapa = data[index].mapa;
+                const h5 = document.createElement("h5");
+                h5.classList.add("fw-bold");
+                h5.classList.add("card-title","mt-2");
+                h5.innerText = "Línea: "+data[i].línea+"";
 
 
-                document.getElementById("sindicatoInfo").innerText = sindicato + ' ' + '('+ linea + ')';
-                document.getElementById("paradaInicialInfo").innerText = paradaInicial;
-                document.getElementById("recorridoIdaInfo").innerText = recorridoIda;
-                document.getElementById("paradaFinalInfo").innerText = paradaFinal;
-                document.getElementById("recorridoVueltaInfo").innerText = recorridoVuelta;
-                document.getElementById("mapaInfo").setAttribute("src", "/storage/mapas/" + mapa);
-                document.getElementById("linkDenuncia").setAttribute("href", "http://wa.me/59177719628?text=Buenas%20quisiera%20realizar%20la%20denuncia%20de%20la%20la%20linea: "+linea+" del Sindicato: "+sindicato);
-            });
+                const titulo = document.createElement("h6");
+                titulo.classList.add("fw-bold");
+                titulo.innerText = "Sindicato :";
 
-            col.appendChild(card);
-            card.appendChild(cardBody);
-            cardBody.appendChild(imagesWra);
-            imagesWra.appendChild(img);
+                const p = document.createElement("h6");
+                p.classList.add("card-text");
+                p.innerText = data[i].sindicato;
 
-            cardBody.appendChild(h5);
-            cardBody.appendChild(titulo);
-            cardBody.appendChild(p);
-            // cardBody.appendChild(titulo2);
-            // cardBody.appendChild(p2);
-            // cardBody.appendChild(titulo3);
-            // cardBody.appendChild(p3);
-            cardBody.appendChild(enlace);
+                const titulo2 = document.createElement("h6");
+                titulo2.classList.add("fw-bold");
+                titulo2.innerText = "Parada Inicial :";
+
+                const p2 = document.createElement("h6");
+                p2.classList.add("card-text");
+                p2.innerText = data[i].paradaInicial;
+
+                const titulo3 = document.createElement("h6");
+                titulo3.classList.add("fw-bold");
+                titulo3.innerText = "Parada Final :";
+
+                const p3 = document.createElement("h6");
+                p3.classList.add("card-text");
+                p3.innerText = data[i].paradaFinal;
+
+                const enlace = document.createElement("button");
+                enlace.classList.add("fs-6", "fw-bold", "btn","btn-outline-secondary","mx-4","mt-2");
+                enlace.innerText = "Ver Ruta";
+                enlace.setAttribute("data-bs-toggle", "modal");
+                enlace.setAttribute("data-bs-target", "#modalId");
+                enlace.setAttribute("data-index", i)
+
+                enlace.addEventListener("click", function() {
+                    var index = this.getAttribute("data-index");
+                    var linea = data[index].línea;
+                    var sindicato = data[index].sindicato;
+                    var paradaInicial = data[index].paradaInicial;
+                    var recorridoIda = data[index].recorridoIda;
+                    var paradaFinal = data[index].paradaFinal;
+                    var recorridoVuelta = data[index].recorridoVuelta;
+                    var mapa = data[index].mapa;
 
 
-            fracment.appendChild(col);
+                    document.getElementById("sindicatoInfo").innerText = sindicato + ' ' + '('+ linea + ')';
+                    document.getElementById("paradaInicialInfo").innerText = paradaInicial;
+                    document.getElementById("recorridoIdaInfo").innerText = recorridoIda;
+                    document.getElementById("paradaFinalInfo").innerText = paradaFinal;
+                    document.getElementById("recorridoVueltaInfo").innerText = recorridoVuelta;
+                    document.getElementById("mapaInfo").setAttribute("src", "/storage/mapas/" + mapa);
+                    document.getElementById("linkDenuncia").setAttribute("href", "http://wa.me/59177719628?text=Buenas%20quisiera%20realizar%20la%20denuncia%20de%20la%20la%20linea: "+linea+" del Sindicato: "+sindicato);
+                });
 
-            contenidoCategorias.appendChild(fracment);
+                col.appendChild(card);
+                card.appendChild(cardBody);
+                cardBody.appendChild(imagesWra);
+                imagesWra.appendChild(img);
+
+                cardBody.appendChild(h5);
+                cardBody.appendChild(titulo);
+                cardBody.appendChild(p);
+                // cardBody.appendChild(titulo2);
+                // cardBody.appendChild(p2);
+                // cardBody.appendChild(titulo3);
+                // cardBody.appendChild(p3);
+                cardBody.appendChild(enlace);
 
 
+                fracment.appendChild(col);
 
-        $('#area2').html(html_select);
+                contenidoCategorias.appendChild(fracment);
+
+                $('#area2').html(html_select);
 
 
-        }});
-
-
+            }});
     }
 
 
 
 </script>
 
-<section id="" class="container-fluid pt-3 pb-3">
-    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
+<section id="tramitesNuevos" class="container pt-3 pb-3">
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold my-4"><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
 
         <div class="row g-0">
         <div class="col-md-4">
@@ -296,8 +314,8 @@
 <!-- SERVICIOS categorias-->
 <!-- =============================================== -->
 
-<section id="categorias" class="container-fluid pt-3 pb-3">
-    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Categorías</span>  </h1>
+<section id="categorias" class="container pt-3 pb-3">
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold my-4 "><span class="redText text-decoration-underline">Categorías</span>  </h1>
     <div data-aos="zoom-in-up" id="contenidoCategorias" class="row mx-auto servicio-fila border border-3 border-danger rounded-3">
 
     <div id="contenidoTitulo" class="">
@@ -338,7 +356,7 @@
 
 <section >
         <div class="container">
-        <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold "><span class="redText text-decoration-underline">Trámites Nuevos</span>  </h1>
+        <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold my-4"><span class="redText text-decoration-underline">Trámites Nuevos</span>  </h1>
             <div id="contenidoTramitesNuevos" class="row">
 
 
@@ -725,8 +743,8 @@
 <!-- BUSQUEDA-->
 <!-- =============================================== -->
 
-<section  id="" class="container-fluid pt-3 pb-3" >
-    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold"><span class="redText text-decoration-underline">Busqueda</span>
+<section  id="" class="container pt-3 pb-3" >
+    <h1 data-aos="fade-down" class="fs-2 text-center fw-bold my-4"><span class="redText text-decoration-underline">Busqueda</span>
     </h1>
 
     <div class="input-group mb-3">
@@ -858,8 +876,8 @@
 <!-- =============================================== -->
 <!-- PUNTOS DE ATENCION -->
 <!-- =============================================== -->
-<section id="ubicacion" class=" pt-3">
- <h1 data-aos="zoom-in-up" class="redText text-center fs-2 fw-bold text-decoration-underline">Puntos de Atención</h1>
+<section id="ubicacion" class="container pt-3">
+ <h1 data-aos="zoom-in-up" class="redText text-center fs-2 fw-bold text-decoration-underline my-4">Puntos de Atención</h1>
 
  <div id="seccion-direccion" class="mt-3">
   <!-- <div class="mapa"> </div> -->
@@ -894,7 +912,7 @@
 
 </div>
 
-<div id="seccion-direccion" class="">
+<div id="seccion-direccion" class="container">
   <!-- <div class="mapa"> </div> -->
 
   <div id="mapa_big2">
