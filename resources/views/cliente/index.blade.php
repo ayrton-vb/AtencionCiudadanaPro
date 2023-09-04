@@ -22,7 +22,7 @@
 
             <input onkeyup ="onBusqueda3(this.value)" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Ingrese el numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
             <button class="btn btn-danger" onclick="limpiarBusqueda()"><i class="fas fa-xmark"></i></button>
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Busca</button>
 
         </div>
 
