@@ -126,7 +126,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <a href="#tramitesNuevos" class="btn btn-primary btn-lg">Comenzar <i class="fas fa-arrow-alt-circle-down"></i></a>
-                <a href="#rutasVehiculos" class="btn btn-danger btn-lg">Buscar tu línea <i class="fas fas fa-shuttle-van"></i></a>
+                <a href="#rutasVehiculos" class="btn btn-danger btn-lg">Busca tu línea <i class="fas fas fa-shuttle-van"></i></a>
             </div>
         </div>
     </div>
