@@ -16,11 +16,11 @@
 <div class="mt-4" style="background-color: #F5F5F5; display: box; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; max-width: none;">
     <img class="img-fluid" src="{{asset('imagenes/banner_vehiculos.png')}}" alt="banner">
     <section class="container pt-3 pb-3">
-        <h1 data-aos="fade-down" class="fs-2 text-center fw-bold my-4"><span class="redText">Ingresa el número de línea:</span>
+        <h1 data-aos="fade-down" class="fs-2 text-center fw-bold my-4"><span class="redText">Ingresa el número de línea de minibús:</span>
         </h1>
         <div class="input-group my-4">
 
-            <input onkeyup ="onBusqueda3(this.value)" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Ingrese el numero de Linea" aria-label="Recipient's username" aria-describedby="button-addon2" >
+            <input onkeyup ="onBusqueda3(this.value)" onkeydown ="onBusqueda4(busqueda2.value);" id="busqueda2" type="text" class="form-control" placeholder="Ingrese el número de línea de minibús" aria-label="Recipient's username" aria-describedby="button-addon2" >
             <button class="btn btn-danger" onclick="limpiarBusqueda()"><i class="fas fa-xmark"></i></button>
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Busca</button>
 
