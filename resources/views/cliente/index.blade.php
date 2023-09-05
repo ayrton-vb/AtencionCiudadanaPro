@@ -7,12 +7,6 @@
 <!-- INTRO-->
 <!-- =============================================== -->
 
-<section id="rutasVehiculos"  class="w-50 mx-auto text-center pt-3 pb-3 " id="intro">
-            <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="blueText">servicios y trámites</span>
-            del Gobierno Autónomo Municipal de la ciudad de El Alto
-            </h1>
-</section>
-
 <div class="mt-4" style="background-color: #F5F5F5; display: box; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; max-width: none;">
     <img class="img-fluid" src="{{asset('imagenes/banner_vehiculos.png')}}" alt="banner">
     <section class="container pt-3 pb-3">
@@ -232,7 +226,11 @@
 
 
 </script>
-
+<section id="rutasVehiculos"  class="w-50 mx-auto text-center pt-3 pb-3 " id="intro">
+            <h1 data-aos="fade-down" class="p-3 pb-0 fs-2 ">Información  sobre <span class="blueText">servicios y trámites</span>
+            del Gobierno Autónomo Municipal de la ciudad de El Alto
+            </h1>
+</section>
 <section id="tramitesNuevos" class="container pt-3 pb-3">
     <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold my-4"><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
 
