@@ -16,7 +16,7 @@ class RecorridoController extends Controller
 
 
     public function byPalabra($palabra){
-        $tramites = Recorrido::where('línea', 'LIKE', $palabra . '%')->get();
+        $tramites = Recorrido::where('línea', 'LIKE', $palabra . '%')->orderBy('línea', 'asc')->get();
         return  $tramites;
     }
 
