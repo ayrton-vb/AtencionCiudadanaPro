@@ -366,7 +366,7 @@
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="modal-title">BUS MUNICIPAL</div>
+        <img class="img-fluid" width="200" src="/imagenes/logo_bus.png" alt="logo bus">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
