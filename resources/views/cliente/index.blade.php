@@ -362,17 +362,27 @@
         </div>
 </section>
 
-<div class="modal fade" id="myModal" tabindex="-1">
-  <div class="modal-dialog">
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-
+        <div class="modal-title">BUS MUNICIPAL</div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="/imagenes/denuncia.jpeg" class="w-100" alt="...">
+        <!-- <img src="/imagenes/denuncia.jpeg" class="w-100" alt="..."> -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="/imagenes/bus_municipal_1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <iframe class="d-none d-md-block" width="1100" height="600" src="/storage/video/buses.mp4" frameborder="0" allowfullscreen></iframe>
+                <iframe class="d-md-none" width="100%" height="315" src="/storage/video/buses_movile.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
   </div>
 </div>
