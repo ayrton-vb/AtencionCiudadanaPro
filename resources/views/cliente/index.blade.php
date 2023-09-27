@@ -366,19 +366,20 @@
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <img class="img-fluid" width="200" src="/imagenes/logo_bus.png" alt="logo bus">
+        Comunicados
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <!-- <img src="/imagenes/denuncia.jpeg" class="w-100" alt="..."> -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
+                <img class="img-fluid" src="/imagenes/comunicado_1.jpeg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
                 <img class="img-fluid" src="/imagenes/bus_municipal_1.jpg" class="d-block w-100" alt="Imagen 1">
             </div>
             <div class="carousel-item">
-                <iframe class="d-none d-md-block" width="1100" height="600" src="/storage/video/buses.mp4" frameborder="0" allowfullscreen></iframe>
-                <iframe class="d-md-none" width="100%" height="315" src="/storage/video/buses_movile.mp4" frameborder="0" allowfullscreen></iframe>
+                <img class="img-fluid" src="/imagenes/denuncia.jpeg" class="d-block w-100" alt="Imagen 1">
             </div>
           </div>
         </div>
