@@ -420,7 +420,7 @@
                     </div>
                 </aside>
                 <div class="alert alert-warning text-center" role="alert">
-                    Atención: Los trámites de Exhumación y Traslado de Restos Óseos, así como la Reubicación del Cuerpo en el <div class="badge bg-primary">Cementerio Mercedario</div>, son gratuitos momentáneamente debido a la coyuntura actual.
+                    Atención: Se suspende temporalmente el corbro por conceptos de renovaciones, exhumaciones y traslado únicamente en el <div class="badge bg-primary">Sector 2 del Cementerio Mercedario</div>, con el fin de brindar tranquilidad a los usuarios de este.
                 </div>
             </div>
             <div class="carousel-item">
