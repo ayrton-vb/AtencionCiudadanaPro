@@ -373,15 +373,74 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="img-fluid" src="/imagenes/comunicado_1.jpeg" class="d-block w-100" alt="Imagen 2">
+                <aside  style=" margin: 80px auto;
+                    width: 100%;
+                    min-width: 230px;
+                    max-width: 600px;
+                    position: relative;
+                    height: auto;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-image: linear-gradient(to bottom right, #E40428, #00C5F3);
+                    background-repeat: no-repeat;
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);"
+                >
+                    <span class="circle-a"></span>
+                    <span class="circle-b"></span>
+                    <img src="https://www.eldiario.net/portal/wp-content/uploads/2022/04/2AL-3.jpg" style="max-width : 600px; width: 100%; position: relative;" />
+                    <div style="
+                        padding: 35px 15px;
+                        color: #fff;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;"
+                    >
+                        <p style="clear: both;
+                            font-family: 'Work Sans', Helvetica, sans-serif;
+                            text-transform: none;
+                            text-rendering: optimizeLegibility;
+                            font-weight: 500;
+                            line-height: 1.15;
+                            word-wrap: break-word;
+                            margin: 1em 0 0.5em;
+                            margin: 0;
+                            padding: 0;
+                            color: #fff;
+                            position: relative;
+                            word-wrap: break-word;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            margin-bottom: 20px;">
+                            ¡Hola! Te invitamos a conocer los distintos tramites de los cementerios de la ciudad de El Alto
+                        </p>
+                    </div>
+                    <div class="row text-center">
+                        <a href="http://atencionciudadana.elalto.gob.bo/clientes/11/categoriasByArea" class="btn btn-lg btn-danger">Ver</a>
+                    </div>
+                </aside>
+                <div class="alert alert-warning text-center" role="alert">
+                    Atención: Los trámites de Exhumación y Traslado de Restos Óseos, así como la Reubicación del Cuerpo en el <div class="badge bg-primary">Cementerio Mercedario</div>, son gratuitos momentáneamente debido a la coyuntura actual.
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="img-fluid" src="/imagenes/bus_municipal_1.jpg" class="d-block w-100" alt="Imagen 1">
+                <img class="img-fluid" src="/imagenes/comunicado_1.jpeg" alt="Imagen 2">
             </div>
             <div class="carousel-item">
-                <img class="img-fluid" src="/imagenes/denuncia.jpeg" class="d-block w-100" alt="Imagen 1">
+                <img class="img-fluid" src="/imagenes/bus_municipal_1.jpg" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="/imagenes/denuncia.jpeg" alt="Imagen 1">
             </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </a>
         </div>
       </div>
     </div>

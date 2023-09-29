@@ -29,6 +29,50 @@
         .image-container:hover .zoom {
             transform: scale(1.2);
         }
+
+        .circle-a:before {
+            width: 500px;
+            height: 500px;
+            top: -300px; left: 52%;
+            -webkit-transform: translate(-50%,0);
+            -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+        }
+        .circle-a:after {
+            top: 160px;
+            right: 10%;
+        }
+        .circle-b:before {
+            top: 60%;
+            left: -25px;
+        }
+        .circle-b:after {
+            width: 150px;
+            height: 150px;
+            bottom: -70px;
+            right: -70px;
+        }
+        a.more-link {
+            background-color: rgba(255, 255, 255, 0.35);
+            display: inline-block;
+            padding: 12px 18px;
+            color: #fff;
+            text-decoration: none;
+            font: 500 15px 'Work Sans', Helvetica, sans-serif;
+            line-height: 1.5;
+            text-align: center;
+            border: none !important;
+            position: relative;
+            border-radius: 30px;
+            text-transform: uppercase;
+            -webkit-transition: .1s all ease-in-out;
+            -moz-transition: .1s all ease-in-out;
+            -o-transition: .1s all ease-in-out;
+            transition: .1s all ease-in-out;
+        }
+        a.more-link:hover {
+            background-color: rgba(255, 255, 255, 0.50);
+        }
     </style>
 
     <title>Atención Ciudadana</title>
