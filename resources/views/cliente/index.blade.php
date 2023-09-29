@@ -420,7 +420,7 @@
                     </div>
                 </aside>
                 <div class="alert alert-warning text-center" role="alert">
-                    Atención: Se suspende temporalmente el corbro por conceptos de renovaciones, exhumaciones y traslado únicamente en el <div class="badge bg-primary">Sector 2 del Cementerio Mercedario</div>, con el fin de brindar tranquilidad a los usuarios de este.
+                    Atención: Se suspende temporalmente el cobro por conceptos de renovaciones, exhumaciones y traslado únicamente en el <div class="badge bg-primary">Sector 2 del Cementerio Mercedario</div>, con el fin de brindar tranquilidad a los usuarios de este.
                 </div>
             </div>
             <div class="carousel-item">
