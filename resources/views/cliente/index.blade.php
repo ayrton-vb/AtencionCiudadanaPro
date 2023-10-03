@@ -6,7 +6,35 @@
 <!-- =============================================== -->
 <!-- INTRO-->
 <!-- =============================================== -->
-
+<div class="text-center title-merce" style="margin-top: 50px; margin-bottom: 100px;">
+    <h1>Tramites Cementerio Mercedario</h1>
+</div>
+<div class="partner-area">
+    <div class="container-fluid">
+        <div class="sponsor-info">
+            <div class="sponsor-slider owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="sponsor-logo">
+                    <img class="img-fluid" src="imagenes/cementerio/carousel_1.jpeg" alt="image">
+                </div>
+                <div class="sponsor-logo">
+                    <img class="img-fluid" src="imagenes/cementerio/carousel_2.jpeg" alt="image">
+                </div>
+                <div class="sponsor-logo">
+                    <img class="img-fluid" src="imagenes/cementerio/carousel_3.jpeg" alt="image">
+                </div>
+                <div class="sponsor-logo">
+                    <img class="img-fluid" src="imagenes/cementerio/carousel_4.jpeg" alt="image">
+                </div>
+                <div class="sponsor-logo">
+                    <img class="img-fluid" src="imagenes/cementerio/carousel_5.jpeg" alt="image">
+                </div>
+                <div class="sponsor-logo">
+                    <img class="img-fluid" src="imagenes/cementerio/carousel_6.jpeg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="rutasVehiculos"  class="mt-4" style="background-color: #F5F5F5; display: box; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; max-width: none;">
     <img class="img-fluid" src="{{asset('imagenes/banner_vehiculos.png')}}" alt="banner">
     <section class="container pt-3 pb-3">
