@@ -6,6 +6,19 @@
 <!-- =============================================== -->
 <!-- INTRO-->
 <!-- =============================================== -->
+<div id="idrecaudaciones"  class="mt-4" style="background-color: #F5F5F5; display: box; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; max-width: none;">
+    <section class="container pt-3 pb-3">
+        <h1 data-aos="fade-down" class="fs-2 text-center fw-bold my-4">
+            Conoce la nueva aplicación móvil
+            <span class="redText">Tú Municipio 24/7</span>
+        </h1>
+        <div class="mt-4 mb-4 text-center">
+            <video class="img-fluid" controls>
+                <source src="video/movil.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</div>
 <div class="text-center title-merce" style="margin-top: 50px; margin-bottom: 100px;">
     <h1>Tramites Cementerio Mercedario</h1>
 </div>
