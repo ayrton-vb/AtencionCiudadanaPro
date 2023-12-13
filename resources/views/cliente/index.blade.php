@@ -2,7 +2,63 @@
 
 @section('contenido')
 
+<section id="idtramitesnuevos" class="container pt-3 pb-3">
+    <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold my-4"><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
 
+        <div class="row g-0">
+            <div class="col-md-4">
+                <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
+                     <div class="images-wrapper ">
+                     <img src="imagenes/tramites/cartel-de-la-calle.png" class="img-fluid rounded-start pt-1" alt="...">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">USO DE VÍAS</h5>
+                        <p class="card-text">Autorización para actividades evangélicas, ayuda, Bienestar social, actividades que promuevan valores, conciencia social vecinal y cuidado con el medio ambiente. <span>No lucrativas</span></p>
+
+                            <a href="{{ route('tramite.requisitos', ['id' => 88]) }}" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%;">
+                    <div class="images-wrapper ">
+                    <img src="/imagenes/LOGOFOREPRO.png" class="img-fluid rounded-start pt-1" alt="...">
+                    </div>
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">FIDEICOMISO FOREPRO - GAMEA</h5>
+                        <p class="card-text">Acceso a unidades económica productivas y artesanos a un crédito de Fomento</p>
+                        <p class="card-text"><small class="text-muted">Objetivo: Otorgar créditos para la Reactivación Económica de la Producción Local
+                            y las Actividades Productivas en el Municipio de El Alto.</small></p>
+                            <a href="ervicioForepro" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+
+                    </div>
+                </div>
+
+        <div class="col-md-4">
+            <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
+             <div class="images-wrapper ">
+             <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
+            </div>
+
+
+            <div class="card-body">
+                <h5 class="card-title">PERMISO EXCEPCIONAL PARA CIRCULAR EN EL AREA DE RESTRICCION</h5>
+                <p class="card-text">Acceso a permiso excepcional para circular en el area de restriccion vehicular</p>
+
+                    <a href="restriccion" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
 <!-- =============================================== -->
 <!-- INTRO-->
 <!-- =============================================== -->
@@ -272,48 +328,45 @@
             del Gobierno Autónomo Municipal de la ciudad de El Alto
             </h1>
 </section>
-<section class="container pt-3 pb-3">
+{{-- <section class="container pt-3 pb-3">
     <h1 data-aos="zoom-in-up" class="fs-2 text-center fw-bold my-4"><span class="redText text-decoration-underline">Nuevos Trámites</span>  </h1>
 
         <div class="row g-0">
-        <div class="col-md-4">
-        <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%;">
-             <div class="images-wrapper ">
-             <img src="/imagenes/LOGOFOREPRO.png" class="img-fluid rounded-start pt-1" alt="...">
-            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
+                     <div class="images-wrapper ">
+                     <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">USO DE VÍAS</h5>
+                        <p class="card-text">Autorización para actividades evangélicas, ayuda, Bienestar social, actividades que promuevan valores, conciencia social vecinal y cuidado con el medio ambiente. <span>No lucrativas</span></p>
+
+                            <a href="clientes/88/tramiteByTramite" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%;">
+                    <div class="images-wrapper ">
+                    <img src="/imagenes/LOGOFOREPRO.png" class="img-fluid rounded-start pt-1" alt="...">
+                    </div>
 
 
-            <div class="card-body">
-                <h5 class="card-title">FIDEICOMISO FOREPRO - GAMEA</h5>
-                <p class="card-text">Acceso a unidades económica productivas y artesanos a un crédito de Fomento</p>
-                <p class="card-text"><small class="text-muted">Objetivo: Otorgar créditos para la Reactivación Económica de la Producción Local
-                    y las Actividades Productivas en el Municipio de El Alto.</small></p>
-                    <a href="ervicioForepro" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-            </div>
+                    <div class="card-body">
+                        <h5 class="card-title">FIDEICOMISO FOREPRO - GAMEA</h5>
+                        <p class="card-text">Acceso a unidades económica productivas y artesanos a un crédito de Fomento</p>
+                        <p class="card-text"><small class="text-muted">Objetivo: Otorgar créditos para la Reactivación Económica de la Producción Local
+                            y las Actividades Productivas en el Municipio de El Alto.</small></p>
+                            <a href="ervicioForepro" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
+                    </div>
 
-            </div>
-        </div>
-
-        <div class="col-md-4">
-        <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
-             <div class="images-wrapper ">
-             <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
-            </div>
-
-
-            <div class="card-body">
-                <h5 class="card-title">PERMISO EXCEPCIONAL PARA CIRCULAR EN EL AREA DE RESTRICCION</h5>
-                <p class="card-text">Acceso a permiso excepcional para circular en el area de restriccion vehicular</p>
-
-                    <a href="restriccion" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
-            </div>
-
-            </div>
-        </div>
-
+                    </div>
+                </div>
 
         <div class="col-md-4">
-        <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
+            <div data-aos="fade-down"  class="card mb-3 mx-auto " style="width: 80%">
              <div class="images-wrapper ">
              <img src="imagenes/recaudaciones/categoria/Recursos 3.png" class="img-fluid rounded-start pt-1" alt="...">
             </div>
@@ -328,13 +381,10 @@
 
             </div>
         </div>
-
-
-
     </div>
 
 
-</section>
+</section> --}}
 
 </br>
 

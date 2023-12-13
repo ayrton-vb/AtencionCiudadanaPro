@@ -58,7 +58,7 @@ Route::get('/clientes/{id}/tramiteByTramiteSucursal2','App\Http\Controllers\Tram
 
 Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteController@serviciosByServicios');
 
-Route::get('/clientes/{id}/tramiteByTramite','App\Http\Controllers\TramiteController@tramiteByTramite');
+Route::get('/clientes/{id}/tramiteByTramite','App\Http\Controllers\TramiteController@tramiteByTramite')->name('tramite.requisitos');
 
 Route::get('/clientes/{id}/servicioByServicio','App\Http\Controllers\TramiteController@servicioByServicio');
 
