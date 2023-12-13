@@ -14,7 +14,7 @@
 
                     <div class="card-body">
                         <h5 class="card-title">USO DE VÍAS</h5>
-                        <p class="card-text">Autorización para actividades evangélicas, ayuda, Bienestar social, actividades que promuevan valores, conciencia social vecinal y cuidado con el medio ambiente. <span>No lucrativas</span></p>
+                        <p class="card-text">Autorización para actividades evangélicas, ayuda, bienestar social, actividades que promuevan valores, conciencia social vecinal y cuidado con el medio ambiente. <span>No lucrativas</span></p>
 
                             <a href="{{ route('tramite.requisitos', ['id' => 88]) }}" class="fs-4 fw-bold btn btn-outline-secondary mx-4 mt-2">Requisitos</a>
                     </div>
