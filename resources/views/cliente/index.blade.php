@@ -454,7 +454,7 @@
         </div>
 </section>
 
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+{{-- <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
@@ -463,25 +463,10 @@
       </div>
       <div class="modal-body">
         <img class="img-fluid" src="{{asset('/imagenes/felices_dac.png')}}" alt="Imagen 1">
-        {{-- <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item">
-                <img class="img-fluid" src="/imagenes/felices_dac.png" alt="Imagen 1">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </a>
-        </div> --}}
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 
 <script>
