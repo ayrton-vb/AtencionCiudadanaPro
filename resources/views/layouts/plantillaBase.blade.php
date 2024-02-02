@@ -102,6 +102,12 @@
                 background: none;
             }
         }
+
+        @media (min-width: 768px) {
+         .modal-mod {
+            max-width: 45%;
+         }
+        }
     </style>
 
     <title>Atención Ciudadana</title>

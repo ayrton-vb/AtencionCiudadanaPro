@@ -454,19 +454,19 @@
         </div>
 </section>
 
-{{-- <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-mod">
     <div class="modal-content">
       <div class="modal-header">
-        Felices Fiestas
+        CENSO 2024
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img class="img-fluid" src="{{asset('/imagenes/felices_dac.png')}}" alt="Imagen 1">
+        <img class="img-fluid" src="{{asset('/imagenes/banner_censo.png')}}" alt="Imagen 1">
       </div>
     </div>
   </div>
-</div> --}}
+</div>
 
 
 <script>
