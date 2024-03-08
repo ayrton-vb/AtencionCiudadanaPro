@@ -465,10 +465,10 @@
         {{-- <img class="img-fluid" src="{{asset('/imagenes/banner_censo.png')}}" alt="Imagen 1"> --}}
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <img class="img-fluid" src="{{asset('/imagenes/banner_censo.png')}}" alt="Imagen 1">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item active">
                 <img class="img-fluid" src="{{asset('/imagenes/elalto_39.png')}}" alt="Imagen 1">
               </div>
             </div>
