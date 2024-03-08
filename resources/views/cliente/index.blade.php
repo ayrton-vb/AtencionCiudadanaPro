@@ -465,10 +465,10 @@
         {{-- <img class="img-fluid" src="{{asset('/imagenes/banner_censo.png')}}" alt="Imagen 1"> --}}
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
+                <div class="carousel-item active" data-bs-interval="8000">
                     <img class="img-fluid" src="{{asset('/imagenes/elalto_39.png')}}" alt="Imagen 1">
                   </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item" data-bs-interval="8000">
                     <img class="img-fluid" src="{{asset('/imagenes/banner_censo.png')}}" alt="Imagen 1">
                 </div>
             </div>
