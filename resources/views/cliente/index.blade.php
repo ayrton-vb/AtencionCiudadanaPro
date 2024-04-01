@@ -466,13 +466,7 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="8000">
-                    <img class="img-fluid" src="{{asset('/imagenes/elalto_39.png')}}" alt="Imagen 1">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img class="img-fluid" src="{{asset('/imagenes/censo_banner_2.jpg')}}" alt="Imagen 2">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img class="img-fluid" src="{{asset('/imagenes/banner_censo.png')}}" alt="Imagen 3">
+                    <img class="img-fluid" src="{{asset('/imagenes/descuento_banner.jpg')}}" alt="Imagen 1">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
